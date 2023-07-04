@@ -1,5 +1,9 @@
 import styles from '../sign-in-nft/page.module.css'
 
+export const metadata = {
+    title: 'PNFT Market'
+}
+
 const SignIn = () => {
     return (
         <div className={styles.main}>
@@ -54,7 +58,7 @@ const SignIn = () => {
                         Sign in with Google
                     </button>
                     <div className={styles.registerSection}>
-                        Don't have an account? <a className={styles.signUpText} href="">Sign up</a>
+                        Don&apos;t have an account? <a className={styles.signUpText} href="">Sign up</a>
                     </div>
                 </div>
             </div>
