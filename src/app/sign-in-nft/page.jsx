@@ -4,7 +4,7 @@ const SignIn = () => {
     return (
         <div className={styles.main}>
             <div className={styles.logoContainer}>
-                <img src="/assets-sign-in-nft/Frame.svg" alt="PNFT Market" />
+                <img src="/assets-sign-in-nft/images/Frame.svg" alt="PNFT Market" />
                 <div className={styles.logoText}>PNFT Market</div>
             </div>
             <div className={styles.signInContainer}>
@@ -23,7 +23,7 @@ const SignIn = () => {
                         </div>
                         <div className={styles.inputContent}>
                             <input type="text" className={styles.input} />
-                            <img className={styles.inputImage} src="/assets-sign-in-nft/X Icon.svg" alt="Email input" />
+                            <img className={styles.inputImage} src="/assets-sign-in-nft/images/X Icon.svg" alt="Email input" />
                         </div>
                     </div>
                     <div className={styles.passwordContainer}>
@@ -32,8 +32,25 @@ const SignIn = () => {
                         </div>
                         <div className={styles.inputContent}>
                             <input type="password" className={styles.input} />
-                            <img className={styles.inputImage} src="/assets-sign-in-nft/Hide Icon.svg" alt="Email input" />
+                            <img className={styles.inputImage} src="/assets-sign-in-nft/images/Hide Icon.svg" alt="Email input" />
                         </div>
+                    </div>
+                    <div className={styles.rememberMeContainer}>
+                        <div className={styles.rememberMeSection}>
+                            <input type="checkbox" className={styles.inputCheckbox} />
+                            <div className={styles.rememberMeText}>Remember Me</div>
+                        </div>
+                        <a href='' className={styles.forgotPasswordText}>Forgot Password?</a>
+                    </div>
+                    <button className={styles.signInButton}>
+                        Sign in
+                    </button>
+                    <button className={styles.googleSignInButton}>
+                        <img className={styles.googleImage} src="/assets-sign-in-nft/images/Google.svg" alt="Google icon" />
+                        Sign in with Google
+                    </button>
+                    <div className={styles.registerSection}>
+                        Don't have an account? <a className={styles.signUpText} href="">Sign up</a>
                     </div>
                 </div>
             </div>

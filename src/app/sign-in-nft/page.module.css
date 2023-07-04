@@ -1,24 +1,16 @@
-.main {
-    background: #FCFDFF;
-}
-
 .logoContainer {
     position: absolute;
     top: 40px;
     left: 40px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
-    gap: 12px;
 }
 
 .logoText {
     color: #000;
     font-size: 16px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.16px;
+    padding-left: 12px;
 }
 
 .signInContainer {
@@ -37,60 +29,45 @@
     color: #344054;
     font-size: 40px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.4px;
-    text-transform: capitalize;
 }
 
 .hintText {
     color: #667085;
     font-size: 16px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
 
 .emailContainer {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
     padding-top: 56px;
 }
 
 .inputLabel {
-    color: var(--secondary-color, #344054);
+    color: #344054;
     font-size: 14px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    padding-bottom: 8px;
 }
 
 .inputContent {
-    position: relative;
     display: flex;
     align-items: center;
-    gap: 115px;
     justify-content: end;
 }
 
 .input {
-    display: flex;
     padding: 10px 38px 10px 14px;
-    justify-content: center;
-    align-items: center;
     border-radius: 8px;
     border: 1px solid #D0D5DD;
     width: 100%;
-    color: var(--accent-2, #667085);
+    color: #667085;
     font-size: 16px;
     font-family: Inter;
-    font-style: normal;
     font-weight: 400;
     line-height: 24px;
 }
@@ -101,10 +78,107 @@
 }
 
 .passwordContainer {
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 8px;
     padding-top: 20px;
+}
+
+.rememberMeContainer {
+    display: inline-flex;
+    align-items: center;
+    gap: 113px;
+    padding-top: 20px;
+}
+
+.rememberMeSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.inputCheckbox {
+    appearance: none;
+    position: relative;
+}
+
+.inputCheckbox::before {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    content: "";
+    display: block;
+    border: 1px solid #D0D5DD;
+}
+
+.inputCheckbox:checked::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #5429FF;
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    content: "";
+}
+
+.rememberMeText {
+    color: #344054;
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.forgotPasswordText {
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    color: #5429FF;
+    text-decoration: none;
+}
+
+.signInButton {
+    background: #5429FF;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 12px 0 12px 0;
+    margin-top: 32px;
+    cursor: pointer;
+}
+
+.googleImage {
+    padding-right: 8px;
+}
+
+.googleSignInButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: white;
+    color: #344054;
+    border: 1px solid #D0D5DD;
+    font-size: 16px;
+    font-family: Inter;
+    line-height: 20px;
+    padding: 10px 0 10px 0;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.registerSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.signUpText {
+    padding-left: 4px;
+    color: #5429FF;
+    text-decoration: none;
 }
