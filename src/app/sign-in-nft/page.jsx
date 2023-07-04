@@ -54,6 +54,14 @@ const SignIn = () => {
                     </div>
                 </div>
             </div>
+            <div className={styles.creditsContainer}>
+                @CreatedbyNAMDesign
+            </div>
+            <div className={styles.imageMainSection}>
+                <div className={styles.imageColorfulSection}>
+                    <img src="/assets-sign-in-nft/images/DRIP_20.png" className={styles.marketImage} alt="PNFT Market" />
+                </div>
+            </div>
         </div>
     )
 }
