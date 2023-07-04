@@ -1,3 +1,7 @@
+.main {
+    font-family: 'Inter';
+}
+
 .logoContainer {
     position: absolute;
     top: 40px;
@@ -7,8 +11,8 @@
 }
 
 .logoText {
-    color: #000;
     font-size: 16px;
+    font-weight: 500;
     letter-spacing: 0.16px;
     padding-left: 12px;
 }
@@ -28,7 +32,6 @@
 .headlineText {
     color: #344054;
     font-size: 40px;
-    font-family: Inter;
     font-weight: 700;
     letter-spacing: 0.4px;
 }
@@ -36,8 +39,6 @@
 .hintText {
     color: #667085;
     font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
     line-height: 24px;
 }
 
@@ -48,7 +49,6 @@
 .inputLabel {
     color: #344054;
     font-size: 14px;
-    font-family: Inter;
     font-weight: 500;
     line-height: 20px;
     padding-bottom: 8px;
@@ -67,8 +67,6 @@
     width: 100%;
     color: #667085;
     font-size: 16px;
-    font-family: Inter;
-    font-weight: 400;
     line-height: 24px;
 }
 
@@ -84,14 +82,12 @@
 .rememberMeContainer {
     display: inline-flex;
     align-items: center;
-    gap: 113px;
     padding-top: 20px;
 }
 
 .rememberMeSection {
     display: flex;
     align-items: center;
-    gap: 8px;
 }
 
 .inputCheckbox {
@@ -123,18 +119,18 @@
 .rememberMeText {
     color: #344054;
     font-size: 14px;
-    font-family: Inter;
     font-weight: 500;
     line-height: 20px;
+    padding-left: 8px;
 }
 
 .forgotPasswordText {
     font-size: 14px;
-    font-family: Inter;
     font-weight: 500;
     line-height: 20px;
     color: #5429FF;
     text-decoration: none;
+    padding-left: 113px;
 }
 
 .signInButton {
@@ -143,8 +139,6 @@
     border: none;
     color: white;
     font-size: 16px;
-    font-family: Inter;
-    font-weight: 500;
     line-height: 20px;
     padding: 12px 0 12px 0;
     margin-top: 32px;
@@ -164,7 +158,7 @@
     color: #344054;
     border: 1px solid #D0D5DD;
     font-size: 16px;
-    font-family: Inter;
+    font-weight: 500;
     line-height: 20px;
     padding: 10px 0 10px 0;
     margin-top: 16px;
@@ -175,10 +169,17 @@
     display: flex;
     justify-content: center;
     padding-top: 20px;
+    font-weight: 400;
 }
 
 .signUpText {
     padding-left: 4px;
     color: #5429FF;
     text-decoration: none;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url("/assets-sign-in-nft/fonts/Inter-VariableFont_slnt\,wght.ttf");
 }
