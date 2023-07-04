@@ -8,6 +8,10 @@ const SignIn = () => {
                 <div className={styles.logoText}>PNFT Market</div>
             </div>
             <div className={styles.signInContainer}>
+                <div className={styles.logoContainerResponsive}>
+                    <img src="/assets-sign-in-nft/images/Frame.svg" alt="PNFT Market" />
+                    <div className={styles.logoText}>PNFT Market</div>
+                </div>
                 <div className={styles.signInForm}>
                     <div className={styles.headlineContainer}>
                         <div className={styles.headlineText}>

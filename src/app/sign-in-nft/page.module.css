@@ -19,6 +19,10 @@
     align-items: center;
 }
 
+.logoContainerResponsive {
+    display: none;
+}
+
 .logoText {
     font-size: 16px;
     font-weight: 500;
@@ -182,6 +186,8 @@
     justify-content: center;
     margin-top: 20px;
     font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .signUpText {
@@ -225,4 +231,51 @@
 @font-face {
     font-family: 'Inter';
     src: url("/assets-sign-in-nft/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@media (max-width: 1024px) {
+    .logoContainer {
+        display: none;
+    }
+
+    .signInContainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .logoContainerResponsive {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoText {
+        margin-top: 12px;
+        margin-left: 0;
+    }
+
+    .signInContainer {
+        width: 100%;
+    }
+
+    .signInForm {
+        width: 327px;
+    }
+
+    .headlineText {
+        font-size: 32px;
+        letter-spacing: 0.32px;
+    }
+
+    .hintText {
+        font-size: 14px;
+    }
+
+    .creditsContainer {
+        display: none;
+    }
+
+    .imageMainSection {
+        display: none;
+    }
 }
