@@ -32,3 +32,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+1. Нужен отступ 8px между верхними текстами
+2. Нужны placeholder для 2 инпутов
+3. Клик на Remember Me должен переключать чекбокс (lable element)
+4. для img нужен height: fit-content
+5. нужно использовать BEM стиль CSS https://sparkbox.com/foundry/bem_by_example
+6. попробовать PostCSS https://nextjs.org/docs/pages/building-your-application/configuring/post-css
+7. установить и попробовать https://github.com/postcss/postcss-nested 
