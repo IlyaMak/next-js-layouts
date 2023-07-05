@@ -33,7 +33,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-- font-size 14xp вынести в главный класс компонента
 - font-weight: 500; одинаковый для всех или большинства текстов? если да - вынести в главный класс
 - line-height должен быть прописан не для <a>, а для его контейнера.
 - у ссылок нет подчёркивания и одинаковый цвет, значит надо вынести в общий класс .link

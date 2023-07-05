@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    font-size: 14px;
 }
 
 .logo-container {
@@ -59,7 +60,6 @@
 
 .input-label {
     color: #344054;
-    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     margin-bottom: 8px;
@@ -130,14 +130,12 @@
 
 .remember-me-section__text {
     color: #344054;
-    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     margin-left: 8px;
 }
 
 .remember-me-container__forgot-password-text {
-    font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     color: #5429FF;
@@ -180,7 +178,6 @@
     justify-content: center;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     white-space: pre;
 }
