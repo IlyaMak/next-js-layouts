@@ -54,7 +54,7 @@ const SignIn = () => {
                         Sign in
                     </button>
                     <button className={styles["sign-in-button"] + ' ' + styles["sign-in-button--google"]}>
-                        <img className={styles["sign-in-button-image"]} src="/assets-sign-in-nft/images/Google.svg" alt="Google icon" />
+                        <img className={styles["sign-in-button__image"]} src="/assets-sign-in-nft/images/Google.svg" alt="Google icon" />
                         Sign in with Google
                     </button>
                     <div className={styles["register-section"]}>

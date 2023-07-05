@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("/assets-sign-in-nft/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
 .main {
     font-family: 'Inter';
     display: flex;
@@ -29,7 +34,7 @@
             margin: 32px 32px 32px 0;
             height: calc(100% - 64px);
 
-            .image-container__image {
+            &__image {
                 max-width: 100%;
                 max-height: 100%;
                 margin: 0px 16px 31px 16px;
@@ -117,11 +122,11 @@
                 display: flex;
                 align-items: center;
 
-                .remember-me-section__checkbox {
+                &__checkbox {
                     appearance: none;
                     position: relative;
 
-                    &.remember-me-section__checkbox::before {
+                    &:before {
                         width: 16px;
                         height: 16px;
                         border-radius: 4px;
@@ -130,7 +135,7 @@
                         border: 1px solid #D0D5DD;
                     }
 
-                    &.remember-me-section__checkbox:checked::after {
+                    &:checked:after {
                         position: absolute;
                         left: 50%;
                         top: 50%;
@@ -143,7 +148,7 @@
                     }
                 }
 
-                .remember-me-section__text {
+                &__text {
                     color: #344054;
                     margin-left: 8px;
                 }
@@ -161,27 +166,27 @@
             font-size: 16px;
             line-height: 20px;
             cursor: pointer;
-        }
 
-        .sign-in-button--primary {
-            background: #5429FF;
-            border: none;
-            color: white;
-            padding: 12px 0 12px 0;
-            margin-top: 32px;
-        }
+            &--primary {
+                background: #5429FF;
+                border: none;
+                color: white;
+                padding: 12px 0 12px 0;
+                margin-top: 32px;
+            }
 
-        .sign-in-button--google {
-            background: white;
-            color: #344054;
-            padding: 9px 0 9px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #D0D5DD;
-            margin-top: 16px;
+            &--google {
+                background: white;
+                color: #344054;
+                padding: 9px 0 9px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #D0D5DD;
+                margin-top: 16px;
+            }
 
-            .sign-in-button-image {
+            &__image {
                 margin-right: 8px;
             }
         }
@@ -212,11 +217,6 @@
     margin-left: 12px;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src: url("/assets-sign-in-nft/fonts/Inter-VariableFont_slnt\,wght.ttf");
-}
-
 @media (max-width: 1024px) {
     .logo-container {
         display: none;
@@ -245,7 +245,6 @@
             }
         }
     }
-
 
     .logo-text {
         margin-top: 12px;
