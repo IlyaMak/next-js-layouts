@@ -33,7 +33,6 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-- у ссылок нет подчёркивания и одинаковый цвет, значит надо вынести в общий класс .link
 
 6. попробовать PostCSS https://nextjs.org/docs/pages/building-your-application/configuring/post-css
 7. установить и попробовать https://github.com/postcss/postcss-nested 

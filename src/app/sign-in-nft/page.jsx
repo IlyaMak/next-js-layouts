@@ -48,7 +48,7 @@ const SignIn = () => {
                             <input type="checkbox" className={styles["remember-me-section__checkbox"]} id='checkbox' />
                             <label className={styles["remember-me-section__text"]} htmlFor="checkbox">Remember me</label>
                         </div>
-                        <a href='' className={styles["remember-me-container__forgot-password-text"]}>Forgot Password?</a>
+                        <a href='' className={styles.link}>Forgot Password?</a>
                     </div>
                     <button className={styles["sign-in-button"] + ' ' + styles["sign-in-button--primary"]}>
                         Sign in
@@ -58,7 +58,7 @@ const SignIn = () => {
                         Sign in with Google
                     </button>
                     <div className={styles["register-section"]}>
-                        Don&apos;t have an account? <a className={styles["sign-up-text"]} href="">Sign up</a>
+                        Don&apos;t have an account? <a className={styles.link} href="">Sign up</a>
                     </div>
                 </div>
             </div>

@@ -135,8 +135,9 @@
     margin-left: 8px;
 }
 
-.remember-me-container__forgot-password-text {
+.link {
     color: #5429FF;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -177,12 +178,6 @@
     margin-top: 20px;
     line-height: 24px;
     white-space: pre;
-}
-
-.sign-up-text {
-    color: #5429FF;
-    text-decoration: none;
-    font-weight: 500;
 }
 
 .credits-container {
