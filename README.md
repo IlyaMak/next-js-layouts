@@ -35,7 +35,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-3. Клик на Remember Me должен переключать чекбокс (label element)
 4. для img нужен height: fit-content
 5. нужно использовать BEM стиль CSS https://sparkbox.com/foundry/bem_by_example
 6. попробовать PostCSS https://nextjs.org/docs/pages/building-your-application/configuring/post-css

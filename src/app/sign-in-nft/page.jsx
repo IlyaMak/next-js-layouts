@@ -45,8 +45,8 @@ const SignIn = () => {
                     </div>
                     <div className={styles.rememberMeContainer}>
                         <div className={styles.rememberMeSection}>
-                            <input type="checkbox" className={styles.inputCheckbox} />
-                            <div className={styles.rememberMeText}>Remember Me</div>
+                            <input type="checkbox" className={styles.inputCheckbox} id='rememberMeCheckbox' />
+                            <label className={styles.rememberMeText} htmlFor="rememberMeCheckbox">Remember me</label>
                         </div>
                         <a href='' className={styles.forgotPasswordText}>Forgot Password?</a>
                     </div>
