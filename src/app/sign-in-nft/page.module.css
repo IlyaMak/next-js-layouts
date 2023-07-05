@@ -96,6 +96,7 @@
     justify-content: space-between;
     margin-top: 20px;
     font-weight: 500;
+    line-height: 20px;
 }
 
 .remember-me-section {
@@ -131,12 +132,10 @@
 
 .remember-me-section__text {
     color: #344054;
-    line-height: 20px;
     margin-left: 8px;
 }
 
 .remember-me-container__forgot-password-text {
-    line-height: 20px;
     color: #5429FF;
     text-decoration: none;
 }
