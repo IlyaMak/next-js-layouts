@@ -30,7 +30,7 @@ const SignIn = () => {
                             Email
                         </div>
                         <div className={styles.inputContent}>
-                            <input type="text" className={styles.input} />
+                            <input type="text" className={styles.input} placeholder='debra.holt@example.com' />
                             <img className={styles.inputImage} src="/assets-sign-in-nft/images/X Icon.svg" alt="Email input" />
                         </div>
                     </div>
@@ -39,7 +39,7 @@ const SignIn = () => {
                             Password
                         </div>
                         <div className={styles.inputContent}>
-                            <input type="password" className={styles.input} />
+                            <input type="password" className={styles.input} value='12345678' />
                             <img className={styles.inputImage} src="/assets-sign-in-nft/images/Hide Icon.svg" alt="Email input" />
                         </div>
                     </div>

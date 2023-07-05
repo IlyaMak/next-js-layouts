@@ -35,9 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 
 
-1. Нужен отступ 8px между верхними текстами
-2. Нужны placeholder для 2 инпутов
-3. Клик на Remember Me должен переключать чекбокс (lable element)
+3. Клик на Remember Me должен переключать чекбокс (label element)
 4. для img нужен height: fit-content
 5. нужно использовать BEM стиль CSS https://sparkbox.com/foundry/bem_by_example
 6. попробовать PostCSS https://nextjs.org/docs/pages/building-your-application/configuring/post-css
