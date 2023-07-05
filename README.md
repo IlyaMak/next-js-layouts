@@ -33,7 +33,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
+- font-size 14xp вынести в главный класс компонента
+- font-weight: 500; одинаковый для всех или большинства текстов? если да - вынести в главный класс
+- line-height должен быть прописан не для <a>, а для его контейнера.
+- у ссылок нет подчёркивания и одинаковый цвет, значит надо вынести в общий класс .link
 
-5. нужно использовать BEM стиль CSS https://sparkbox.com/foundry/bem_by_example
 6. попробовать PostCSS https://nextjs.org/docs/pages/building-your-application/configuring/post-css
 7. установить и попробовать https://github.com/postcss/postcss-nested 
