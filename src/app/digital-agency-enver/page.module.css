@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'GraphikRegular';
+    src: url("/assets-digital-agency-enver/fonts/GraphikRegular.otf");
+}
+
+@font-face {
     font-family: 'Nunito Sans';
     src: url("/assets-digital-agency-enver/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
@@ -37,6 +42,10 @@
             font-weight: 700;
             color: white;
             margin-top: 50px;
+        }
+
+        &--contacts {
+            margin-left: 20px;
         }
     }
 
@@ -76,41 +85,49 @@
                 top: 50%;
             }
         }
+    }
 
+    .features-section {
+        margin-top: 50px;
 
-        .features-section {
-            margin-top: 50px;
-
-            &__container {
-                height: 294px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                font-family: 'Nunito Sans';
-                text-align: center;
-                align-items: center;
-
-            }
-
-            &__image {
-                width: 69px;
-                height: 69px;
-            }
-
-            &__header {
-                font-size: 24px;
-                font-weight: 600;
-                letter-spacing: -0.75px;
-            }
-
-            &__description {
-                color: rgba(255, 255, 255, 0.70);
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 28px;
-            }
+        &__header {
+            margin-left: 24px;
+            margin-right: 24px;
         }
 
+        &__container {
+            height: 294px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            font-family: 'Nunito Sans';
+            text-align: center;
+            align-items: center;
+
+        }
+
+        &__description-container {
+            margin-left: 57px;
+            margin-right: 57px;
+        }
+
+        &__image {
+            width: 69px;
+            height: 69px;
+        }
+
+        &__header {
+            font-size: 24px;
+            font-weight: 600;
+            letter-spacing: -0.75px;
+        }
+
+        &__description {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 28px;
+        }
     }
 
     .secondary-header {
@@ -145,6 +162,53 @@
         &__arrows-container {
             display: flex;
             justify-content: center;
+        }
+    }
+
+    .contacts-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 416px;
+        background: rgba(30, 30, 32, 0.50);
+
+        &__header {
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 306px;
+        padding: 140px 0 50px 0;
+
+        &__menu-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 164px;
+        }
+
+        &__item {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 18px;
+            font-family: 'Nunito Sans';
+            font-weight: 700;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+
+        .copyright {
+            color: #FFF;
+            text-align: center;
+            font-size: 18px;
+            font-family: 'GraphikRegular';
+            line-height: 28px;
         }
     }
 }

@@ -21,8 +21,10 @@ const Enver = () => {
                     Our Services
                     <img className={styles["click-button-logo"]} src="/assets-digital-agency-enver/images/arrow-right-up.svg" alt="Click button logo" />
                 </button>
-                <img src="/assets-digital-agency-enver/images/young-attractive-handsome-guy-feels-delighted-gladden-amazed-min_ccexpress 1.png"
-                    alt="Man" className={styles["man-image"]} />
+                <div className={styles["man-image-section"]}>
+                    <img src="/assets-digital-agency-enver/images/young-attractive-handsome-guy-feels-delighted-gladden-amazed-min_ccexpress 1.png"
+                        alt="Man" className={styles["man-image"]} />
+                </div>
                 <div className={styles["secondary-header"]}>
                     Why Enver Is The Best Choice?
                 </div>
@@ -33,21 +35,26 @@ const Enver = () => {
                     <img className={styles["video-image"]} src="/assets-digital-agency-enver/images/image 4.png" alt="Video image" />
                     <img className={styles["play-icon"]} src="/assets-digital-agency-enver/images/Play.svg" alt="Play icon" />
                 </div>
-                <div className={styles["secondary-header"]}>
+            </div>
+            <div className={styles["features-section"]}>
+                <div className={styles["secondary-header"] + ' ' + styles["features-section__header"]}>
                     The Service We Provide For You
                 </div>
-                <div className={styles["features-section"]}>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/development-icon.svg" alt="Development icon" />
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/development-icon.svg" alt="Development icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             Development
                         </div>
                         <div className={styles["features-section__description"]}>
                             Create a platform with the best and coolest quality from us.
                         </div>
+
                     </div>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/ui-ux-icon.svg" alt="UI/UX icon" />
+                </div>
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/ui-ux-icon.svg" alt="UI/UX icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             UI/UX Designer
                         </div>
@@ -55,8 +62,10 @@ const Enver = () => {
                             We provide UI/UX Design services, and of course with the best quality
                         </div>
                     </div>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/graphik-designer-icon.svg" alt="Graphik designer icon" />
+                </div>
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/graphik-designer-icon.svg" alt="Graphik designer icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             Graphik Designer
                         </div>
@@ -64,8 +73,10 @@ const Enver = () => {
                             We provide Graphic Design services, with the best designers
                         </div>
                     </div>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/motion-graphik-icon.svg" alt="Motion graphik icon" />
+                </div>
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/motion-graphik-icon.svg" alt="Motion graphik icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             Motion Graphik
                         </div>
@@ -73,8 +84,10 @@ const Enver = () => {
                             Create a platform with the best and coolest quality from us.
                         </div>
                     </div>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/photography-icon.svg" alt="Photography icon" />
+                </div>
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/photography-icon.svg" alt="Photography icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             Photography
                         </div>
@@ -82,8 +95,10 @@ const Enver = () => {
                             We provide Photography services, and of course with the best quality
                         </div>
                     </div>
-                    <div className={styles["features-section__container"]}>
-                        <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/videography-icon.svg" alt="Videography icon" />
+                </div>
+                <div className={styles["features-section__container"]}>
+                    <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/videography-icon.svg" alt="Videography icon" />
+                    <div className={styles["features-section__description-container"]}>
                         <div className={styles["features-section__header"]}>
                             Videography
                         </div>
@@ -105,6 +120,31 @@ const Enver = () => {
                     <button className={styles.button + ' ' + styles["ellipse-button"] + ' ' + styles["ellipse-button--enabled"]}>
                         <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Right arrow icon" />
                     </button>
+                </div>
+            </div>
+            <div className={styles["contacts-section"]}>
+                <div className={styles["secondary-header"] + ' ' + styles["contacts-section__header"]}>
+                    Contact us for the service you want to use
+                </div>
+                <button className={styles.button + ' ' + styles["button--rectangle"] + ' ' + styles["button--contacts"]}>
+                    Contact us
+                </button>
+            </div>
+            <div className={styles.footer}>
+                <img className={styles.logo} src="/assets-digital-agency-enver/images/logo.svg" alt="Enver logo" />
+                <div className={styles["footer__menu-items"]}>
+                    <div className={styles["footer__item"]}>
+                        Support
+                    </div>
+                    <div className={styles["footer__item"]}>
+                        Privacy Policy
+                    </div>
+                    <div className={styles["footer__item"]}>
+                        Terms And Conditions
+                    </div>
+                </div>
+                <div className={styles.copyright}>
+                    © 2020 Enver, All right reserved
                 </div>
             </div>
         </div>
