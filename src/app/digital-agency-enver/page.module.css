@@ -1,3 +1,11 @@
 .main {
     background: #19191B;
+    color: white;
+    height: 100%;
+
+    .logo-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 24px 0 24px;
+    }
 }
