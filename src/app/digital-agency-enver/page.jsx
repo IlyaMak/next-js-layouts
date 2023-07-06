@@ -12,8 +12,11 @@ const Enver = () => {
                 <img className={styles["menu-logo"]} src="/assets-digital-agency-enver/images/Sort.svg" alt="Menu logo" />
             </div>
             <div className={styles["main__section"]}>
-                <div className={styles["main-header"]}>Build Your Awesome Platform</div>
-                <div className={styles.description}>
+                <div className={styles.gradient + ' ' + styles["gradient--first"]}></div>
+                <div className={styles["main-header"]}>
+                    Build Your Awesome Platform
+                </div>
+                <div className={styles["section-description"]}>
                     Enver studio is a digital studio that offers several services such as UI/UX Design to developers,
                     we will provide the best service for those of you who use our services.
                 </div>
@@ -21,19 +24,29 @@ const Enver = () => {
                     Our Services
                     <img className={styles["click-button-logo"]} src="/assets-digital-agency-enver/images/arrow-right-up.svg" alt="Click button logo" />
                 </button>
-                <div className={styles["man-image-section"]}>
-                    <img src="/assets-digital-agency-enver/images/young-attractive-handsome-guy-feels-delighted-gladden-amazed-min_ccexpress 1.png"
-                        alt="Man" className={styles["man-image"]} />
-                </div>
+            </div>
+            <div className={styles["man-section"]}>
+                <div className={styles.gradient + ' ' + styles["gradient--second"]}></div>
+                <img className={styles["vector-icon"]} src="/assets-digital-agency-enver/images/Vector 13.svg" alt="Vector icon" />
+                <img className={styles["group-circle-icon"]} src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
+                <img className={styles["group-play-icon"]} src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
+                <img className={styles["plus-icon"]} src="/assets-digital-agency-enver/images/add.svg" alt="Plus icon" />
+                <img src="/assets-digital-agency-enver/images/man.png"
+                    alt="Man" className={styles["man-section__image"]} />
+            </div>
+            <div className={styles["video-section"]}>
                 <div className={styles["secondary-header"]}>
                     Why Enver Is The Best Choice?
                 </div>
-                <div className={styles.description}>
+                <div className={styles["section-description"]}>
                     Watch this one minute video so you understand why you should use our services!
                 </div>
-                <div className={styles["video-image-container"]}>
-                    <img className={styles["video-image"]} src="/assets-digital-agency-enver/images/image 4.png" alt="Video image" />
-                    <img className={styles["play-icon"]} src="/assets-digital-agency-enver/images/Play.svg" alt="Play icon" />
+                <div className={styles["video-section__container"]}>
+                    <img className={styles["video-section__image"]} src="/assets-digital-agency-enver/images/image 4.png" alt="Video image" />
+                    <button className={styles.button + ' ' + styles["ellipse-button"] + ' ' + styles["play-button"]}>
+                        <img src="/assets-digital-agency-enver/images/Play.svg" alt="Play icon" />
+                    </button>
+
                 </div>
             </div>
             <div className={styles["features-section"]}>

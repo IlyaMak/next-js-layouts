@@ -23,6 +23,27 @@
         padding: 40px 24px 0 24px;
     }
 
+    .gradient {
+        position: absolute;
+        filter: blur(150px);
+
+
+        &--first {
+            width: 220px;
+            height: 500px;
+            transform: rotate(-40deg) translate(100px, -125px);
+            background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.11) 100%);
+
+        }
+
+        &--second {
+            width: 215px;
+            height: 510px;
+            transform: rotate(45deg);
+            background: linear-gradient(180deg, rgba(251, 168, 28, 0.26) 0%, rgba(224, 86, 136, 0.15) 100%);
+        }
+    }
+
     .button {
         background: #5454D4;
         border: 0;
@@ -58,33 +79,69 @@
             line-height: 150%;
         }
 
-        .description {
-            color: rgba(255, 255, 255, 0.70);
-            font-size: 16px;
-            font-family: 'Nunito Sans';
-            line-height: 150%;
-            margin-top: 30px;
+
+    }
+
+    .section-description {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 16px;
+        font-family: 'Nunito Sans';
+        line-height: 150%;
+        margin-top: 30px;
+    }
+
+    .man-section {
+        position: relative;
+        margin: 60px 0 60px 0;
+
+        .vector-icon {
+            position: absolute;
+            left: 20px;
+            top: 25px;
         }
 
-        .man-image {
-            margin-top: 92px;
+        .group-circle-icon {
+            position: absolute;
+            right: 40px;
         }
 
-        .video-image-container {
-            margin-top: 50px;
+        .group-play-icon {
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+        }
+
+        .plus-icon {
+            position: absolute;
+            bottom: 40px;
+            right: 30px;
+        }
+
+        &__image {
+            height: fit-content;
+            width: 100%;
+        }
+    }
+
+    .video-section {
+        margin: 50px 24px 0 24px;
+
+        &__container {
             position: relative;
 
-            .video-image {
-                width: 100%;
-                height: 100%;
-            }
-
-            .play-icon {
+            .play-button {
                 position: absolute;
                 left: 50%;
                 top: 50%;
             }
         }
+
+        &__image {
+            width: 100%;
+            height: 100%;
+            margin-top: 50px;
+        }
+
     }
 
     .features-section {
