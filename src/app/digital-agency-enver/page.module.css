@@ -13,16 +13,56 @@
     src: url("/assets-digital-agency-enver/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf");
 }
 
+@custom-media --xl (min-width: 1280px);
+
 .main {
     background: #19191B;
     color: white;
     position: relative;
     overflow-x: hidden;
 
-    .logo-section {
+    .logo {
+        @media (--xl) {
+            height: 40px;
+        }
+    }
+
+    .menu-section {
         display: flex;
         justify-content: space-between;
-        padding: 40px 24px 0 24px;
+        align-items: center;
+        margin: 40px 24px 0 24px;
+
+        @media (--xl) {
+            margin: 42px 128px 0 120px;
+        }
+
+        &__container {
+            display: none;
+
+            @media (--xl) {
+                width: 400px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &__item {
+            color: rgba(255, 255, 255, 0.70);
+            font-size: 18px;
+            font-family: Nunito Sans;
+            letter-spacing: -0.5px;
+
+            &--selected {
+                color: #5454D4;
+            }
+        }
+
+        .menu-logo {
+            @media (--xl) {
+                display: none;
+            }
+        }
     }
 
     .gradient {
@@ -35,6 +75,12 @@
             transform: rotate(-40deg) translate(-20%, 50px);
             background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.11) 100%);
             left: 25%;
+
+            @media (--xl) {
+                width: 400px;
+                height: 900px;
+                transform: rotate(-54deg) translate(-20%, -270px);
+            }
         }
 
         &--second {
@@ -44,6 +90,36 @@
             top: 550px;
             left: 20%;
             background: linear-gradient(180deg, rgba(251, 168, 28, 0.26) 0%, rgba(224, 86, 136, 0.15) 100%);
+
+            @media (--xl) {
+                width: 400px;
+                height: 900px;
+                top: 100px;
+                left: unset;
+                right: 100px;
+                transform: rotate(65deg) translate(0, 0);
+            }
+        }
+
+        &--third {
+            @media(--xl) {
+                width: 460px;
+                height: 500px;
+                transform: rotate(-55deg) translate(-60px, -140px);
+                background: linear-gradient(180deg, rgba(84, 84, 212, 0.21) 0%, rgba(84, 84, 212, 0.09) 100%);
+                top: 1800px;
+            }
+        }
+
+        &--fourth {
+            @media(--xl) {
+                background: linear-gradient(180deg, rgba(84, 84, 212, 0.20) 0%, rgba(84, 84, 212, 0.08) 100%);
+                width: 590px;
+                height: 650px;
+                bottom: 950px;
+                transform: translate(350px, 0);
+                right: 0;
+            }
         }
     }
 
@@ -53,6 +129,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: 'Nunito Sans';
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+
+        @media (--xl) {
+            font-size: 20px;
+        }
 
         .click-button-logo {
             margin-left: 8px
@@ -61,25 +145,63 @@
         &--rectangle {
             width: 166px;
             height: 44px;
-            font-family: 'Nunito Sans';
-            font-size: 16px;
-            font-weight: 700;
-            color: white;
             margin-top: 50px;
+
+            @media (--xl) {
+                width: 200px;
+                height: 60px;
+            }
         }
 
         &--contacts {
             margin-left: 20px;
+
+            @media(--xl) {
+                width: 201px;
+                height: 60px;
+            }
+        }
+
+        &--menu-contacts {
+            display: none;
+
+            @media (--xl) {
+                display: block;
+                margin: 0;
+                width: 157px;
+                height: 44px;
+                font-weight: 400;
+                border-radius: 5px;
+                border: 1px solid #FFF;
+                background: #19191B;
+            }
+        }
+    }
+
+    .greeting-section {
+        @media(--xl) {
+            display: flex;
+            margin: 0 70px 0 120px;
         }
     }
 
     &__section {
-        padding: 66px 24px 0 24px;
+        margin: 66px 24px 0 24px;
+
+        @media (--xl) {
+            width: 50%;
+            margin: 145px 0 0 0;
+        }
 
         .main-header {
             font-size: 42px;
             font-family: 'GraphikBlack';
             line-height: 150%;
+
+            @media (--xl) {
+                font-size: 80px;
+                line-height: 84px;
+            }
         }
     }
 
@@ -89,12 +211,31 @@
         font-family: 'Nunito Sans';
         line-height: 150%;
         margin-top: 30px;
+
+        @media (--xl) {
+            margin: 0;
+            font-size: 21px;
+            line-height: 39px;
+            letter-spacing: -0.6px;
+        }
+
+        &--video {
+            @media(--xl) {
+                width: 50%;
+                margin-left: 24px;
+            }
+        }
     }
 
     .man-section {
         position: relative;
         margin-top: 60px;
         padding-bottom: 35px;
+
+        @media (--xl) {
+            margin-top: 30px;
+            padding: 0;
+        }
 
         &__image {
             height: fit-content;
@@ -105,51 +246,103 @@
     .vector-icon {
         position: absolute;
 
+        @media (--xl) {
+            width: 95px;
+        }
+
         &--man-section {
             left: 20px;
             top: 25px;
+
+            @media (--xl) {
+                left: -50px;
+                top: 110px;
+            }
         }
 
         &--portfolio-section {
             left: 33px;
             bottom: 77px;
+
+            @media(--xl) {
+                left: 74px;
+                bottom: 100px;
+            }
         }
     }
 
     .group-circle-icon {
         position: absolute;
 
+        @media (--xl) {
+            height: 60px;
+        }
+
         &--man-section {
             right: 40px;
+
+            @media (--xl) {
+                right: 65px;
+                top: 70px;
+            }
         }
 
         &--portfolio-section {
             right: 24px;
             bottom: 60px;
+
+            @media(--xl) {
+                height: 72px;
+                right: 120px;
+                transform: rotate(-27deg);
+            }
         }
 
         &--contacts-section {
             bottom: 12px;
             left: 10px;
+
+            @media(--xl) {
+                bottom: 64px;
+                left: 159px;
+            }
         }
     }
 
     .group-play-icon {
         position: absolute;
 
+        @media (--xl) {
+            height: 120px;
+        }
+
         &--man-section {
             bottom: 0;
             left: 20px;
+
+            @media (--xl) {
+                left: -100px;
+                bottom: 50px;
+            }
         }
 
         &--features-section {
             left: 20px;
             top: 75px;
+
+            @media (--xl) {
+                left: 170px;
+                top: 110px
+            }
         }
     }
 
     .plus-icon {
         position: absolute;
+
+        @media (--xl) {
+            height: 50px;
+        }
 
         &--small {
             width: 28px;
@@ -159,32 +352,75 @@
         &--man-section {
             bottom: 70px;
             right: 30px;
+
+            @media (--xl) {
+                bottom: 90px;
+                right: 60px;
+            }
         }
 
         &--features-section {
             right: 10px;
             bottom: 0;
+
+            @media (--xl) {
+                height: 42px;
+                width: 42px;
+                right: 120px;
+                transform: rotate(-30deg);
+            }
         }
 
         &--portfolio-section {
             top: 17px;
             left: 24px;
+
+            @media (--xl) {
+                height: 42px;
+                width: 42px;
+                left: 100px;
+                transform: rotate(30deg);
+            }
         }
 
         &--contacts-section {
             right: 30px;
             top: 10px;
+
+            @media(--xl) {
+                height: 42px;
+                width: 42px;
+                right: 130px;
+                top: 69px;
+            }
         }
     }
 
     .video-section {
         margin: 110px 24px 0 24px;
 
+        @media (--xl) {
+            margin: 100px 120px 0 120px;
+        }
+
+        &__description-container {
+
+            @media(--xl) {
+                display: flex;
+            }
+        }
+
         /*TODO:*/
         &__header {
             font-size: 36px;
             font-family: 'GraphikBlack';
             line-height: 150%;
+
+            @media(--xl) {
+                font-size: 60px;
+                line-height: 70px;
+                width: 50%;
+            }
         }
 
         &__container {
@@ -196,6 +432,12 @@
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+
+                .play-icon {
+                    @media(--xl) {
+                        height: 124px;
+                    }
+                }
             }
         }
 
@@ -208,14 +450,32 @@
 
     .features-section {
 
+        &__containers {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-top: 30px;
+
+            @media(--xl) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-row-gap: 24px;
+                grid-column-gap: 24px;
+                margin: 50px 120px 0;
+            }
+
+        }
+
         &__header-container {
             position: relative;
             padding-top: 150px;
             padding-bottom: 15px;
+
+            @media(--xl) {
+                display: flex;
+                justify-content: center;
+            }
         }
 
         &__container {
-            margin-top: 30px;
             height: 294px;
             display: flex;
             flex-direction: column;
@@ -223,10 +483,6 @@
             font-family: 'Nunito Sans';
             text-align: center;
             align-items: center;
-
-        }
-
-        &__description-container {
             margin-left: 57px;
             margin-right: 57px;
         }
@@ -240,6 +496,10 @@
             font-size: 24px;
             font-weight: 600;
             letter-spacing: -0.75px;
+
+            @media(--xl) {
+                font-size: 28px;
+            }
         }
 
         &__description {
@@ -247,6 +507,10 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 28px;
+
+            @media(--xl) {
+                font-size: 20px;
+            }
         }
     }
 
@@ -256,6 +520,19 @@
         line-height: 150%;
         margin-left: 24px;
         margin-right: 24px;
+
+        @media(--xl) {
+            margin: 0;
+            text-align: center;
+            font-size: 60px;
+            line-height: 70px;
+        }
+
+        &--features {
+            @media(--xl) {
+                width: 700px;
+            }
+        }
     }
 
     .ellipse-button {
@@ -266,6 +543,11 @@
         &--enabled {
             transform: rotate(180deg);
             margin-left: 12px;
+        }
+
+        &--disabled {
+            background: rgba(255, 255, 255, 0.20);
+
         }
     }
 
@@ -278,6 +560,33 @@
             position: relative;
             padding-top: 150px;
             padding-bottom: 50px;
+
+            @media(--xl) {
+                padding-bottom: 70px;
+            }
+
+            .portfolio-header {
+                @media(--xl) {
+                    font-size: 58px;
+                    text-align: left;
+                    margin-left: 120px;
+                }
+            }
+        }
+
+        &__image {
+            @media(--xl) {
+                display: none;
+            }
+
+            &--responsive {
+                display: none;
+
+                @media(--xl) {
+                    display: block;
+                    margin: 0 120px 0 120px;
+                }
+            }
         }
 
         &__footer {
@@ -289,13 +598,49 @@
         &__arrows-container {
             display: flex;
             justify-content: center;
+
+            @media(--xl) {
+                display: none;
+            }
+        }
+
+        &__pagination {
+            display: none;
+
+            @media(--xl) {
+                display: block;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
 
     .contacts-section {
         background: rgba(30, 30, 32, 0.50);
         position: relative;
-        padding: 80px 0 80px 0;
+        padding: 80px 0;
+
+        @media(--xl) {
+            padding: 187px 0;
+        }
+
+        .contacts-container {
+            @media(--xl) {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 120px;
+
+                .contacts-header {
+                    @media(--xl) {
+                        text-align: left;
+                    }
+                }
+
+                .contacts-button-container {
+                    margin-left: 173px;
+                }
+            }
+        }
     }
 
     .footer {
@@ -307,11 +652,25 @@
         height: 306px;
         padding: 140px 0 50px 0;
 
+        @media(--xl) {
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 0;
+            height: 220px;
+        }
+
         &__menu-items {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 164px;
+
+            @media(--xl) {
+                width: 430px;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
         }
 
         &__item {
@@ -320,15 +679,18 @@
             font-family: 'Nunito Sans';
             font-weight: 700;
             line-height: 28px;
-            text-transform: capitalize;
         }
 
         .copyright {
-            color: #FFF;
+            color: rgba(255, 255, 255, 0.70);
             text-align: center;
             font-size: 18px;
             font-family: 'GraphikRegular';
             line-height: 28px;
+
+            @media(--xl) {
+                font-size: 16px;
+            }
         }
     }
 }
