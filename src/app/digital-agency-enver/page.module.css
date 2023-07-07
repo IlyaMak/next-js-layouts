@@ -16,6 +16,8 @@
 .main {
     background: #19191B;
     color: white;
+    position: relative;
+    overflow-x: hidden;
 
     .logo-section {
         display: flex;
@@ -27,19 +29,20 @@
         position: absolute;
         filter: blur(150px);
 
-
         &--first {
             width: 220px;
             height: 500px;
-            transform: rotate(-40deg) translate(100px, -125px);
+            transform: rotate(-40deg) translate(-20%, 50px);
             background: linear-gradient(180deg, rgba(84, 84, 212, 0.27) 0%, rgba(84, 84, 212, 0.11) 100%);
-
+            left: 25%;
         }
 
         &--second {
             width: 215px;
             height: 510px;
             transform: rotate(45deg);
+            top: 550px;
+            left: 20%;
             background: linear-gradient(180deg, rgba(251, 168, 28, 0.26) 0%, rgba(224, 86, 136, 0.15) 100%);
         }
     }
@@ -71,15 +74,13 @@
     }
 
     &__section {
-        margin: 66px 24px 0 24px;
+        padding: 66px 24px 0 24px;
 
         .main-header {
             font-size: 42px;
             font-family: 'GraphikBlack';
             line-height: 150%;
         }
-
-
     }
 
     .section-description {
@@ -92,7 +93,8 @@
 
     .man-section {
         position: relative;
-        margin: 60px 0 60px 0;
+        margin-top: 60px;
+        padding-bottom: 35px;
 
         &__image {
             height: fit-content;
@@ -108,7 +110,7 @@
             top: 25px;
         }
 
-        &--portfolio-section  {
+        &--portfolio-section {
             left: 33px;
             bottom: 77px;
         }
@@ -142,73 +144,74 @@
 
         &--features-section {
             left: 20px;
-            top: 0;
+            top: 75px;
         }
     }
 
     .plus-icon {
         position: absolute;
 
+        &--small {
+            width: 28px;
+            height: 28px;
+        }
+
         &--man-section {
-            bottom: 40px;
+            bottom: 70px;
             right: 30px;
         }
 
         &--features-section {
             right: 10px;
             bottom: 0;
-            width: 28px;
-            height: 28px;
         }
 
         &--portfolio-section {
             top: 17px;
             left: 24px;
-            width: 28px;
-            height: 28px;
         }
 
         &--contacts-section {
             right: 30px;
             top: 10px;
-            width: 28px;
-            height: 28px;
         }
     }
 
     .video-section {
-        margin: 50px 24px 0 24px;
+        margin: 110px 24px 0 24px;
+
+        /*TODO:*/
+        &__header {
+            font-size: 36px;
+            font-family: 'GraphikBlack';
+            line-height: 150%;
+        }
 
         &__container {
             position: relative;
+            margin-top: 50px;
 
             .play-button {
                 position: absolute;
-                left: 50%;
                 top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
 
         &__image {
             width: 100%;
             height: 100%;
-            margin-top: 50px;
         }
 
     }
 
     .features-section {
-        margin-top: 50px;
 
         &__header-container {
             position: relative;
-            padding-top: 90px;
+            padding-top: 150px;
             padding-bottom: 15px;
-        }
-
-        &__header {
-            margin-left: 24px;
-            margin-right: 24px;
         }
 
         &__container {
@@ -251,6 +254,8 @@
         font-size: 36px;
         font-family: 'GraphikBlack';
         line-height: 150%;
+        margin-left: 24px;
+        margin-right: 24px;
     }
 
     .ellipse-button {
@@ -275,11 +280,6 @@
             padding-bottom: 50px;
         }
 
-        &__header {
-            margin-left: 24px;
-            margin-right: 24px;
-        }
-
         &__footer {
             position: relative;
             padding-top: 50px;
@@ -296,11 +296,6 @@
         background: rgba(30, 30, 32, 0.50);
         position: relative;
         padding: 80px 0 80px 0;
-
-        &__header {
-            margin-left: 24px;
-            margin-right: 24px;
-        }
     }
 
     .footer {
