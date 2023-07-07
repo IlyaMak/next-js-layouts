@@ -27,10 +27,14 @@ const Enver = () => {
             </div>
             <div className={styles["man-section"]}>
                 <div className={styles.gradient + ' ' + styles["gradient--second"]}></div>
-                <img className={styles["vector-icon"]} src="/assets-digital-agency-enver/images/Vector 13.svg" alt="Vector icon" />
-                <img className={styles["group-circle-icon"]} src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
-                <img className={styles["group-play-icon"]} src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
-                <img className={styles["plus-icon"]} src="/assets-digital-agency-enver/images/add.svg" alt="Plus icon" />
+                <img className={styles["vector-icon"] + ' ' + styles["vector-icon--man-section"]}
+                    src="/assets-digital-agency-enver/images/Vector 13.svg" alt="Vector icon" />
+                <img className={styles["group-circle-icon"] + ' ' + styles["group-circle-icon--man-section"]}
+                    src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
+                <img className={styles["group-play-icon"] + ' ' + styles["group-play-icon--man-section"]}
+                    src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
+                <img className={styles["plus-icon"] + ' ' + styles["plus-icon--man-section"]} src="/assets-digital-agency-enver/images/add.svg"
+                    alt="Plus icon" />
                 <img src="/assets-digital-agency-enver/images/man.png"
                     alt="Man" className={styles["man-section__image"]} />
             </div>
@@ -50,8 +54,14 @@ const Enver = () => {
                 </div>
             </div>
             <div className={styles["features-section"]}>
-                <div className={styles["secondary-header"] + ' ' + styles["features-section__header"]}>
-                    The Service We Provide For You
+                <div className={styles["features-section__header-container"]}>
+                    <img className={styles["group-play-icon"] + ' ' + styles["group-play-icon--features-section"]}
+                        src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
+                    <img className={styles["plus-icon"] + ' ' + styles["plus-icon--features-section"]}
+                        src="/assets-digital-agency-enver/images/add.svg" alt="Plus icon" />
+                    <div className={styles["secondary-header"] + ' ' + styles["features-section__header"]}>
+                        The Service We Provide For You
+                    </div>
                 </div>
                 <div className={styles["features-section__container"]}>
                     <img className={styles["features-section__image"]} src="/assets-digital-agency-enver/images/development-icon.svg" alt="Development icon" />
@@ -122,26 +132,40 @@ const Enver = () => {
                 </div>
             </div>
             <div className={styles["portfolio-section"]}>
-                <div className={styles["secondary-header"] + ' ' + styles["portfolio-section__header"]}>
-                    Our Awesome Portofolio
+                <div className={styles["portfolio-section__header-container"]}>
+                    <img className={styles["group-circle-icon"] + ' ' + styles["group-circle-icon--portfolio-section"]}
+                        src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
+                    <img className={styles["plus-icon"] + ' ' + styles["plus-icon--portfolio-section"]} src="/assets-digital-agency-enver/images/add.svg"
+                        alt="Plus icon" />
+                    <div className={styles["secondary-header"] + ' ' + styles["portfolio-section__header"]}>
+                        Our Awesome Portofolio
+                    </div>
                 </div>
                 <img className={styles["portfolio-section__image"]} src="/assets-digital-agency-enver/images/portfolio-image.svg" alt="Portfolio image" />
-                <div className={styles["portfolio-section__arrows-container"]}>
-                    <button className={styles.button + ' ' + styles["ellipse-button"]}>
-                        <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Left arrow icon" />
-                    </button>
-                    <button className={styles.button + ' ' + styles["ellipse-button"] + ' ' + styles["ellipse-button--enabled"]}>
-                        <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Right arrow icon" />
-                    </button>
+                <div className={styles["portfolio-section__footer"]}>
+                    <div className={styles["portfolio-section__arrows-container"]}>
+                        <button className={styles.button + ' ' + styles["ellipse-button"]}>
+                            <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Left arrow icon" />
+                        </button>
+                        <button className={styles.button + ' ' + styles["ellipse-button"] + ' ' + styles["ellipse-button--enabled"]}>
+                            <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Right arrow icon" />
+                        </button>
+                    </div>
+                    <img className={styles["vector-icon"] + ' ' + styles["vector-icon--portfolio-section"]}
+                        src="/assets-digital-agency-enver/images/Vector 13.svg" alt="Vector icon" />
                 </div>
             </div>
             <div className={styles["contacts-section"]}>
+                <img className={styles["plus-icon"] + ' ' + styles["plus-icon--contacts-section"]} src="/assets-digital-agency-enver/images/add.svg"
+                    alt="Plus icon" />
                 <div className={styles["secondary-header"] + ' ' + styles["contacts-section__header"]}>
                     Contact us for the service you want to use
                 </div>
                 <button className={styles.button + ' ' + styles["button--rectangle"] + ' ' + styles["button--contacts"]}>
                     Contact us
                 </button>
+                <img className={styles["group-circle-icon"] + ' ' + styles["group-circle-icon--contacts-section"]}
+                    src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
             </div>
             <div className={styles.footer}>
                 <img className={styles.logo} src="/assets-digital-agency-enver/images/logo.svg" alt="Enver logo" />

@@ -94,32 +94,85 @@
         position: relative;
         margin: 60px 0 60px 0;
 
-        .vector-icon {
-            position: absolute;
+        &__image {
+            height: fit-content;
+            width: 100%;
+        }
+    }
+
+    .vector-icon {
+        position: absolute;
+
+        &--man-section {
             left: 20px;
             top: 25px;
         }
 
-        .group-circle-icon {
-            position: absolute;
+        &--portfolio-section  {
+            left: 33px;
+            bottom: 77px;
+        }
+    }
+
+    .group-circle-icon {
+        position: absolute;
+
+        &--man-section {
             right: 40px;
         }
 
-        .group-play-icon {
-            position: absolute;
+        &--portfolio-section {
+            right: 24px;
+            bottom: 60px;
+        }
+
+        &--contacts-section {
+            bottom: 12px;
+            left: 10px;
+        }
+    }
+
+    .group-play-icon {
+        position: absolute;
+
+        &--man-section {
             bottom: 0;
             left: 20px;
         }
 
-        .plus-icon {
-            position: absolute;
+        &--features-section {
+            left: 20px;
+            top: 0;
+        }
+    }
+
+    .plus-icon {
+        position: absolute;
+
+        &--man-section {
             bottom: 40px;
             right: 30px;
         }
 
-        &__image {
-            height: fit-content;
-            width: 100%;
+        &--features-section {
+            right: 10px;
+            bottom: 0;
+            width: 28px;
+            height: 28px;
+        }
+
+        &--portfolio-section {
+            top: 17px;
+            left: 24px;
+            width: 28px;
+            height: 28px;
+        }
+
+        &--contacts-section {
+            right: 30px;
+            top: 10px;
+            width: 28px;
+            height: 28px;
         }
     }
 
@@ -147,12 +200,19 @@
     .features-section {
         margin-top: 50px;
 
+        &__header-container {
+            position: relative;
+            padding-top: 90px;
+            padding-bottom: 15px;
+        }
+
         &__header {
             margin-left: 24px;
             margin-right: 24px;
         }
 
         &__container {
+            margin-top: 30px;
             height: 294px;
             display: flex;
             flex-direction: column;
@@ -191,7 +251,6 @@
         font-size: 36px;
         font-family: 'GraphikBlack';
         line-height: 150%;
-        margin-top: 40px;
     }
 
     .ellipse-button {
@@ -206,14 +265,25 @@
     }
 
     .portfolio-section {
-        height: 540px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
 
+        &__header-container {
+            position: relative;
+            padding-top: 150px;
+            padding-bottom: 50px;
+        }
+
         &__header {
             margin-left: 24px;
             margin-right: 24px;
+        }
+
+        &__footer {
+            position: relative;
+            padding-top: 50px;
+            padding-bottom: 130px;
         }
 
         &__arrows-container {
@@ -223,11 +293,9 @@
     }
 
     .contacts-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        height: 416px;
         background: rgba(30, 30, 32, 0.50);
+        position: relative;
+        padding: 80px 0 80px 0;
 
         &__header {
             margin-left: 24px;
