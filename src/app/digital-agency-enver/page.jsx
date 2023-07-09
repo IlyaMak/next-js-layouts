@@ -60,6 +60,16 @@ const Enver = () => {
                     <img className={styles["man-section__image"]} src="/assets-digital-agency-enver/images/man.png" alt="Man" />
                 </div>
             </div>
+            <div className={cn("man-section", "man-section--phone")}>
+                <img className={cn("vector-icon", "vector-icon--man-section")}
+                    src="/assets-digital-agency-enver/images/Vector 13.svg" alt="Vector icon" />
+                <img className={cn("group-circle-icon", "group-circle-icon--man-section")}
+                    src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
+                <img className={cn("group-play-icon", "group-play-icon--man-section")}
+                    src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
+                <img className={cn("plus-icon", "plus-icon--man-section")} src="/assets-digital-agency-enver/images/add.svg" alt="Plus icon" />
+                <img className={styles["man-section__image"]} src="/assets-digital-agency-enver/images/man.png" alt="Man" />
+            </div>
             <div id="about" className={cn("video-section", "row")}>
                 <div className={styles["video-section__description-container"]}>
                     <div className={styles["video-section__header"]}>
