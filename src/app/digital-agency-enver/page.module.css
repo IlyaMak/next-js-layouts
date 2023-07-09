@@ -21,6 +21,14 @@
     position: relative;
     overflow-x: hidden;
 
+    .row {
+        margin: 0 24px;
+
+        @media(--xl) {
+            margin: 0 120px;
+        }
+    }
+
     .logo {
         @media (--xl) {
             height: 40px;
@@ -31,10 +39,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 40px 24px 0 24px;
+        margin-top: 40px;
 
         @media (--xl) {
-            margin: 42px 128px 0 120px;
+            margin-top: 42px;
         }
 
         &__container {
@@ -154,8 +162,6 @@
         }
 
         &--contacts {
-            margin-left: 20px;
-
             @media(--xl) {
                 width: 201px;
                 height: 60px;
@@ -181,7 +187,7 @@
     .greeting-section {
         @media(--xl) {
             display: flex;
-            margin: 0 70px 0 120px;
+            margin-right: 70px;
         }
     }
 
@@ -213,7 +219,7 @@
         margin-top: 30px;
 
         @media (--xl) {
-            margin: 0;
+            margin-top: 24;
             font-size: 21px;
             line-height: 39px;
             letter-spacing: -0.6px;
@@ -222,6 +228,7 @@
         &--video {
             @media(--xl) {
                 width: 50%;
+                margin-top: 0;
                 margin-left: 24px;
             }
         }
@@ -368,6 +375,7 @@
                 width: 42px;
                 right: 120px;
                 transform: rotate(-30deg);
+                bottom: 30px;
             }
         }
 
@@ -397,10 +405,10 @@
     }
 
     .video-section {
-        margin: 110px 24px 0 24px;
+        margin-top: 110px;
 
         @media (--xl) {
-            margin: 100px 120px 0 120px;
+            margin-top: 100px;
         }
 
         &__description-container {
@@ -449,11 +457,10 @@
     }
 
     .features-section {
-
         &__containers {
             display: grid;
             grid-template-columns: 1fr;
-            margin-top: 30px;
+            margin-top: 20px;
 
             @media(--xl) {
                 grid-template-columns: 1fr 1fr 1fr;
@@ -461,7 +468,6 @@
                 grid-column-gap: 24px;
                 margin: 50px 120px 0;
             }
-
         }
 
         &__header-container {
@@ -477,14 +483,30 @@
 
         &__container {
             height: 294px;
+            margin: 24px 57px 0 57px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media(--xl) {
+                height: 300px;
+                margin: 0;
+            }
+        }
+
+        &__content-container {
+            height: 198px;
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
-            font-family: 'Nunito Sans';
+            justify-content: space-between;
             text-align: center;
             align-items: center;
-            margin-left: 57px;
-            margin-right: 57px;
+            font-family: 'Nunito Sans';
+
+            @media(--xl) {
+                height: 203px;
+                width: 299px;
+            }
         }
 
         &__image {
@@ -507,9 +529,10 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 28px;
-
+            
             @media(--xl) {
                 font-size: 20px;
+                letter-spacing: -0.5px;
             }
         }
     }
@@ -518,18 +541,15 @@
         font-size: 36px;
         font-family: 'GraphikBlack';
         line-height: 150%;
-        margin-left: 24px;
-        margin-right: 24px;
 
         @media(--xl) {
-            margin: 0;
-            text-align: center;
             font-size: 60px;
             line-height: 70px;
         }
 
         &--features {
             @media(--xl) {
+                text-align: center;
                 width: 700px;
             }
         }
@@ -554,7 +574,6 @@
     .portfolio-section {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
 
         &__header-container {
             position: relative;
@@ -568,8 +587,6 @@
             .portfolio-header {
                 @media(--xl) {
                     font-size: 58px;
-                    text-align: left;
-                    margin-left: 120px;
                 }
             }
         }
@@ -628,7 +645,6 @@
             @media(--xl) {
                 display: flex;
                 justify-content: space-between;
-                margin: 0 120px;
 
                 .contacts-header {
                     @media(--xl) {
@@ -650,12 +666,12 @@
         justify-content: space-between;
         text-align: center;
         height: 306px;
-        padding: 140px 0 50px 0;
+        margin: 140px 0 50px 0;
 
         @media(--xl) {
             flex-direction: row;
             justify-content: space-around;
-            padding: 0;
+            margin: 0;
             height: 220px;
         }
 
