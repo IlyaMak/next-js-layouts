@@ -55,22 +55,27 @@
             }
         }
 
-        &__item {
-            color: rgba(255, 255, 255, 0.70);
-            font-size: 18px;
-            font-family: Nunito Sans;
-            letter-spacing: -0.5px;
-
-            &--selected {
-                color: #5454D4;
-            }
-        }
-
         .menu-logo {
             @media (--xl) {
                 display: none;
             }
         }
+    }
+
+    .link {
+        color: rgba(255, 255, 255, 0.70);
+        font-size: 18px;
+        font-family: 'Nunito Sans';
+        text-decoration: none;
+        transition: color 0.2s linear;
+
+        &--footer {
+            font-weight: 700;
+        }
+    }
+
+    .link:hover {
+        color: #5454D4;
     }
 
     .gradient {
@@ -141,13 +146,14 @@
         font-size: 16px;
         font-weight: 700;
         color: white;
+        transition: all 0.2s linear;
 
         @media (--xl) {
             font-size: 20px;
         }
 
         .click-button-logo {
-            margin-left: 8px
+            margin-left: 8px;
         }
 
         &--rectangle {
@@ -182,6 +188,10 @@
                 background: #19191B;
             }
         }
+    }
+
+    .button:hover {
+        filter: brightness(130%);
     }
 
     .greeting-section {
@@ -529,7 +539,7 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 28px;
-            
+
             @media(--xl) {
                 font-size: 20px;
                 letter-spacing: -0.5px;
@@ -567,7 +577,6 @@
 
         &--disabled {
             background: rgba(255, 255, 255, 0.20);
-
         }
     }
 
@@ -687,14 +696,6 @@
                 justify-content: space-between;
                 align-items: center;
             }
-        }
-
-        &__item {
-            color: rgba(255, 255, 255, 0.70);
-            font-size: 18px;
-            font-family: 'Nunito Sans';
-            font-weight: 700;
-            line-height: 28px;
         }
 
         .copyright {

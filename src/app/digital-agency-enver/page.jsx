@@ -17,25 +17,25 @@ const Enver = () => {
             <div className={cn("menu-section", "row")}>
                 <img className={styles.logo} src="/assets-digital-agency-enver/images/logo.svg" alt="Enver logo" />
                 <div className={styles["menu-section__container"]}>
-                    <div className={cn("menu-section__item", "menu-section__item--selected")}>
+                    <a href="#main" className={styles.link}>
                         Home
-                    </div>
-                    <div className={styles["menu-section__item"]}>
+                    </a>
+                    <a href="#features" className={styles.link}>
                         Services
-                    </div>
-                    <div className={styles["menu-section__item"]}>
+                    </a>
+                    <a href="#portfolio" className={styles.link}>
                         Our Project
-                    </div>
-                    <div className={styles["menu-section__item"]}>
+                    </a>
+                    <a href="#about" className={styles.link}>
                         Abous us
-                    </div>
+                    </a>
                 </div>
                 <img className={styles["menu-logo"]} src="/assets-digital-agency-enver/images/Sort.svg" alt="Menu logo" />
                 <button className={cn("button", "button--menu-contacts")}>
                     Contact us
                 </button>
             </div>
-            <div className={cn("greeting-section", "row")}>
+            <div id="main" className={cn("greeting-section", "row")}>
                 <div className={styles["main__section"]}>
                     <div className={styles["main-header"]}>
                         Build Your Awesome Platform
@@ -60,7 +60,7 @@ const Enver = () => {
                     <img className={styles["man-section__image"]} src="/assets-digital-agency-enver/images/man.png" alt="Man" />
                 </div>
             </div>
-            <div className={cn("video-section", "row")}>
+            <div id="about" className={cn("video-section", "row")}>
                 <div className={styles["video-section__description-container"]}>
                     <div className={styles["video-section__header"]}>
                         Why Enver Is The Best Choice?
@@ -77,7 +77,7 @@ const Enver = () => {
 
                 </div>
             </div>
-            <div className={styles["features-section"]}>
+            <div id="features" className={styles["features-section"]}>
                 <div className={styles["features-section__header-container"]}>
                     <img className={cn("group-play-icon", "group-play-icon--features-section")}
                         src="/assets-digital-agency-enver/images/Group 162527.svg" alt="Group play icon" />
@@ -156,7 +156,7 @@ const Enver = () => {
                     </div>
                 </div>
             </div>
-            <div className={styles["portfolio-section"]}>
+            <div id="portfolio" className={styles["portfolio-section"]}>
                 <div className={styles["portfolio-section__header-container"]}>
                     <img className={cn("group-circle-icon", "group-circle-icon--portfolio-section")}
                         src="/assets-digital-agency-enver/images/Group 162526.svg" alt="Group cirle icon" />
@@ -203,13 +203,13 @@ const Enver = () => {
             <div className={styles.footer}>
                 <img className={styles.logo} src="/assets-digital-agency-enver/images/logo.svg" alt="Enver logo" />
                 <div className={styles["footer__menu-items"]}>
-                    <div className={styles["footer__item"]}>
+                    <div className={cn("link", "link--footer")}>
                         Support
                     </div>
-                    <div className={styles["footer__item"]}>
+                    <div className={cn("link", "link--footer")}>
                         Privacy Policy
                     </div>
-                    <div className={styles["footer__item"]}>
+                    <div className={cn("link", "link--footer")}>
                         Terms And Conditions
                     </div>
                 </div>
