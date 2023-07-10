@@ -12,7 +12,7 @@ Ideas:
 + 2. Animate button color with "transition": make them brighter on hover. Свойство brightness?
 + 3. phone. Menu button. Toggle to show/hide absolute menu. Toggle icons: hamburger and "X".
 + 4. Menu. Animate scroll to a certain div on click.
-5. phone. Make carousel work.
++ 5. phone. Make carousel work.
 6. Put features in JS array. Render them as a <Feature/> component.
 7. Show headers during scroll (change opacity from 0 to 1). Try to use native CSS. 
 8. Use internationalization next-i18next https://phrase.com/blog/posts/nextjs-i18n/

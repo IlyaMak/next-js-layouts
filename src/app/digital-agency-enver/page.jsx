@@ -12,6 +12,15 @@ const cn = cnCommon.bind(null, styles);
 
 const Enver = () => {
     const [isMenuShown, setIsMenuShown] = useState(false);
+    const [imageSourceIndex, setImageSourceIndex] = useState(0);
+    const imageSources = ["/assets-digital-agency-enver/images/portfolio-image1.svg", "/assets-digital-agency-enver/images/portfolio-image2.svg",
+        "/assets-digital-agency-enver/images/portfolio-image3.svg"];
+
+    const handleImageSource = (newImageSourceIndex) => {
+        if (newImageSourceIndex < imageSources.length && newImageSourceIndex >= 0) {
+            setImageSourceIndex(newImageSourceIndex);
+        }
+    }
 
     return (
         <div className={styles.main}>
@@ -196,17 +205,37 @@ const Enver = () => {
                     <img className={cn("plus-icon", "plus-icon--small", "plus-icon--portfolio-section")} src="/assets-digital-agency-enver/images/add.svg"
                         alt="Plus icon" />
                     <div className={cn("row", "secondary-header", "portfolio-header")}>
-                        Our Awesome Portofolio
+                        Our Awesome Portfolio
                     </div>
                 </div>
-                <img className={styles["portfolio-section__image"]} src="/assets-digital-agency-enver/images/portfolio-image.svg" alt="Portfolio image" />
+                <div className={styles["portfolio-section__rendered-image-container"]}>
+                    <img className={cn("portfolio-section__image", "portfolio-section__image--placeholder")} src={imageSources[0]} alt="Portfolio image" />
+                    {imageSources.map(
+                        (imageSource, index) => (
+                            <img
+                                key={imageSource}
+                                className={
+                                    cn(
+                                        "portfolio-section__image",
+                                        "portfolio-section__image--absolute",
+                                        imageSourceIndex === index ? "portfolio-section__image--is-shown" : ""
+                                    )
+                                }
+                                src={imageSource}
+                                alt="Portfolio image"
+                            />
+                        )
+                    )}
+                </div>
                 <img className={styles["portfolio-section__image--responsive"]} src="/assets-digital-agency-enver/images/Group 162511.png" alt="Portfolio image" />
                 <div className={styles["portfolio-section__footer"]}>
                     <div className={styles["portfolio-section__arrows-container"]}>
-                        <button className={cn("button", "ellipse-button", "ellipse-button--disabled")}>
-                            <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Left arrow icon" />
+                        <button className={cn("button", "ellipse-button")} onClick={() => handleImageSource(imageSourceIndex - 1)}
+                            disabled={!imageSources[imageSourceIndex - 1]}>
+                            <img src="/assets-digital-agency-enver/images/chevron-left.png" alt="Left arrow icon" />
                         </button>
-                        <button className={cn("button", "ellipse-button", "ellipse-button--enabled")}>
+                        <button className={cn("button", "ellipse-button")} onClick={() => handleImageSource(imageSourceIndex + 1)}
+                            disabled={!imageSources[imageSourceIndex + 1]}>
                             <img src="/assets-digital-agency-enver/images/chevron-right.png" alt="Right arrow icon" />
                         </button>
                     </div>
