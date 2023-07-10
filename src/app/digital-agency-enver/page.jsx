@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import styles from '../digital-agency-enver/page.module.css'
 import cnCommon from '../modules/classname';
 
@@ -8,6 +11,8 @@ export const metadata = {
 const cn = cnCommon.bind(null, styles);
 
 const Enver = () => {
+    const [isMenuShown, setIsMenuShown] = useState(false);
+
     return (
         <div className={styles.main}>
             <div className={cn("gradient", "gradient--first")}></div>
@@ -30,10 +35,28 @@ const Enver = () => {
                         Abous us
                     </a>
                 </div>
-                <img className={styles["menu-logo"]} src="/assets-digital-agency-enver/images/Sort.svg" alt="Menu logo" />
+                <button className={styles["menu-button"]} onClick={() => setIsMenuShown(!isMenuShown)}>
+                    {isMenuShown ? <div className={cn("close-logo")}>X</div>
+                        : <img className={styles["menu-logo"]} src="/assets-digital-agency-enver/images/Sort.svg" alt="Menu logo" />
+                    }
+                </button>
                 <button className={cn("button", "button--menu-contacts")}>
                     Contact us
                 </button>
+            </div>
+            <div className={cn("menu-section", "menu-section--phone", isMenuShown ? "menu-section--is-open" : "")}>
+                <a href="#main" className={cn("link", "link--menu")}>
+                    Home
+                </a>
+                <a href="#features" className={cn("link", "link--menu")}>
+                    Services
+                </a>
+                <a href="#portfolio" className={cn("link", "link--menu")}>
+                    Our Project
+                </a>
+                <a href="#about" className={cn("link", "link--menu")}>
+                    Abous us
+                </a>
             </div>
             <div id="main" className={cn("greeting-section", "row")}>
                 <div className={styles["main__section"]}>

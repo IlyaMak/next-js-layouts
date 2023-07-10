@@ -10,7 +10,7 @@
 Ideas:
 + 1. Animate link color with "transition": white by default, blue on hover (ссылки в шапке и футере).
 + 2. Animate button color with "transition": make them brighter on hover. Свойство brightness?
-3. phone. Menu button. Toggle to show/hide absolute menu. Toggle icons: hamburger and "X".
++ 3. phone. Menu button. Toggle to show/hide absolute menu. Toggle icons: hamburger and "X".
 + 4. Menu. Animate scroll to a certain div on click.
 5. phone. Make carousel work.
 6. Put features in JS array. Render them as a <Feature/> component.
