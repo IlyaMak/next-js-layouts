@@ -548,61 +548,6 @@
         justify-content: center;
       }
     }
-
-    &__container {
-      height: 294px;
-      margin: 24px 57px 0 57px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      @media (--xl) {
-        height: 300px;
-        margin: 0;
-      }
-    }
-
-    &__content-container {
-      height: 198px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      text-align: center;
-      align-items: center;
-      font-family: "Nunito Sans";
-
-      @media (--xl) {
-        height: 203px;
-        width: 299px;
-      }
-    }
-
-    &__image {
-      width: 69px;
-      height: 69px;
-    }
-
-    &__header {
-      font-size: 24px;
-      font-weight: 600;
-      letter-spacing: -0.75px;
-
-      @media (--xl) {
-        font-size: 28px;
-      }
-    }
-
-    &__description {
-      color: rgba(255, 255, 255, 0.7);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 28px;
-
-      @media (--xl) {
-        font-size: 20px;
-        letter-spacing: -0.5px;
-      }
-    }
   }
 
   .secondary-header {

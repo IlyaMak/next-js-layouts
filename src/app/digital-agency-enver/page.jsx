@@ -4,6 +4,7 @@
 import { useState } from "react";
 import styles from "../digital-agency-enver/page.module.css";
 import cnCommon from "../modules/classname";
+import Feature from "./components/features";
 
 export const metadata = {
   title: "Digital Agency Enver",
@@ -266,23 +267,7 @@ const Enver = () => {
         </div>
         <div className={styles["features-section__containers"]}>
           {features.map((feature, featureIndex) => (
-            <div
-              key={featureIndex}
-              className={styles["features-section__container"]}>
-              <div className={styles["features-section__content-container"]}>
-                <img
-                  className={styles["features-section__image"]}
-                  src={feature["icon"]}
-                  alt={feature["alt"]}
-                />
-                <div className={styles["features-section__header"]}>
-                  {feature["header"]}
-                </div>
-                <div className={styles["features-section__description"]}>
-                  {feature["description"]}
-                </div>
-              </div>
-            </div>
+            <Feature key={featureIndex} feature={feature} />
           ))}
         </div>
       </div>
