@@ -5,7 +5,15 @@ export const metadata = {
 };
 
 const Notes = () => {
-  return <div className={styles.main}></div>;
+  return (
+    <div className={styles.main}>
+      <div className={styles.header}></div>
+      <div className={styles["main-section"]}>
+        <div className={styles.body}></div>
+        <div className={styles.footer}></div>
+      </div>
+    </div>
+  );
 };
 
 export default Notes;
