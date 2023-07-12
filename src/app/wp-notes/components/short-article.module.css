@@ -1,0 +1,26 @@
+.article {
+  margin-top: 16px;
+
+  &__header {
+    color: #303030;
+  }
+
+  &__description {
+    margin-top: 3px;
+  }
+
+  &__content-text {
+    color: #898989;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  &__datetime {
+    margin-top: 16px;
+  }
+}
+
+.row {
+      margin-left: 27px;
+      margin-right: 27px;
+    }
