@@ -1,5 +1,5 @@
 import styles from "./short-article.module.css";
-import cnCommon from "../../modules/classname";
+import cnCommon from "../../../modules/classname";
 
 const cn = cnCommon.bind(null, styles);
 
