@@ -2,9 +2,9 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
-import Feature from "./components/features";
+import Feature from "../../components/digital-agency-enver/feature/features";
 import Head from "next/head";
-import globalStyles from "../style.global";
+import globalStyles from "../../app/style.global";
 
 const cn = cnCommon.bind(null, styles);
 

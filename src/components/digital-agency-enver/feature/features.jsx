@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "./component.module.css";
+import styles from "./feature.module.css";
 
 export default function Feature({ feature }) {
   return (

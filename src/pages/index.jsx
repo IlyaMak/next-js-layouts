@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import Head from "next/head";
-import globalStyles from "./style.global";
+import globalStyles from "../app/style.global";
 
 export default function Home() {
   return (

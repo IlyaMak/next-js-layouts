@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../sign-in-nft/page.module.css";
 import Head from "next/head";
-import globalStyles from "../style.global";
+import globalStyles from "../../app/style.global";
 
 const SignIn = () => {
   return (

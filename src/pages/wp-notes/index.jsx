@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
-import ShortArticle from "./components/short-article";
+import ShortArticle from "../../components/wp-notes/short-article/short-article";
 import Head from "next/head";
-import globalStyles from "../style.global";
+import globalStyles from "../../app/style.global";
 
 const cn = cnCommon.bind(null, styles);
 
