@@ -113,7 +113,20 @@ const Notes = () => {
             ))}
             <button className={cn("button-all-posts", "row")}>All Posts</button>
           </div>
-          <div className={styles.footer}></div>
+          <div className={styles.footer}>
+            <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
+            <div className={styles["footer__main"]}></div>
+            <div className={styles["footer__privacy"]}>
+              Holo theme by{" "}
+              <span className={styles["footer__author-link"]}>VitaThemes</span>{" "}
+              | <span className={styles["footer__author-link"]}>Privacy</span>
+            </div>
+            <div className={styles["footer__social"]}>
+              <div className={styles["footer__social-item"]}>Instagram</div>
+              <div className={styles["footer__social-item"]}>Twitter</div>
+              <div className={styles["footer__social-item"]}>Facebook</div>
+            </div>
+          </div>
         </div>
       </div>
     </>
