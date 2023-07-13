@@ -1,12 +1,27 @@
+@custom-media --xl (min-width: 1280px);
+
 .article {
   margin-top: 16px;
+
+  .link {
+    text-decoration: none;
+  }
+
+  &__content-container {
+    padding: 10px;
+  }
 
   &__header {
     color: #303030;
   }
 
-  &__description {
+  &__tags {
+    color: #ec7160 !important;
     margin-top: 3px;
+  }
+
+  &__description {
+    margin-top: 8px;
   }
 
   &__content-text {
@@ -18,9 +33,19 @@
   &__datetime {
     margin-top: 16px;
   }
+
+  &:hover {
+    border-radius: 8px;
+    background: #f6f6f6;
+  }
 }
 
 .row {
-      margin-left: 27px;
-      margin-right: 27px;
-    }
+  margin-left: 16px;
+  margin-right: 16px;
+
+  @media (--xl) {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}

@@ -11,20 +11,30 @@ const Notes = () => {
   const otherArticles = [
     {
       header: "Business Partners Work at Modern Office",
+      tags: [],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. ",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. consectetur adipisce placerat Lorem ipsum dolor sit amet:",
       datetime: "Feb 8, 2021",
     },
     {
       header: "Light & Bright in Brooklyn",
+      tags: [],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. ",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. consectetur adipisce placerat Lorem ipsum dolor sit amet:",
       datetime: "Feb 8, 2021",
     },
     {
       header: "Light & Bright in Brooklyn",
+      tags: [],
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. ",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. consectetur adipisce placerat Lorem ipsum dolor sit amet:",
+      datetime: "Feb 8, 2021",
+    },
+    {
+      header: "Business Partners Work at Modern Office",
+      tags: ["office", "remote"],
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. consectetur adipisce placerat Lorem ipsum dolor sit amet:",
       datetime: "Feb 8, 2021",
     },
   ];
@@ -39,92 +49,123 @@ const Notes = () => {
       </style>
       <div className={styles.main}>
         <div className={styles.header}>
-          <img
-            className={styles["menu-icon"]}
-            src="/assets-wp-notes/images/Menu.svg"
-            alt="Menu icon"
-          />
-          <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
-          <img
-            className={styles["search-icon-mobile"]}
-            src="/assets-wp-notes/images/search-mobile.svg"
-            alt="Search icon"
-          />
-          <div className={styles["search-container"]}>
-            <input
-              className={styles["input-search"]}
-              type="text"
-              placeholder="Search"
-            />
+          <div className={styles["header__content"]}>
             <img
-              className={styles["search-icon"]}
-              src="/assets-wp-notes/images/search.svg"
+              className={styles["menu-icon"]}
+              src="/assets-wp-notes/images/Menu.svg"
+              alt="Menu icon"
+            />
+            <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
+            <img
+              className={styles["search-icon-mobile"]}
+              src="/assets-wp-notes/images/search-mobile.svg"
               alt="Search icon"
             />
-          </div>
-          <div className={styles.menu}>
-            <div className={styles["menu__item"]}>Blog</div>
-            <div className={styles["menu__item"]}>Portfolio</div>
-            <div className={styles["menu__item"]}>Contact</div>
+            <div className={styles["search-container"]}>
+              <input
+                className={styles["input-search"]}
+                type="text"
+                placeholder="Search"
+              />
+              <img
+                className={styles["search-icon"]}
+                src="/assets-wp-notes/images/search.svg"
+                alt="Search icon"
+              />
+            </div>
+            <div className={styles.menu}>
+              <div className={styles["menu__item"]}>Blog</div>
+              <div className={styles["menu__item"]}>Portfolio</div>
+              <div className={styles["menu__item"]}>Contact</div>
+            </div>
           </div>
         </div>
         <div className={styles["main-section"]}>
-          <div className={styles.body}>
-            <div className={cn("header-additional-info", "row")}>PINNED</div>
-            <div className={cn("article", "article--pinned")}>
-              <div className={cn("article__header", "row")}>
-                Light & Bright in Brooklyn
+          <div className={styles["main-container"]}>
+            <div className={styles.body}>
+              <div className={styles["main-header"]}>Archive</div>
+              <div className={cn("header-additional-info", "row")}>PINNED</div>
+              <div className={cn("article", "article--pinned")}>
+                <div className={cn("article__header", "row")}>
+                  Light & Bright in Brooklyn
+                </div>
+                <div
+                  className={cn(
+                    "article__description",
+                    "article__content-text",
+                    "row"
+                  )}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  at arcu dui. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Sed at arcu dui. consectetur adipisce
+                  placerat Lorem ipsum dolor sit amet:
+                </div>
+                <div
+                  className={cn(
+                    "article__datetime",
+                    "article__content-text",
+                    "row"
+                  )}>
+                  Feb 8, 2021
+                </div>
               </div>
-              <div
-                className={cn(
-                  "article__description",
-                  "article__content-text",
-                  "row"
-                )}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at
-                arcu dui.
+              <div className={styles["other-header-section"]}>
+                <div className={styles["horizontal-line"]}></div>
+                <div
+                  className={cn(
+                    "header-additional-info",
+                    "header-additional-info--other",
+                    "row"
+                  )}>
+                  OTHER
+                </div>
+                <div className={styles["horizontal-line"]}></div>
               </div>
-              <div
-                className={cn(
-                  "article__datetime",
-                  "article__content-text",
-                  "row"
-                )}>
-                Feb 8, 2021
+              {otherArticles.map((shortArticle, shortArticleIndex) => (
+                <ShortArticle
+                  key={shortArticleIndex}
+                  shortArticle={shortArticle}
+                />
+              ))}
+              <div className={cn("button-all-posts-container")}>
+                <button className={cn("button-all-posts")}>All Posts</button>
+              </div>
+              <div className={cn("pagination")}>
+                <div className={cn("pagination__container")}>
+                  <img
+                    src="/assets-wp-notes/images/left-arrow.svg"
+                    alt="Left icon"
+                  />
+                  <div className={cn("pagination__button-container")}>
+                    <button className={cn("pagination__button")}>1</button>
+                    <button className={cn("pagination__button")}>2</button>
+                    <button className={cn("pagination__button")}>3</button>
+                    <button className={cn("pagination__button")}>...</button>
+                  </div>
+                  <img
+                    src="/assets-wp-notes/images/right-arrow.svg"
+                    alt="Right icon"
+                  />
+                </div>
               </div>
             </div>
-            <div className={styles["other-header-section"]}>
-              <div className={styles["horizontal-line"]}></div>
-              <div
-                className={cn(
-                  "header-additional-info",
-                  "header-additional-info--other",
-                  "row"
-                )}>
-                OTHER
+            <div className={styles.footer}>
+              <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
+              <div className={styles["footer__main"]}>
+                <div className={styles["footer__privacy"]}>
+                  Holo theme by{" "}
+                  <span className={styles["footer__author-link"]}>
+                    VitaThemes
+                  </span>{" "}
+                  |{" "}
+                  <span className={styles["footer__author-link"]}>Privacy</span>
+                </div>
+                <div className={styles["footer__social"]}>
+                  <div className={styles["footer__social-item"]}>Instagram</div>
+                  <div className={styles["footer__social-item"]}>Twitter</div>
+                  <div className={styles["footer__social-item"]}>Facebook</div>
+                </div>
               </div>
-              <div className={styles["horizontal-line"]}></div>
-            </div>
-            {otherArticles.map((shortArticle, shortArticleIndex) => (
-              <ShortArticle
-                key={shortArticleIndex}
-                shortArticle={shortArticle}
-              />
-            ))}
-            <button className={cn("button-all-posts", "row")}>All Posts</button>
-          </div>
-          <div className={styles.footer}>
-            <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
-            <div className={styles["footer__main"]}></div>
-            <div className={styles["footer__privacy"]}>
-              Holo theme by{" "}
-              <span className={styles["footer__author-link"]}>VitaThemes</span>{" "}
-              | <span className={styles["footer__author-link"]}>Privacy</span>
-            </div>
-            <div className={styles["footer__social"]}>
-              <div className={styles["footer__social-item"]}>Instagram</div>
-              <div className={styles["footer__social-item"]}>Twitter</div>
-              <div className={styles["footer__social-item"]}>Facebook</div>
             </div>
           </div>
         </div>

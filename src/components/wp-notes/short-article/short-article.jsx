@@ -5,17 +5,21 @@ const cn = cnCommon.bind(null, styles);
 
 export default function ShortArticle({ shortArticle }) {
   return (
-    <div className={styles.article}>
-      <div className={cn("article__header", "row")}>
-        {shortArticle["header"]}
-      </div>
-      <div
-        className={cn("article__description", "article__content-text", "row")}>
-        {shortArticle["description"]}
-      </div>
-      <div className={cn("article__datetime", "article__content-text", "row")}>
-        {shortArticle["datetime"]}
-      </div>
+    <div className={cn("article", "row")}>
+      <a className={cn("link")} href="">
+        <div className={cn("article__content-container")}>
+          <div className={cn("article__header")}>{shortArticle["header"]}</div>
+          <div className={cn("article__content-text", "article__tags")}>
+            {shortArticle["tags"].join(", ")}
+          </div>
+          <div className={cn("article__description", "article__content-text")}>
+            {shortArticle["description"]}
+          </div>
+          <div className={cn("article__datetime", "article__content-text")}>
+            {shortArticle["datetime"]}
+          </div>
+        </div>
+      </a>
     </div>
   );
 }
