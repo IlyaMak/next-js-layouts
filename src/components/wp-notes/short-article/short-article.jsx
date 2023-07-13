@@ -6,7 +6,7 @@ const cn = cnCommon.bind(null, styles);
 export default function ShortArticle({ shortArticle }) {
   return (
     <div className={cn("article", "row")}>
-      <a className={cn("link")} href="">
+      <a className={cn("link")} href="../../wp-notes/single-blog">
         <div className={cn("article__content-container")}>
           <div className={cn("article__header")}>{shortArticle["header"]}</div>
           <div className={cn("article__content-text", "article__tags")}>
