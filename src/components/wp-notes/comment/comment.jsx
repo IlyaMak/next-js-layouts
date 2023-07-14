@@ -20,7 +20,11 @@ export default function Comment({ comment, isChild = false }) {
         <div className={cn("comment__description")}>
           {comment["description"]}
         </div>
-        <div className={cn("comment__reply")}>Reply</div>
+        <div className={cn("comment__reply-container")}>
+          <a className={cn("comment__reply")} href="#">
+            Reply
+          </a>
+        </div>
       </div>
     </div>
   );

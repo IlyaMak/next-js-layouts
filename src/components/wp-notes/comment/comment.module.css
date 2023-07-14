@@ -29,11 +29,16 @@
     line-height: 20px;
   }
 
-  &__reply {
+  &__reply-container {
     text-align: right;
+    margin-top: 16px;
+  }
+
+  &__reply {
+    color: #898989;
     font-size: 13px;
     line-height: 20px;
-    margin-top: 16px;
+    text-decoration: none;
   }
 
   &--child {

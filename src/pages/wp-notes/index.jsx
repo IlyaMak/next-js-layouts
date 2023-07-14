@@ -74,9 +74,15 @@ const Notes = () => {
               />
             </div>
             <div className={styles.menu}>
-              <div className={styles["menu__item"]}>Blog</div>
-              <div className={styles["menu__item"]}>Portfolio</div>
-              <div className={styles["menu__item"]}>Contact</div>
+              <a className={styles["menu__item"]} href="wp-notes">
+                Blog
+              </a>
+              <a className={styles["menu__item"]} href="#">
+                Portfolio
+              </a>
+              <a className={styles["menu__item"]} href="wp-notes/contacts">
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -154,16 +160,24 @@ const Notes = () => {
               <div className={styles["footer__main"]}>
                 <div className={styles["footer__privacy"]}>
                   Holo theme by{" "}
-                  <span className={styles["footer__author-link"]}>
+                  <a className={styles["footer__author-link"]} href="#">
                     VitaThemes
-                  </span>{" "}
+                  </a>{" "}
                   |{" "}
-                  <span className={styles["footer__author-link"]}>Privacy</span>
+                  <a className={styles["footer__author-link"]} href="#">
+                    Privacy
+                  </a>
                 </div>
                 <div className={styles["footer__social"]}>
-                  <div className={styles["footer__social-item"]}>Instagram</div>
-                  <div className={styles["footer__social-item"]}>Twitter</div>
-                  <div className={styles["footer__social-item"]}>Facebook</div>
+                  <a className={styles["footer__social-item"]} href="#">
+                    Instagram
+                  </a>
+                  <a className={styles["footer__social-item"]} href="#">
+                    Twitter
+                  </a>
+                  <a className={styles["footer__social-item"]} href="#">
+                    Facebook
+                  </a>
                 </div>
               </div>
             </div>
