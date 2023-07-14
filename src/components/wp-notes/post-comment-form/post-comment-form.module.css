@@ -12,8 +12,10 @@
   }
 
   .required-inputs-container {
-    display: flex;
-    justify-content: space-between;
+    @media (--xl) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__input-container {
@@ -39,7 +41,9 @@
     padding: 10px;
 
     &--required {
-      width: calc(270px - 20px);
+      @media (--xl) {
+        width: calc(270px - 20px);
+      }
     }
 
     &--comment {
