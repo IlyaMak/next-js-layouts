@@ -202,8 +202,8 @@
           display: flex;
 
           &__line {
-            width: 2px;
-            height: 124px;
+            width: 6px;
+            height: 162px;
             background-color: #ec7160;
 
             @media (--xl) {

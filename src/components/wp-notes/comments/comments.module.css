@@ -1,0 +1,11 @@
+.comments {
+  margin-top: 42px;
+
+  &__header {
+    color: #303030;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+}

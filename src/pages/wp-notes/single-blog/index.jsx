@@ -3,8 +3,36 @@ import styles from "./page.module.css";
 import cnCommon from "../../../modules/classname";
 import Head from "next/head";
 import globalStyles from "../../../app/style.global";
+import Comments from "../../../components/wp-notes/comments/comments";
 
 const cn = cnCommon.bind(null, styles);
+
+const comments = [
+  {
+    image: "/assets-wp-notes/images/Img 03.png",
+    name: "Jewel",
+    date: "Feb 8, 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui.",
+    isChild: false,
+  },
+  {
+    image: "/assets-wp-notes/images/Img 05.png",
+    name: "Jewel",
+    date: "Feb 8, 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui.",
+    isChild: false,
+  },
+  {
+    image: "/assets-wp-notes/images/Img 03.png",
+    name: "Jewel",
+    date: "Feb 8, 2021",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet.",
+    isChild: true,
+  },
+];
 
 const Notes = () => {
   return (
@@ -133,6 +161,7 @@ const Notes = () => {
                 Tags:{" "}
                 <span className={cn("tags")}>Pivacy, Business, Office</span>
               </div>
+              <Comments comments={comments} />
             </div>
             <div className={styles.footer}>
               <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
