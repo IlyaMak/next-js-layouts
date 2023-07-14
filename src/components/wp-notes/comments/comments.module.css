@@ -1,5 +1,11 @@
+@custom-media --xl (min-width: 1280px);
+
 .comments {
   margin-top: 42px;
+
+  @media (--xl) {
+    margin-top: 48px;
+  }
 
   &__header {
     color: #303030;

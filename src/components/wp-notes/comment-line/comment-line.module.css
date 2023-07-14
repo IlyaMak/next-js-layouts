@@ -1,0 +1,10 @@
+.line-container {
+  width: calc(100% - 71px);
+  margin-left: 71px;
+}
+
+.line {
+  height: 2px;
+  background: #e7e7e9;
+  margin-top: 14px;
+}

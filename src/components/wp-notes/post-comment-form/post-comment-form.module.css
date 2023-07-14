@@ -1,0 +1,63 @@
+@custom-media --xl (min-width: 1280px);
+
+.form {
+  margin-top: 43px;
+
+  &__header {
+    color: #303030;
+    font-family: "DM Sans";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  .required-inputs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input-container {
+    margin-top: 32px;
+  }
+
+  .label {
+    color: #898989;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .input {
+    width: calc(100% - 20px);
+    height: calc(45px - 20px);
+    padding: 0;
+    border: 0;
+    border-radius: 7px;
+    background: #f6f6f6;
+    margin-top: 8px;
+    color: #898989;
+    font-size: 16px;
+    padding: 10px;
+
+    &--required {
+      width: calc(270px - 20px);
+    }
+
+    &--comment {
+      height: calc(135px - 20px);
+    }
+  }
+
+  &__button-container {
+    margin-top: 39px;
+
+    .button {
+      width: 123px;
+      height: 40px;
+      border-radius: 7px;
+      background: #ec7160;
+      border: 0;
+      color: #fff;
+      font-size: 13px;
+    }
+  }
+}

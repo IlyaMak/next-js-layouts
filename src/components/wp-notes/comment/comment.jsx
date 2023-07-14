@@ -4,9 +4,9 @@ import styles from "./comment.module.css";
 
 const cn = cnCommon.bind(null, styles);
 
-export default function Comment({ comment }) {
+export default function Comment({ comment, isChild = false }) {
   return (
-    <div className={cn("comment", comment["isChild"] ? "comment--child" : "")}>
+    <div className={cn("comment", isChild ? "comment--child" : "")}>
       <img
         className={cn("comment__image")}
         src={comment["image"]}
@@ -21,9 +21,6 @@ export default function Comment({ comment }) {
           {comment["description"]}
         </div>
         <div className={cn("comment__reply")}>Reply</div>
-        <div className={cn("comment__line-container")}>
-          <div className={cn(comment["isChild"] ? "" : "comment__line")}></div>
-        </div>
       </div>
     </div>
   );
