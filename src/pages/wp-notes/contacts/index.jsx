@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import cnCommon from "../../../modules/classname";
 import Head from "next/head";
 import globalStyles from "../../../app/style.global";
+import DrawerMenu from "../../../components/wp-notes/drawer-menu/drawer-menu";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -20,34 +21,14 @@ const Notes = () => {
         {globalStyles}
       </style>
       <div className={cn("main-div")}>
-        <div className={cn("drawer-menu")}>
-          <div
-            className={cn(
-              "drawer-menu__content",
-              isMenuShown ? "" : "drawer-menu__content--close"
-            )}>
-            <button
-              className={styles["menu-button"]}
-              onClick={() => setIsMenuShown(!isMenuShown)}>
-              <img
-                className={cn("close-logo")}
-                src="/assets-wp-notes/images/close.svg"
-                alt="Close icon"
-              />
-            </button>
-            <div className={cn("menu-responsive")}>
-              <a className={styles["menu-item"]} href="../wp-notes">
-                Blog
-              </a>
-              <a className={styles["menu-item"]} href="#">
-                Portfolio
-              </a>
-              <a className={styles["menu-item"]} href="contacts">
-                Contact
-              </a>
-            </div>
-          </div>
-        </div>
+        {
+          <DrawerMenu
+            isMenuShown={isMenuShown}
+            setIsMenuShown={setIsMenuShown}
+            blogHref="../wp-notes"
+            contactsHref="contacts"
+          />
+        }
         <div className={styles.main}>
           <div className={styles.header}>
             <div className={styles["header__content"]}>
