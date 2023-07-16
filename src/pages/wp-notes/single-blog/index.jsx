@@ -56,20 +56,19 @@ const Notes = () => {
           setIsMenuShown={setIsMenuShown}
           blogHref="../wp-notes"
           contactsHref="contacts"
+          isBlogActive={true}
         />
-
         <div className={styles.main}>
           <button className={cn("drawer-button")}>
             <img src="/assets-wp-notes/images/Button 01.svg" alt="Arrow icon" />
           </button>
-
           <Header
             isMenuShown={isMenuShown}
             setIsMenuShown={setIsMenuShown}
             blogHref="../wp-notes"
             contactsHref="contacts"
+            isBlogActive={true}
           />
-
           <div className={styles["main-section"]}>
             <div className={styles["main-container"]}>
               <div className={styles.body}>

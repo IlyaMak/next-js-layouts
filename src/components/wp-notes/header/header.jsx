@@ -9,6 +9,9 @@ export default function Header({
   setIsMenuShown,
   blogHref,
   contactsHref,
+  isBlogActive,
+  isPortfolioActive,
+  isContactActive,
 }) {
   return (
     <div className={cn("header")}>
@@ -22,13 +25,17 @@ export default function Header({
             alt="Menu icon"
           />
         </button>
-        <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
+        <img
+          className={cn("main-row-margin")}
+          src="/assets-wp-notes/images/Logo.png"
+          alt="Logo icon"
+        />
         <img
           className={cn("search-icon-mobile")}
           src="/assets-wp-notes/images/search-mobile.svg"
           alt="Search icon"
         />
-        <div className={cn("search-container")}>
+        <div className={cn("search-container", "main-row-margin")}>
           <input
             className={cn("input-search")}
             type="text"
@@ -41,13 +48,25 @@ export default function Header({
           />
         </div>
         <div className={cn("menu")}>
-          <a className={cn("menu-item")} href={blogHref}>
+          <a
+            className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
+            href={blogHref}>
             Blog
           </a>
-          <a className={cn("menu-item")} href="#">
+          <a
+            className={cn(
+              "menu-item",
+              isPortfolioActive ? "menu-item--active" : ""
+            )}
+            href="#">
             Portfolio
           </a>
-          <a className={cn("menu-item")} href={contactsHref}>
+          <a
+            className={cn(
+              "menu-item",
+              isContactActive ? "menu-item--active" : ""
+            )}
+            href={contactsHref}>
             Contact
           </a>
         </div>

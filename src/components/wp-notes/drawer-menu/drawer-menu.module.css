@@ -2,14 +2,15 @@
 
 .drawer-menu {
   background: #f6f6f6;
+  font-family: "Inter";
 
   @media (--xl) {
     display: none;
   }
 
   &__content {
-    margin: 21px 0 0 16px;
-    width: calc(204px - 16px);
+    margin-top: 21px;
+    width: 204px;
     transition: width 0.2s linear;
 
     &--close {
@@ -23,18 +24,30 @@
   .menu-responsive {
     display: flex;
     flex-direction: column;
-    margin-top: 42px;
+    margin-top: 32px;
   }
 
   .menu-button {
     border: none;
     background: transparent;
+    padding: 0;
+
+    .close-logo {
+      margin-left: 15px;
+    }
   }
 
   .menu-item {
     color: #898989;
-    margin-top: 11px;
-    line-height: 27px;
+    margin-top: 21px;
+    margin-left: 27px;
+
     text-decoration: none;
+
+    &--active {
+      border-left: 3px solid #ec7160;
+      padding-left: 12px;
+      margin-left: 15px;
+    }
   }
 }

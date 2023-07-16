@@ -9,6 +9,9 @@ export default function DrawerMenu({
   setIsMenuShown,
   blogHref,
   contactsHref,
+  isBlogActive,
+  isPortfolioActive,
+  isContactActive,
 }) {
   return (
     <div className={cn("drawer-menu")}>
@@ -27,13 +30,25 @@ export default function DrawerMenu({
           />
         </button>
         <div className={cn("menu-responsive")}>
-          <a className={cn("menu-item")} href={blogHref}>
+          <a
+            className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
+            href={blogHref}>
             Blog
           </a>
-          <a className={cn("menu-item")} href="#">
+          <a
+            className={cn(
+              "menu-item",
+              isPortfolioActive ? "menu-item--active" : ""
+            )}
+            href="#">
             Portfolio
           </a>
-          <a className={cn("menu-item")} href={contactsHref}>
+          <a
+            className={cn(
+              "menu-item",
+              isContactActive ? "menu-item--active" : ""
+            )}
+            href={contactsHref}>
             Contact
           </a>
         </div>

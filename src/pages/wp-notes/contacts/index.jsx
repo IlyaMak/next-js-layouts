@@ -28,6 +28,7 @@ const Notes = () => {
           setIsMenuShown={setIsMenuShown}
           blogHref="../wp-notes"
           contactsHref="contacts"
+          isContactActive={true}
         />
         <div className={styles.main}>
           <Header
@@ -35,6 +36,7 @@ const Notes = () => {
             setIsMenuShown={setIsMenuShown}
             blogHref="../wp-notes"
             contactsHref="contacts"
+            isContactActive={true}
           />
           <div className={styles["main-section"]}>
             <div className={styles["main-container"]}>
