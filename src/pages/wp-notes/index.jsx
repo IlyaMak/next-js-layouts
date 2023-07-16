@@ -7,6 +7,7 @@ import Head from "next/head";
 import globalStyles from "../../app/style.global";
 import DrawerMenu from "../../components/wp-notes/drawer-menu/drawer-menu";
 import Header from "../../components/wp-notes/header/header";
+import Footer from "../../components/wp-notes/footer/footer";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -53,23 +54,19 @@ const Notes = () => {
         {globalStyles}
       </style>
       <div className={cn("main-div")}>
-        {
-          <DrawerMenu
+        <DrawerMenu
+          isMenuShown={isMenuShown}
+          setIsMenuShown={setIsMenuShown}
+          blogHref="wp-notes"
+          contactsHref="wp-notes/contacts"
+        />
+        <div className={styles.main}>
+          <Header
             isMenuShown={isMenuShown}
             setIsMenuShown={setIsMenuShown}
             blogHref="wp-notes"
             contactsHref="wp-notes/contacts"
           />
-        }
-        <div className={styles.main}>
-          {
-            <Header
-              isMenuShown={isMenuShown}
-              setIsMenuShown={setIsMenuShown}
-              blogHref="wp-notes"
-              contactsHref="wp-notes/contacts"
-            />
-          }
           <div className={styles["main-section"]}>
             <div className={styles["main-container"]}>
               <div className={styles.body}>
@@ -141,31 +138,8 @@ const Notes = () => {
                   </div>
                 </div>
               </div>
-              <div className={styles.footer}>
-                <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
-                <div className={styles["footer__main"]}>
-                  <div className={styles["footer__privacy"]}>
-                    Holo theme by{" "}
-                    <a className={styles["footer__author-link"]} href="#">
-                      VitaThemes
-                    </a>{" "}
-                    |{" "}
-                    <a className={styles["footer__author-link"]} href="#">
-                      Privacy
-                    </a>
-                  </div>
-                  <div className={styles["footer__social"]}>
-                    <a className={styles["footer__social-item"]} href="#">
-                      Instagram
-                    </a>
-                    <a className={styles["footer__social-item"]} href="#">
-                      Twitter
-                    </a>
-                    <a className={styles["footer__social-item"]} href="#">
-                      Facebook
-                    </a>
-                  </div>
-                </div>
+              <div className={cn("footer-container")}>
+                <Footer />
               </div>
             </div>
           </div>

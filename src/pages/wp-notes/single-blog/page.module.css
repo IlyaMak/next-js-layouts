@@ -197,51 +197,6 @@
             color: #898989;
           }
         }
-
-        .footer {
-          margin-top: 52px;
-
-          @media (--xl) {
-            margin-top: 124px;
-          }
-
-          &__main {
-            margin-top: 16px;
-
-            @media (--xl) {
-              display: flex;
-              justify-content: space-between;
-            }
-          }
-
-          &__privacy {
-            font-size: 13px;
-            line-height: 20px;
-          }
-
-          &__author-link {
-            color: #898989;
-            text-decoration: none;
-          }
-
-          &__social {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            width: 194px;
-
-            @media (--xl) {
-              margin-top: 0;
-            }
-          }
-
-          &__social-item {
-            color: #ec7160;
-            line-height: 20px;
-            font-size: 13px;
-            text-decoration: none;
-          }
-        }
       }
     }
   }
