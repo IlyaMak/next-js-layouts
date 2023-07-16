@@ -18,7 +18,7 @@ export default function DrawerMenu({
           isMenuShown ? "" : "drawer-menu__content--close"
         )}>
         <button
-          className={styles["menu-button"]}
+          className={cn("menu-button")}
           onClick={() => setIsMenuShown(!isMenuShown)}>
           <img
             className={cn("close-logo")}
@@ -27,13 +27,13 @@ export default function DrawerMenu({
           />
         </button>
         <div className={cn("menu-responsive")}>
-          <a className={styles["menu-item"]} href={blogHref}>
+          <a className={cn("menu-item")} href={blogHref}>
             Blog
           </a>
-          <a className={styles["menu-item"]} href="#">
+          <a className={cn("menu-item")} href="#">
             Portfolio
           </a>
-          <a className={styles["menu-item"]} href={contactsHref}>
+          <a className={cn("menu-item")} href={contactsHref}>
             Contact
           </a>
         </div>

@@ -7,6 +7,7 @@ import globalStyles from "../../../app/style.global";
 import Comments from "../../../components/wp-notes/comments/comments";
 import PostCommentForm from "../../../components/wp-notes/post-comment-form/post-comment-form";
 import DrawerMenu from "../../../components/wp-notes/drawer-menu/drawer-menu";
+import Header from "../../../components/wp-notes/header/header";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -61,48 +62,14 @@ const Notes = () => {
           <button className={cn("drawer-button")}>
             <img src="/assets-wp-notes/images/Button 01.svg" alt="Arrow icon" />
           </button>
-          <div className={styles.header}>
-            <div className={styles["header__content"]}>
-              <button
-                className={styles["menu-button"]}
-                onClick={() => setIsMenuShown(!isMenuShown)}>
-                <img
-                  className={styles["menu-icon"]}
-                  src="/assets-wp-notes/images/Menu.svg"
-                  alt="Menu icon"
-                />
-              </button>
-              <img src="/assets-wp-notes/images/Logo.png" alt="Logo icon" />
-              <img
-                className={styles["search-icon-mobile"]}
-                src="/assets-wp-notes/images/search-mobile.svg"
-                alt="Search icon"
-              />
-              <div className={styles["search-container"]}>
-                <input
-                  className={styles["input-search"]}
-                  type="text"
-                  placeholder="Search"
-                />
-                <img
-                  className={styles["search-icon"]}
-                  src="/assets-wp-notes/images/search.svg"
-                  alt="Search icon"
-                />
-              </div>
-              <div className={styles.menu}>
-                <a className={styles["menu-item"]} href="../wp-notes">
-                  Blog
-                </a>
-                <a className={styles["menu-item"]} href="#">
-                  Portfolio
-                </a>
-                <a className={styles["menu-item"]} href="contacts">
-                  Contact
-                </a>
-              </div>
-            </div>
-          </div>
+          {
+            <Header
+              isMenuShown={isMenuShown}
+              setIsMenuShown={setIsMenuShown}
+              blogHref="../wp-notes"
+              contactsHref="contacts"
+            />
+          }
           <div className={styles["main-section"]}>
             <div className={styles["main-container"]}>
               <div className={styles.body}>

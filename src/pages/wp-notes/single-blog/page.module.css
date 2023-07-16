@@ -7,31 +7,15 @@
 
 .main-div {
   display: flex;
-  overflow: hidden;
-
-  .menu-button {
-    border: none;
-    background: transparent;
-  }
-
-  .menu-item {
-    color: #898989;
-    margin-top: 11px;
-    line-height: 27px;
-    text-decoration: none;
-  }
+  overflow-x: hidden;
 
   .main {
     font-family: "Inter";
-    margin: 12px 16px 0 16px;
-    padding-bottom: 16px;
     position: relative;
 
     @media (--xl) {
       width: 100%;
       display: flex;
-      margin: 0;
-      padding-bottom: 0;
     }
 
     .drawer-button {
@@ -47,83 +31,15 @@
       }
     }
 
-    .header {
-      @media (--xl) {
-        background-color: #f6f6f6;
-        width: 258px;
-      }
-
-      &__content {
-        display: flex;
-        justify-content: space-between;
-
-        @media (--xl) {
-          flex-direction: column;
-          align-items: start;
-          width: 258px;
-          margin: 40px 0 0 24px;
-        }
-
-        .menu-icon {
-          @media (--xl) {
-            display: none;
-          }
-        }
-      }
-
-      .search-icon-mobile {
-        @media (--xl) {
-          display: none;
-        }
-      }
-
-      .search-container {
-        display: none;
-
-        @media (--xl) {
-          position: relative;
-          display: flex;
-          align-items: center;
-          margin-top: 43px;
-        }
-
-        .input-search {
-          border: 0;
-          border-radius: 7px;
-          width: 176px;
-          height: 32px;
-          font-size: 13px;
-          line-height: 20px;
-          color: #898989;
-          padding-left: 32px;
-        }
-
-        .search-icon {
-          position: absolute;
-          left: 0;
-          margin-left: 8px;
-        }
-      }
-
-      .menu {
-        display: none;
-
-        @media (--xl) {
-          display: flex;
-          flex-direction: column;
-          margin-top: 37px;
-        }
-      }
-    }
-
     .main-section {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
+      margin: 0 16px 16px 16px;
+      width: calc(100% - 32px);
 
       @media (--xl) {
-        padding-bottom: 37px;
+        margin: 0 0 37px 0;
       }
 
       .main-container {
