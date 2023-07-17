@@ -23,11 +23,29 @@
       align-items: center;
       width: 100%;
 
+      .articles-list-section {
+        height: 100%;
+
+        @media (--xl) {
+          border-right: 1px solid #e7e7e9;
+        }
+      }
+
       .main-container {
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        &--mobile {
+          display: none;
+          @media (--xl) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: 0 30px;
+          }
+        }
 
         .body {
           @media (--xl) {

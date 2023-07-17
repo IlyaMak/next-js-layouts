@@ -35,18 +35,35 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 16px 16px 16px;
-      width: calc(100% - 32px);
+      /*margin: 0 16px 16px 16px;*/
+      width: 100%;
 
-      @media (--xl) {
-        margin: 0 0 37px 0;
+      .articles-list-section {
+        height: 100%;
+
+        @media (--xl) {
+          border-right: 1px solid #e7e7e9;
+        }
       }
 
       .main-container {
         height: 100%;
+        margin: 0 16px 16px 16px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        @media (--xl) {
+          margin: 0 0 37px 0;
+        }
+
+        &--mobile {
+          display: none;
+          @media (--xl) {
+            display: block;
+            margin: 0 30px 37px 30px;
+          }
+        }
 
         .body {
           @media (--xl) {

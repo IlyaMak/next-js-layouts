@@ -10,7 +10,6 @@
   overflow-x: hidden;
 
   @media (--xl) {
-    height: 100%;
   }
 
   .main {
@@ -33,6 +32,14 @@
         width: 100%;
       }
 
+      .articles-list-section {
+        height: 100%;
+
+        @media (--xl) {
+          border-right: 1px solid #e7e7e9;
+        }
+      }
+
       .main-container {
         @media (--xl) {
           width: 776px;
@@ -42,8 +49,17 @@
           margin-bottom: 39px;
         }
 
+        &--mobile {
+          display: none;
+          @media (--xl) {
+            display: block;
+            margin: 0 30px;
+          }
+        }
+
         .body {
           @media (--xl) {
+            width: 776px;
             margin-top: 114px;
             display: flex;
             justify-content: space-between;

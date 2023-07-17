@@ -12,9 +12,11 @@ export default function Header({
   isBlogActive,
   isPortfolioActive,
   isContactActive,
+  isSearchShown,
+  setIsSearchShown,
 }) {
   return (
-    <div className={cn("header")}>
+    <div className={cn("header", isSearchShown ? "header--mobile" : "")}>
       <div className={cn("header__content")}>
         <button
           className={cn("menu-button")}
@@ -30,11 +32,23 @@ export default function Header({
           src="/assets-wp-notes/images/Logo.png"
           alt="Logo icon"
         />
-        <img
-          className={cn("search-icon-mobile")}
-          src="/assets-wp-notes/images/search-mobile.svg"
-          alt="Search icon"
-        />
+        <button
+          className={cn("button-search")}
+          onClick={() => setIsSearchShown(!isSearchShown)}>
+          {isSearchShown ? (
+            <img
+              className={cn("close-icon-mobile")}
+              src="/assets-wp-notes/images/close.svg"
+              alt="Search icon"
+            />
+          ) : (
+            <img
+              className={cn("search-icon-mobile")}
+              src="/assets-wp-notes/images/search-mobile.svg"
+              alt="Search icon"
+            />
+          )}
+        </button>
         <div className={cn("search-container", "main-row-margin")}>
           <input
             className={cn("input-search")}
@@ -71,6 +85,20 @@ export default function Header({
           </a>
         </div>
       </div>
+      {isSearchShown && (
+        <div className={cn("search-container", "search-container--mobile")}>
+          <input
+            className={cn("input-search")}
+            type="text"
+            placeholder="Search"
+          />
+          <img
+            className={cn("search-icon")}
+            src="/assets-wp-notes/images/search.svg"
+            alt="Search icon"
+          />
+        </div>
+      )}
     </div>
   );
 }
