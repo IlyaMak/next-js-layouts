@@ -144,7 +144,9 @@ const Notes = () => {
           isBlogActive={true}
         />
         <div className={styles.main}>
-          <button className={cn("drawer-button")}>
+          <button
+            className={cn("drawer-button")}
+            onClick={() => setIsSearchShown(!isSearchShown)}>
             <img src="/assets-wp-notes/images/Button 01.svg" alt="Arrow icon" />
           </button>
           <Header
@@ -171,7 +173,7 @@ const Notes = () => {
           ) : (
             <div className={styles["main-section"]}>
               <div className={cn("main-container")}>
-                <Body  />
+                <Body />
                 <div className={cn("footer-container")}>
                   <Footer />
                 </div>

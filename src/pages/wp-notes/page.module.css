@@ -27,6 +27,7 @@
         height: 100%;
 
         @media (--xl) {
+          width: 25%;
           border-right: 1px solid #e7e7e9;
         }
       }
@@ -37,20 +38,22 @@
         flex-direction: column;
         justify-content: space-between;
 
+        @media (--xl) {
+          width: 800px;
+        }
+
         &--mobile {
           display: none;
           @media (--xl) {
             display: flex;
-            flex-direction: column;
-            justify-content: space-between;
             margin: 0 30px;
+            width: 75%;
           }
         }
 
         .body {
           @media (--xl) {
             margin-top: 114px;
-            width: 800px;
           }
           .main-header {
             margin: 53px 16px 0 16px;

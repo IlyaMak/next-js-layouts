@@ -36,17 +36,18 @@
         height: 100%;
 
         @media (--xl) {
+          width: 25%;
           border-right: 1px solid #e7e7e9;
         }
       }
 
       .main-container {
         @media (--xl) {
-          width: 776px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           margin-bottom: 39px;
+          width: 776px;
         }
 
         &--mobile {
@@ -54,12 +55,12 @@
           @media (--xl) {
             display: block;
             margin: 0 30px;
+            width: 75%;
           }
         }
 
         .body {
           @media (--xl) {
-            width: 776px;
             margin-top: 114px;
             display: flex;
             justify-content: space-between;
