@@ -2,6 +2,13 @@
 
 .all-articles-section {
   margin-bottom: 30px;
+  @media (--xl) {
+    width: 320px;
+  }
+
+  .link {
+    text-decoration: none;
+  }
 
   .header-additional-info {
     color: #ec7160;
@@ -16,10 +23,15 @@
   }
 
   .article {
-    margin-top: 16px;
+    margin: 16px 17px 0 17px;
 
-    &--pinned {
-      margin-top: 12px;
+    &:hover {
+      border-radius: 8px;
+      background: #f6f6f6;
+    }
+
+    &__content-container {
+      padding: 10px;
     }
 
     &__header {
@@ -44,11 +56,6 @@
   .row {
     margin-left: 27px;
     margin-right: 27px;
-
-    @media (--xl) {
-      margin-left: 16px;
-      margin-right: 16px;
-    }
   }
 
   .other-header-section {
