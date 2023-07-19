@@ -54,6 +54,7 @@ export default function Header({
             className={cn("input-search")}
             type="text"
             placeholder="Search"
+            onFocus={() => setIsSearchShown(true)}
           />
           <img
             className={cn("search-icon")}
