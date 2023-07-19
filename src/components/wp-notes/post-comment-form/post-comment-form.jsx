@@ -8,13 +8,21 @@ export default function PostCommentForm() {
     <div className={cn("form")}>
       <div className={cn("form__header")}>Post Comment</div>
       <div className={cn("required-inputs-container")}>
-        <div className={cn("form__input-container")}>
+        <div
+          className={cn(
+            "form__input-container",
+            "form__input-container--required"
+          )}>
           <div className={cn("label")}>Name*</div>
-          <input className={cn("input", "input--required")} type="text" />
+          <input className={cn("input")} type="text" />
         </div>
-        <div className={cn("form__input-container")}>
+        <div
+          className={cn(
+            "form__input-container",
+            "form__input-container--required"
+          )}>
           <div className={cn("label")}>Email*</div>
-          <input className={cn("input", "input--required")} type="text" />
+          <input className={cn("input")} type="text" />
         </div>
       </div>
       <div className={cn("form__input-container")}>

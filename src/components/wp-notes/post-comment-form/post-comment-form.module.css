@@ -18,6 +18,10 @@
     }
   }
 
+  .form__input-container--required {
+    width: 45%;
+  }
+
   &__input-container {
     margin-top: 32px;
   }
@@ -38,12 +42,6 @@
     color: #898989;
     font-size: 16px;
     padding: 10px;
-
-    &--required {
-      @media (--xl) {
-        width: calc(270px - 20px);
-      }
-    }
 
     &--comment {
       height: calc(135px - 20px);
