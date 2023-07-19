@@ -1,8 +1,10 @@
 @custom-media --xl (min-width: 1280px);
 
 .body {
+  margin: 0 16px;
+
   @media (--xl) {
-    margin-top: 115px;
+    margin: 115px 0 0 0;
   }
 
   .header-text {

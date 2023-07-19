@@ -68,6 +68,10 @@
     }
   }
 
+  .other-articles-list-section {
+    margin: 0 17px;
+  }
+
   .button-all-posts-container {
     margin-top: 48px;
     display: flex;

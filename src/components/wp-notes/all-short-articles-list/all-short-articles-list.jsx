@@ -40,7 +40,11 @@ export default function AllShortArticlesList({ otherArticles }) {
         <div className={styles["horizontal-line"]}></div>
       </div>
       {otherArticles.map((shortArticle, shortArticleIndex) => (
-        <ShortArticle key={shortArticleIndex} shortArticle={shortArticle} />
+        <div
+          key={shortArticleIndex}
+          className={cn("other-articles-list-section")}>
+          <ShortArticle shortArticle={shortArticle} />
+        </div>
       ))}
       <div className={cn("button-all-posts-container")}>
         <button className={cn("button-all-posts")}>All Posts</button>

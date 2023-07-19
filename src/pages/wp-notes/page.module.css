@@ -28,10 +28,23 @@
   }
 
   .article {
-    margin-top: 16px;
+    margin: 2px 17px 0 17px;
 
-    &--pinned {
-      margin-top: 12px;
+    @media (--xl) {
+      margin: 8px 6px 0 6px;
+    }
+
+    &:hover {
+      border-radius: 8px;
+      background: #f6f6f6;
+    }
+
+    &__content-container {
+      padding: 10px;
+    }
+
+    .link {
+      text-decoration: none;
     }
 
     &__header {
@@ -70,6 +83,14 @@
       width: 100%;
       height: 1px;
       background: #e7e7e9;
+    }
+  }
+
+  .other-articles-list-section {
+    margin: 0 17px;
+
+    @media (--xl) {
+      margin: 0 6px;
     }
   }
 
