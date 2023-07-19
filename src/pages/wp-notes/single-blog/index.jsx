@@ -1,16 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { useState } from "react";
 import styles from "./page.module.css";
 import cnCommon from "../../../modules/classname";
-import Head from "next/head";
-import globalStyles from "../../../app/style.global";
 import Comments from "../../../components/wp-notes/comments/comments";
 import PostCommentForm from "../../../components/wp-notes/post-comment-form/post-comment-form";
-import DrawerMenu from "../../../components/wp-notes/drawer-menu/drawer-menu";
-import Header from "../../../components/wp-notes/header/header";
-import Footer from "../../../components/wp-notes/footer/footer";
-import AllShortArticlesList from "../../../components/wp-notes/all-short-articles-list/all-short-articles-list";
-import { otherArticles } from "../../../constants/wp-notes/other-articles";
+import PageStructure from "../../../components/wp-notes/page-structure/page-structure";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -124,65 +117,14 @@ function Body() {
 }
 
 const Notes = () => {
-  const [isMenuShown, setIsMenuShown] = useState(false);
-  const [isSearchShown, setIsSearchShown] = useState(false);
-
   return (
-    <>
-      <Head>
-        <title>Single Blog</title>
-      </Head>
-      <style jsx global>
-        {globalStyles}
-      </style>
-      <div className={cn("main-div")}>
-        <DrawerMenu
-          isMenuShown={isMenuShown}
-          setIsMenuShown={setIsMenuShown}
-          blogHref="../wp-notes"
-          contactsHref="contacts"
-          isBlogActive={true}
-        />
-        <div className={styles.main}>
-          <button
-            className={cn("drawer-button")}
-            onClick={() => setIsSearchShown(!isSearchShown)}>
-            <img src="/assets-wp-notes/images/Button 01.svg" alt="Arrow icon" />
-          </button>
-          <Header
-            isMenuShown={isMenuShown}
-            setIsMenuShown={setIsMenuShown}
-            blogHref="../wp-notes"
-            contactsHref="contacts"
-            isBlogActive={true}
-            isSearchShown={isSearchShown}
-            setIsSearchShown={setIsSearchShown}
-          />
-          {isSearchShown ? (
-            <div className={styles["main-section"]}>
-              <div className={cn("articles-list-section")}>
-                <AllShortArticlesList otherArticles={otherArticles} />
-              </div>
-              <div className={cn("main-container", "main-container--mobile")}>
-                <Body />
-                <div className={cn("footer-container")}>
-                  <Footer />
-                </div>
-              </div>
-            </div>
-          ) : (
-            <div className={styles["main-section"]}>
-              <div className={cn("main-container")}>
-                <Body />
-                <div className={cn("footer-container")}>
-                  <Footer />
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </>
+    <PageStructure
+      headTitle="Single Blog"
+      isBlogActive={true}
+      blogHref="../wp-notes"
+      contactsHref="contacts"
+      body={<Body />}
+    />
   );
 };
 

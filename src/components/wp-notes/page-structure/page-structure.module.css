@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Inter";
+  src: url("/assets-wp-notes/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@custom-media --xl (min-width: 1280px);
+
+.main-div {
+  display: flex;
+  overflow-x: hidden;
+
+  .main {
+    font-family: "Inter";
+    position: relative;
+    width: 100%;
+
+    @media (--xl) {
+      width: 100%;
+      display: flex;
+    }
+
+    .drawer-button {
+      display: none;
+
+      @media (--xl) {
+        display: block;
+        position: absolute;
+        border: 0;
+        background: inherit;
+        left: 237px;
+        top: 118px;
+        transition: left 0.2s linear;
+      }
+
+      &--show-articles {
+        left: 559px;
+        top: 115px;
+        transform: rotate(180deg);
+      }
+    }
+
+    .main-section {
+      display: flex;
+      width: 100%;
+
+      .articles-list-section {
+        display: none;
+        @media (--xl) {
+          display: block;
+          width: 0;
+          transition: width 0.2s linear;
+          overflow-x: hidden;
+        }
+
+        &--shown {
+          display: block;
+          width: 100%;
+          @media (--xl) {
+            width: 320px;
+            border-right: 1px solid #e7e7e9;
+            transition: width 0.2s linear;
+          }
+        }
+      }
+
+      .main-container {
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @media (--xl) {
+          width: calc(100% - 320px);
+          transition: width 0.2s linear;
+        }
+
+        &--show-articles {
+          display: none;
+          @media (--xl) {
+            display: block;
+            margin-left: 107px;
+            margin-right: 152px;
+            width: calc(100% - 320px - 107px - 152px);
+            transition: width 0.2s linear;
+          }
+        }
+      }
+    }
+  }
+}
