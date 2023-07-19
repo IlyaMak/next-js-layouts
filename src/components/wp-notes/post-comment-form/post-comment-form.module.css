@@ -18,12 +18,14 @@
     }
   }
 
-  .form__input-container--required {
-    width: 45%;
-  }
-
   &__input-container {
     margin-top: 32px;
+
+    &--required {
+      @media (--xl) {
+        width: 45%;
+      }
+    }
   }
 
   .label {
