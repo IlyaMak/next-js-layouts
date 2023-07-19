@@ -1,7 +1,11 @@
 @custom-media --xl (min-width: 1280px);
 
 .footer {
-  margin-top: 67px;
+  margin: 67px 0 16px 16px;
+
+  @media(--xl) {
+    margin-bottom: 39px;
+  }
 
   &__main {
     margin-top: 16px;

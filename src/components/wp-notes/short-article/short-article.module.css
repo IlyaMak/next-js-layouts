@@ -21,7 +21,7 @@
   }
 
   &__description {
-    margin-top: 8px;
+    margin-top: 3px;
   }
 
   &__content-text {
@@ -41,8 +41,8 @@
 }
 
 .row {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 17px;
+  margin-right: 17px;
 
   @media (--xl) {
     margin-left: 6px;
