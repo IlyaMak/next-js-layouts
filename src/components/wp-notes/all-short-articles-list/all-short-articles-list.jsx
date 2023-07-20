@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import styles from "./all-short-articles-list.module.css";
 import cnCommon from "../../../modules/classname";
@@ -21,7 +22,7 @@ export default function AllShortArticlesList({ otherArticles }) {
     <div className={cn("all-articles-section")}>
       <div className={cn("header-additional-info", "row")}>PINNED</div>
       <div className={cn("article")}>
-        <a className={cn("link")} href="../wp-notes/single-blog">
+        <Link className={cn("link")} href="/wp-notes/single-blog">
           <div className={cn("article__content-container")}>
             <div className={cn("article__header")}>
               Light & Bright in Brooklyn
@@ -37,7 +38,7 @@ export default function AllShortArticlesList({ otherArticles }) {
               Feb 8, 2021
             </div>
           </div>
-        </a>
+        </Link>
       </div>
       <div className={styles["other-header-section"]}>
         <div className={styles["horizontal-line"]}></div>

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./drawer-menu.module.css";
@@ -36,27 +37,27 @@ export default function DrawerMenu({
           />
         </button>
         <div className={cn("menu-responsive")}>
-          <a
+          <Link
             className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
             href="/wp-notes">
             Blog
-          </a>
-          <a
+          </Link>
+          <Link
             className={cn(
               "menu-item",
               isPortfolioActive ? "menu-item--active" : ""
             )}
             href="#">
             Portfolio
-          </a>
-          <a
+          </Link>
+          <Link
             className={cn(
               "menu-item",
               isContactActive ? "menu-item--active" : ""
             )}
             href="/wp-notes/contacts">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>

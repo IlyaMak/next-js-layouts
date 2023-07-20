@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import styles from "./short-article.module.css";
 import cnCommon from "../../../modules/classname";
@@ -16,7 +17,7 @@ ShortArticle.propTypes = {
 export default function ShortArticle({ shortArticle }) {
   return (
     <div className={cn("article")}>
-      <a className={cn("link")} href="../../wp-notes/single-blog">
+      <Link className={cn("link")} href="../../wp-notes/single-blog">
         <div className={cn("article__content-container")}>
           <div className={cn("article__header")}>{shortArticle.header}</div>
           <div className={cn("article__content-text", "article__tags")}>
@@ -29,7 +30,7 @@ export default function ShortArticle({ shortArticle }) {
             {shortArticle.datetime}
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./header.module.css";
@@ -71,27 +72,27 @@ export default function Header({
           />
         </div>
         <div className={cn("menu")}>
-          <a
+          <Link
             className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
             href="/wp-notes">
             Blog
-          </a>
-          <a
+          </Link>
+          <Link
             className={cn(
               "menu-item",
               isPortfolioActive ? "menu-item--active" : ""
             )}
             href="#">
             Portfolio
-          </a>
-          <a
+          </Link>
+          <Link
             className={cn(
               "menu-item",
               isContactActive ? "menu-item--active" : ""
             )}
             href="/wp-notes/contacts">
             Contact
-          </a>
+          </Link>
         </div>
       </div>
       {isSearchShown && (

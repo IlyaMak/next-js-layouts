@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
 import ShortArticle from "../../components/wp-notes/short-article/short-article";
@@ -13,7 +14,7 @@ const Notes = () => {
         <div className={styles["main-header"]}>Archive</div>
         <div className={cn("header-additional-info", "row")}>PINNED</div>
         <div className={cn("article")}>
-          <a className={cn("link")} href="wp-notes/single-blog">
+          <Link className={cn("link")} href="wp-notes/single-blog">
             <div className={cn("article__content-container")}>
               <div className={cn("article__header")}>
                 Light & Bright in Brooklyn
@@ -29,7 +30,7 @@ const Notes = () => {
                 Feb 8, 2021
               </div>
             </div>
-          </a>
+          </Link>
         </div>
         <div className={styles["other-header-section"]}>
           <div className={styles["horizontal-line"]}></div>
