@@ -2,7 +2,7 @@
 import { useState } from "react";
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
-import Feature from "../../components/digital-agency-enver/feature/features";
+import Feature from "../../components/digital-agency-enver/feature/feature";
 import Head from "next/head";
 import globalStyles from "../../app/style.global";
 

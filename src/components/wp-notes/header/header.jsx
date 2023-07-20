@@ -1,8 +1,21 @@
 /* eslint-disable @next/next/no-img-element */
+import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./header.module.css";
 
 const cn = cnCommon.bind(null, styles);
+
+Header.propTypes = {
+  isMenuShown: PropTypes.bool.isRequired,
+  setIsMenuShown: PropTypes.func.isRequired,
+  blogHref: PropTypes.string.isRequired,
+  contactsHref: PropTypes.string.isRequired,
+  isBlogActive: PropTypes.bool,
+  isPortfolioActive: PropTypes.bool,
+  isContactActive: PropTypes.bool,
+  isSearchShown: PropTypes.bool.isRequired,
+  setIsSearchShown: PropTypes.func.isRequired,
+};
 
 export default function Header({
   isMenuShown,

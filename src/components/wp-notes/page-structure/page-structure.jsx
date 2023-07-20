@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import PropTypes from "prop-types";
 import { useState } from "react";
 import cnCommon from "../../../modules/classname";
 import styles from "./page-structure.module.css";
@@ -11,6 +12,15 @@ import globalStyles from "../../../app/style.global";
 import { otherArticles } from "../../../constants/wp-notes/other-articles";
 
 const cn = cnCommon.bind(null, styles);
+
+PageStructure.propTypes = {
+  headTitle: PropTypes.string.isRequired,
+  isBlogActive: PropTypes.bool,
+  isContactActive: PropTypes.bool,
+  blogHref: PropTypes.string.isRequired,
+  contactsHref: PropTypes.string.isRequired,
+  body: PropTypes.node.isRequired,
+};
 
 export default function PageStructure({
   headTitle,

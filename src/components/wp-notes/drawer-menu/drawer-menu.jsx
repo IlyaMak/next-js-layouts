@@ -1,8 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
+import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./drawer-menu.module.css";
 
 const cn = cnCommon.bind(null, styles);
+
+DrawerMenu.propTypes = {
+  isMenuShown: PropTypes.bool.isRequired,
+  setIsMenuShown: PropTypes.func.isRequired,
+  blogHref: PropTypes.string.isRequired,
+  contactsHref: PropTypes.string.isRequired,
+  isBlogActive: PropTypes.bool,
+  isPortfolioActive: PropTypes.bool,
+  isContactActive: PropTypes.bool,
+};
 
 export default function DrawerMenu({
   isMenuShown,

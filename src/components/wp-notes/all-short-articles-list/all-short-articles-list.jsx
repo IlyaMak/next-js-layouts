@@ -1,8 +1,20 @@
+import PropTypes from "prop-types";
 import styles from "./all-short-articles-list.module.css";
 import cnCommon from "../../../modules/classname";
 import ShortArticle from "../short-article/short-article";
 
 const cn = cnCommon.bind(null, styles);
+
+AllShortArticlesList.propTypes = {
+  otherArticles: PropTypes.arrayOf(
+    PropTypes.shape({
+      header: PropTypes.string.isRequired,
+      tags: PropTypes.array.isRequired,
+      description: PropTypes.string.isRequired,
+      datetime: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default function AllShortArticlesList({ otherArticles }) {
   return (

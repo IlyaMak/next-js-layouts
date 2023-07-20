@@ -1,9 +1,29 @@
+import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import Comment from "../comment/comment";
 import CommentLine from "../comment-line/comment-line";
 import styles from "./comments.module.css";
 
 const cn = cnCommon.bind(null, styles);
+
+Comments.propTypes = {
+  comments: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      children: PropTypes.arrayOf(
+        PropTypes.shape({
+          image: PropTypes.string.isRequired,
+          name: PropTypes.string.isRequired,
+          date: PropTypes.string.isRequired,
+          description: PropTypes.string.isRequired,
+        })
+      ),
+    })
+  ).isRequired,
+};
 
 export default function Comments({ comments }) {
   const commentsCount =
