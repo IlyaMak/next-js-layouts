@@ -16,8 +16,6 @@ PageStructure.propTypes = {
   headTitle: PropTypes.string.isRequired,
   isBlogActive: PropTypes.bool,
   isContactActive: PropTypes.bool,
-  blogHref: PropTypes.string.isRequired,
-  contactsHref: PropTypes.string.isRequired,
   body: PropTypes.node.isRequired,
 };
 
@@ -25,8 +23,6 @@ export default function PageStructure({
   headTitle,
   isBlogActive,
   isContactActive,
-  blogHref,
-  contactsHref,
   body,
 }) {
   const [isMenuShown, setIsMenuShown] = useState(false);
@@ -44,8 +40,6 @@ export default function PageStructure({
         <DrawerMenu
           isMenuShown={isMenuShown}
           setIsMenuShown={setIsMenuShown}
-          blogHref={blogHref}
-          contactsHref={contactsHref}
           isBlogActive={true}
         />
         <div className={cn("main")}>
@@ -60,8 +54,6 @@ export default function PageStructure({
           <Header
             isMenuShown={isMenuShown}
             setIsMenuShown={setIsMenuShown}
-            blogHref={blogHref}
-            contactsHref={contactsHref}
             isBlogActive={isBlogActive}
             isContactActive={isContactActive}
             isSearchShown={isSearchShown}

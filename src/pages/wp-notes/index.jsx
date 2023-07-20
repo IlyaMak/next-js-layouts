@@ -73,13 +73,7 @@ const Notes = () => {
   }
 
   return (
-    <PageStructure
-      headTitle="WP-Notes"
-      isBlogActive={true}
-      blogHref="wp-notes"
-      contactsHref="wp-notes/contacts"
-      body={<Body />}
-    />
+    <PageStructure headTitle="WP-Notes" isBlogActive={true} body={<Body />} />
   );
 };
 

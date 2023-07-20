@@ -7,8 +7,6 @@ const cn = cnCommon.bind(null, styles);
 DrawerMenu.propTypes = {
   isMenuShown: PropTypes.bool.isRequired,
   setIsMenuShown: PropTypes.func.isRequired,
-  blogHref: PropTypes.string.isRequired,
-  contactsHref: PropTypes.string.isRequired,
   isBlogActive: PropTypes.bool,
   isPortfolioActive: PropTypes.bool,
   isContactActive: PropTypes.bool,
@@ -17,8 +15,6 @@ DrawerMenu.propTypes = {
 export default function DrawerMenu({
   isMenuShown,
   setIsMenuShown,
-  blogHref,
-  contactsHref,
   isBlogActive,
   isPortfolioActive,
   isContactActive,
@@ -42,7 +38,7 @@ export default function DrawerMenu({
         <div className={cn("menu-responsive")}>
           <a
             className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
-            href={blogHref}>
+            href="/wp-notes">
             Blog
           </a>
           <a
@@ -58,7 +54,7 @@ export default function DrawerMenu({
               "menu-item",
               isContactActive ? "menu-item--active" : ""
             )}
-            href={contactsHref}>
+            href="/wp-notes/contacts">
             Contact
           </a>
         </div>

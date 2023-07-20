@@ -7,8 +7,6 @@ const cn = cnCommon.bind(null, styles);
 Header.propTypes = {
   isMenuShown: PropTypes.bool.isRequired,
   setIsMenuShown: PropTypes.func.isRequired,
-  blogHref: PropTypes.string.isRequired,
-  contactsHref: PropTypes.string.isRequired,
   isBlogActive: PropTypes.bool,
   isPortfolioActive: PropTypes.bool,
   isContactActive: PropTypes.bool,
@@ -19,8 +17,6 @@ Header.propTypes = {
 export default function Header({
   isMenuShown,
   setIsMenuShown,
-  blogHref,
-  contactsHref,
   isBlogActive,
   isPortfolioActive,
   isContactActive,
@@ -77,7 +73,7 @@ export default function Header({
         <div className={cn("menu")}>
           <a
             className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
-            href={blogHref}>
+            href="/wp-notes">
             Blog
           </a>
           <a
@@ -93,7 +89,7 @@ export default function Header({
               "menu-item",
               isContactActive ? "menu-item--active" : ""
             )}
-            href={contactsHref}>
+            href="/wp-notes/contacts">
             Contact
           </a>
         </div>

@@ -120,8 +120,6 @@ const Notes = () => {
     <PageStructure
       headTitle="Single Blog"
       isBlogActive={true}
-      blogHref="../wp-notes"
-      contactsHref="contacts"
       body={<Body />}
     />
   );
