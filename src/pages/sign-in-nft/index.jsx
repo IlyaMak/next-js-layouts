@@ -49,7 +49,7 @@ const SignIn = () => {
                 <input
                   className={styles["input"]}
                   type="password"
-                  value="12345678"
+                  placeholder="••••••••"
                 />
                 <img
                   className={styles["input-image"]}
