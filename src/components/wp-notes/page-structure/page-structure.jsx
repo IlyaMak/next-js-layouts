@@ -14,17 +14,10 @@ const cn = cnCommon.bind(null, styles);
 
 PageStructure.propTypes = {
   headTitle: PropTypes.string.isRequired,
-  isBlogActive: PropTypes.bool,
-  isContactActive: PropTypes.bool,
   body: PropTypes.node.isRequired,
 };
 
-export default function PageStructure({
-  headTitle,
-  isBlogActive,
-  isContactActive,
-  body,
-}) {
+export default function PageStructure({ headTitle, body }) {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const [isSearchShown, setIsSearchShown] = useState(false);
 
@@ -37,11 +30,7 @@ export default function PageStructure({
         {globalStyles}
       </style>
       <div className={cn("main-div")}>
-        <DrawerMenu
-          isMenuShown={isMenuShown}
-          setIsMenuShown={setIsMenuShown}
-          isBlogActive={true}
-        />
+        <DrawerMenu isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
         <div className={cn("main")}>
           <button
             className={cn(
@@ -54,8 +43,6 @@ export default function PageStructure({
           <Header
             isMenuShown={isMenuShown}
             setIsMenuShown={setIsMenuShown}
-            isBlogActive={isBlogActive}
-            isContactActive={isContactActive}
             isSearchShown={isSearchShown}
             setIsSearchShown={setIsSearchShown}
           />

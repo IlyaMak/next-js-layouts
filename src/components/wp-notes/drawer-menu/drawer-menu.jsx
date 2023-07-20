@@ -2,24 +2,18 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./drawer-menu.module.css";
+import { usePathname } from "next/navigation";
 
 const cn = cnCommon.bind(null, styles);
 
 DrawerMenu.propTypes = {
   isMenuShown: PropTypes.bool.isRequired,
   setIsMenuShown: PropTypes.func.isRequired,
-  isBlogActive: PropTypes.bool,
-  isPortfolioActive: PropTypes.bool,
-  isContactActive: PropTypes.bool,
 };
 
-export default function DrawerMenu({
-  isMenuShown,
-  setIsMenuShown,
-  isBlogActive,
-  isPortfolioActive,
-  isContactActive,
-}) {
+export default function DrawerMenu({ isMenuShown, setIsMenuShown }) {
+  const pathname = usePathname();
+
   return (
     <div className={cn("drawer-menu")}>
       <div
@@ -38,22 +32,22 @@ export default function DrawerMenu({
         </button>
         <div className={cn("menu-responsive")}>
           <Link
-            className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
+            className={cn(
+              "menu-item",
+              pathname === "/wp-notes" || pathname === "/wp-notes/single-blog"
+                ? "menu-item--active"
+                : ""
+            )}
             href="/wp-notes">
             Blog
           </Link>
-          <Link
-            className={cn(
-              "menu-item",
-              isPortfolioActive ? "menu-item--active" : ""
-            )}
-            href="#">
+          <Link className={cn("menu-item")} href="#">
             Portfolio
           </Link>
           <Link
             className={cn(
               "menu-item",
-              isContactActive ? "menu-item--active" : ""
+              pathname === "/wp-notes/contacts" ? "menu-item--active" : ""
             )}
             href="/wp-notes/contacts">
             Contact

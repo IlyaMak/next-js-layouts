@@ -2,15 +2,13 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./header.module.css";
+import { usePathname } from "next/navigation";
 
 const cn = cnCommon.bind(null, styles);
 
 Header.propTypes = {
   isMenuShown: PropTypes.bool.isRequired,
   setIsMenuShown: PropTypes.func.isRequired,
-  isBlogActive: PropTypes.bool,
-  isPortfolioActive: PropTypes.bool,
-  isContactActive: PropTypes.bool,
   isSearchShown: PropTypes.bool.isRequired,
   setIsSearchShown: PropTypes.func.isRequired,
 };
@@ -18,12 +16,11 @@ Header.propTypes = {
 export default function Header({
   isMenuShown,
   setIsMenuShown,
-  isBlogActive,
-  isPortfolioActive,
-  isContactActive,
   isSearchShown,
   setIsSearchShown,
 }) {
+  const pathname = usePathname();
+
   return (
     <div className={cn("header", isSearchShown ? "header--mobile" : "")}>
       <div className={cn("header__content")}>
@@ -73,22 +70,22 @@ export default function Header({
         </div>
         <div className={cn("menu")}>
           <Link
-            className={cn("menu-item", isBlogActive ? "menu-item--active" : "")}
+            className={cn(
+              "menu-item",
+              pathname === "/wp-notes" || pathname === "/wp-notes/single-blog"
+                ? "menu-item--active"
+                : ""
+            )}
             href="/wp-notes">
             Blog
           </Link>
-          <Link
-            className={cn(
-              "menu-item",
-              isPortfolioActive ? "menu-item--active" : ""
-            )}
-            href="#">
+          <Link className={cn("menu-item")} href="#">
             Portfolio
           </Link>
           <Link
             className={cn(
               "menu-item",
-              isContactActive ? "menu-item--active" : ""
+              pathname === "/wp-notes/contacts" ? "menu-item--active" : ""
             )}
             href="/wp-notes/contacts">
             Contact

@@ -73,9 +73,7 @@ const Notes = () => {
     );
   }
 
-  return (
-    <PageStructure headTitle="WP-Notes" isBlogActive={true} body={<Body />} />
-  );
+  return <PageStructure headTitle="WP-Notes" body={<Body />} />;
 };
 
 export default Notes;

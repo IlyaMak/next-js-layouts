@@ -116,13 +116,7 @@ function Body() {
 }
 
 const Notes = () => {
-  return (
-    <PageStructure
-      headTitle="Single Blog"
-      isBlogActive={true}
-      body={<Body />}
-    />
-  );
+  return <PageStructure headTitle="Single Blog" body={<Body />} />;
 };
 
 export default Notes;

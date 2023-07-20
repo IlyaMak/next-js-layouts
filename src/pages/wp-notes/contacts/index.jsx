@@ -48,13 +48,7 @@ function Body() {
 }
 
 const Notes = () => {
-  return (
-    <PageStructure
-      headTitle="Contacts"
-      isContactActive={true}
-      body={<Body />}
-    />
-  );
+  return <PageStructure headTitle="Contacts" body={<Body />} />;
 };
 
 export default Notes;
