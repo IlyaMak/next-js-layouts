@@ -16,6 +16,6 @@
 
 8.  --sm (max-width: 1279px); должно быть
 
-9.  Убрать везде eslint-disable @next/next/no-img-element
++ 9.  Убрать везде eslint-disable @next/next/no-img-element
 
 + 10. Добавить PropTypes нужным компонентам.

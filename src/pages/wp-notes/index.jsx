@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
 import ShortArticle from "../../components/wp-notes/short-article/short-article";

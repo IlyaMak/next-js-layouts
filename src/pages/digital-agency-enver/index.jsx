@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";

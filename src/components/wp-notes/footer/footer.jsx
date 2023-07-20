@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import cnCommon from "../../../modules/classname";
 import styles from "./footer.module.css";
 

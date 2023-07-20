@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import PropTypes from "prop-types";
 import { useState } from "react";
 import cnCommon from "../../../modules/classname";

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import styles from "./page.module.css";
 import cnCommon from "../../../modules/classname";
 import Comments from "../../../components/wp-notes/comments/comments";
