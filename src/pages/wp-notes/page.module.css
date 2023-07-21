@@ -19,7 +19,11 @@
     color: #ec7160;
     line-height: 20px;
     font-size: 13px;
-    margin-top: 49px;
+    margin-top: 39px;
+
+    @media (--xl) {
+      margin-top: 37px;
+    }
 
     &--other {
       margin-top: 9px;

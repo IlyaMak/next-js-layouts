@@ -1,7 +1,7 @@
 @custom-media --xl (min-width: 1280px);
 
 .article {
-  margin-top: 16px;
+  margin-top: 6px;
 
   .link {
     text-decoration: none;
