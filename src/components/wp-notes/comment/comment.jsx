@@ -8,13 +8,20 @@ Comment.propTypes = {
   comment: PropTypes.shape({
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    date: PropTypes.string.isRequired,
+    date: PropTypes.instanceOf(Date).isRequired,
     description: PropTypes.string.isRequired,
   }),
   isChild: PropTypes.bool,
+  commentIndex: PropTypes.number.isRequired,
+  replyComment: PropTypes.func.isRequired,
 };
 
-export default function Comment({ comment, isChild }) {
+export default function Comment({
+  comment,
+  isChild,
+  commentIndex,
+  replyComment,
+}) {
   return (
     <div className={cn("comment", isChild ? "comment--child" : "")}>
       <img
@@ -25,13 +32,20 @@ export default function Comment({ comment, isChild }) {
       <div className={cn("comment__text-container")}>
         <div className={cn("comment__name-container")}>
           <div className={cn("comment__name")}>{comment.name}</div>
-          <div className={cn("comment__date")}>/ {comment.date}</div>
+          <div className={cn("comment__date")}>
+            /{" "}
+            {`${comment.date.toLocaleDateString("en", {
+              month: "short",
+            })} ${comment.date.getDate()}, ${comment.date.getFullYear()}`}
+          </div>
         </div>
         <div className={cn("comment__description")}>{comment.description}</div>
         <div className={cn("comment__reply-container")}>
-          <a className={cn("comment__reply")} href="#">
+          <button
+            className={cn("comment__reply")}
+            onClick={() => replyComment(commentIndex)}>
             Reply
-          </a>
+          </button>
         </div>
       </div>
     </div>

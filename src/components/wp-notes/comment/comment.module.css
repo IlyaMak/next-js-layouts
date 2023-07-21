@@ -38,7 +38,8 @@
     color: #898989;
     font-size: 13px;
     line-height: 20px;
-    text-decoration: none;
+    border: none;
+    background: transparent;
   }
 
   &--child {

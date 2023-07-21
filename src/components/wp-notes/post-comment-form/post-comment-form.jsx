@@ -1,9 +1,24 @@
+import PropTypes from "prop-types";
 import cnCommon from "../../../modules/classname";
 import styles from "./post-comment-form.module.css";
 
 const cn = cnCommon.bind(null, styles);
 
-export default function PostCommentForm() {
+const handleChange = (event, setState) => {
+  setState(event.target.value);
+};
+
+PostCommentForm.propTypes = {
+  postComment: PropTypes.func.isRequired,
+  setName: PropTypes.func.isRequired,
+  setDescription: PropTypes.func.isRequired,
+};
+
+export default function PostCommentForm({
+  postComment,
+  setName,
+  setDescription,
+}) {
   return (
     <div className={cn("form")}>
       <div className={cn("form__header")}>Post Comment</div>
@@ -14,7 +29,11 @@ export default function PostCommentForm() {
             "form__input-container--required"
           )}>
           <div className={cn("label")}>Name*</div>
-          <input className={cn("input")} type="text" />
+          <input
+            className={cn("input")}
+            type="text"
+            onChange={(e) => handleChange(e, setName)}
+          />
         </div>
         <div
           className={cn(
@@ -31,10 +50,16 @@ export default function PostCommentForm() {
       </div>
       <div className={cn("form__input-container")}>
         <div className={cn("label")}>Your Comment</div>
-        <textarea className={cn("input", "input--comment")} type="text" />
+        <textarea
+          className={cn("input", "input--comment")}
+          type="text"
+          onChange={(e) => handleChange(e, setDescription)}
+        />
       </div>
       <div className={cn("form__button-container")}>
-        <button className={cn("button")}>Post Comment</button>
+        <button className={cn("button")} onClick={postComment}>
+          Post Comment
+        </button>
       </div>
     </div>
   );

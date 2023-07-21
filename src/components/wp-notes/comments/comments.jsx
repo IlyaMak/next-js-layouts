@@ -11,21 +11,22 @@ Comments.propTypes = {
     PropTypes.shape({
       image: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
-      date: PropTypes.string.isRequired,
+      date: PropTypes.instanceOf(Date).isRequired,
       description: PropTypes.string.isRequired,
       children: PropTypes.arrayOf(
         PropTypes.shape({
           image: PropTypes.string.isRequired,
           name: PropTypes.string.isRequired,
-          date: PropTypes.string.isRequired,
+          date: PropTypes.instanceOf(Date).isRequired,
           description: PropTypes.string.isRequired,
         })
       ),
     })
   ).isRequired,
+  replyComment: PropTypes.func.isRequired,
 };
 
-export default function Comments({ comments }) {
+export default function Comments({ comments, replyComment }) {
   const commentsCount =
     comments.length +
     comments.reduce(
@@ -38,12 +39,23 @@ export default function Comments({ comments }) {
       <div className={cn("comments__header")}>{commentsCount} Comments</div>
       {comments.map((comment, commentIndex) => (
         <div key={commentIndex}>
-          <Comment comment={comment} />
-          {commentIndex + 1 < comments.length && <CommentLine />}
+          <Comment
+            comment={comment}
+            commentIndex={commentIndex}
+            replyComment={replyComment}
+          />
+          {(commentIndex + 1 < comments.length ||
+            comments[commentIndex].children.length !== 0) && <CommentLine />}
           {comment.children.map((childComment, childCommentIndex) => (
             <div key={childCommentIndex}>
-              {childCommentIndex < comment.children.length && <CommentLine />}
-              <Comment comment={childComment} isChild />
+              <Comment
+                comment={childComment}
+                isChild
+                commentIndex={commentIndex}
+                replyComment={replyComment}
+              />
+              {(childCommentIndex + 1 < comment.children.length ||
+                commentIndex + 1 < comments.length) && <CommentLine />}
             </div>
           ))}
         </div>

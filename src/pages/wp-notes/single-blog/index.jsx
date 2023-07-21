@@ -3,14 +3,16 @@ import cnCommon from "../../../modules/classname";
 import Comments from "../../../components/wp-notes/comments/comments";
 import PostCommentForm from "../../../components/wp-notes/post-comment-form/post-comment-form";
 import PageStructure from "../../../components/wp-notes/page-structure/page-structure";
+import { useState } from "react";
 
 const cn = cnCommon.bind(null, styles);
+const date = new Date();
 
-const comments = [
+const defaultComments = [
   {
     image: "/assets-wp-notes/images/Img 03.png",
     name: "Jewel",
-    date: "Feb 8, 2021",
+    date: new Date("2021-02-02"),
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui.",
     children: [],
@@ -18,14 +20,14 @@ const comments = [
   {
     image: "/assets-wp-notes/images/Img 05.png",
     name: "Jewel",
-    date: "Feb 8, 2021",
+    date: new Date("2021-02-02"),
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui.",
     children: [
       {
         image: "/assets-wp-notes/images/Img 03.png",
         name: "Jewel",
-        date: "Feb 8, 2021",
+        date: new Date("2021-02-02"),
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Lorem ipsum dolor sit amet.",
       },
@@ -34,6 +36,47 @@ const comments = [
 ];
 
 function Body() {
+  const [comments, setComments] = useState(defaultComments);
+  const [name, setName] = useState("");
+  const [description, setDescription] = useState("");
+  const [commentIndex, setCommentIndex] = useState(null);
+
+  const postComment = () => {
+    if (commentIndex === null) {
+      setComments([
+        ...comments,
+        {
+          image: "/assets-wp-notes/images/Img 03.png",
+          name: name,
+          date: date,
+          description: description,
+          children: [],
+        },
+      ]);
+    } else {
+      const commentReply = {
+        ...comments[commentIndex],
+        children: [
+          ...comments[commentIndex].children,
+          {
+            image: "/assets-wp-notes/images/Img 03.png",
+            name: name,
+            date: date,
+            description: description,
+          },
+        ],
+      };
+      const newComments = [...comments];
+      newComments.splice(commentIndex, 1, commentReply);
+      setComments(newComments);
+    }
+  };
+
+  const replyComment = (commentIndex) => {
+    setCommentIndex(commentIndex);
+  };
+
+  console.log(commentIndex);
   return (
     <div className={styles.body}>
       <div className={cn("header-text")}>
@@ -109,8 +152,12 @@ function Body() {
       <div className={cn("tags-container")}>
         Tags: <span className={cn("tags")}>Pivacy, Business, Office</span>
       </div>
-      <Comments comments={comments} />
-      <PostCommentForm />
+      <Comments comments={comments} replyComment={replyComment} />
+      <PostCommentForm
+        postComment={postComment}
+        setName={setName}
+        setDescription={setDescription}
+      />
     </div>
   );
 }
