@@ -113,6 +113,10 @@
       border-radius: 7px;
       border: 1px solid #e7e7e9;
       background: #fff;
+
+      &:hover {
+        filter: brightness(95%);
+      }
     }
   }
 
@@ -141,6 +145,10 @@
       color: #898989;
       background: #fff;
       margin-right: 5px;
+
+      &:hover {
+        filter: brightness(96%);
+      }
     }
   }
 }

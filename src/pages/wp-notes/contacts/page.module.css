@@ -69,6 +69,10 @@
         border: 0;
         color: #fff;
         font-size: 13px;
+
+        &:hover {
+          filter: brightness(110%);
+        }
       }
     }
   }
