@@ -20,7 +20,7 @@ export default function PostCommentForm({
   setDescription,
 }) {
   return (
-    <div className={cn("form")}>
+    <form className={cn("form")} onSubmit={postComment}>
       <div className={cn("form__header")}>Post Comment</div>
       <div className={cn("required-inputs-container")}>
         <div
@@ -32,6 +32,7 @@ export default function PostCommentForm({
           <input
             className={cn("input")}
             type="text"
+            required
             onChange={(e) => handleChange(e, setName)}
           />
         </div>
@@ -41,7 +42,7 @@ export default function PostCommentForm({
             "form__input-container--required"
           )}>
           <div className={cn("label")}>Email*</div>
-          <input className={cn("input")} type="text" />
+          <input className={cn("input")} required type="text" />
         </div>
       </div>
       <div className={cn("form__input-container")}>
@@ -53,14 +54,13 @@ export default function PostCommentForm({
         <textarea
           className={cn("input", "input--comment")}
           type="text"
+          required
           onChange={(e) => handleChange(e, setDescription)}
         />
       </div>
       <div className={cn("form__button-container")}>
-        <button className={cn("button")} onClick={postComment}>
-          Post Comment
-        </button>
+        <button className={cn("button")}>Post Comment</button>
       </div>
-    </div>
+    </form>
   );
 }

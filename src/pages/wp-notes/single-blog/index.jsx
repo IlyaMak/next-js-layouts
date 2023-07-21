@@ -41,7 +41,8 @@ function Body() {
   const [description, setDescription] = useState("");
   const [commentIndex, setCommentIndex] = useState(null);
 
-  const postComment = () => {
+  const postComment = (event) => {
+    event.preventDefault();
     if (commentIndex === null) {
       setComments([
         ...comments,
