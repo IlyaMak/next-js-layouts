@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 import cnCommon from "../../../modules/classname";
-import PageStructure from "../../../components/wp-notes/page-structure/page-structure";
+import Layout from "../../../components/wp-notes/layout/layout";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -48,7 +48,11 @@ function Body() {
 }
 
 const Notes = () => {
-  return <PageStructure headTitle="Contacts" body={<Body />} />;
+  return (
+    <Layout headTitle="Contacts">
+      <Body />
+    </Layout>
+  );
 };
 
 export default Notes;

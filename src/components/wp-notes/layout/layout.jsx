@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import cnCommon from "../../../modules/classname";
-import styles from "./page-structure.module.css";
+import styles from "./layout.module.css";
 import Head from "next/head";
 import DrawerMenu from "../drawer-menu/drawer-menu";
 import Header from "../header/header";
@@ -12,12 +12,12 @@ import { otherArticles } from "../../../constants/wp-notes/other-articles";
 
 const cn = cnCommon.bind(null, styles);
 
-PageStructure.propTypes = {
+Layout.propTypes = {
   headTitle: PropTypes.string.isRequired,
-  body: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
 };
 
-export default function PageStructure({ headTitle, body }) {
+export default function Layout({ headTitle, children }) {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const [isSearchShown, setIsSearchShown] = useState(false);
 
@@ -59,7 +59,7 @@ export default function PageStructure({ headTitle, body }) {
                 "main-container",
                 isSearchShown ? "main-container--show-articles" : ""
               )}>
-              {body}
+              {children}
               <Footer />
             </div>
           </div>

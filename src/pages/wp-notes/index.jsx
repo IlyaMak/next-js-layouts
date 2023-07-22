@@ -3,7 +3,7 @@ import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
 import ShortArticle from "../../components/wp-notes/short-article/short-article";
 import { otherArticles } from "../../constants/wp-notes/other-articles";
-import PageStructure from "../../components/wp-notes/page-structure/page-structure";
+import Layout from "../../components/wp-notes/layout/layout";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -73,7 +73,11 @@ const Notes = () => {
     );
   }
 
-  return <PageStructure headTitle="WP-Notes" body={<Body />} />;
+  return (
+    <Layout headTitle="WP-Notes">
+      <Body />
+    </Layout>
+  );
 };
 
 export default Notes;

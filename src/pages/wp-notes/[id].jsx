@@ -2,7 +2,7 @@ import styles from "./[id].module.css";
 import cnCommon from "../../modules/classname";
 import Comments from "../../components/wp-notes/comments/comments";
 import PostCommentForm from "../../components/wp-notes/post-comment-form/post-comment-form";
-import PageStructure from "../../components/wp-notes/page-structure/page-structure";
+import Layout from "../../components/wp-notes/layout/layout";
 import { useState } from "react";
 
 const cn = cnCommon.bind(null, styles);
@@ -163,7 +163,11 @@ function Body() {
 }
 
 const Notes = () => {
-  return <PageStructure headTitle="Single Blog" body={<Body />} />;
+  return (
+    <Layout headTitle="Single Blog">
+      <Body />
+    </Layout>
+  );
 };
 
 export default Notes;
