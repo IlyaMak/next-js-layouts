@@ -17,7 +17,7 @@ ShortArticle.propTypes = {
 export default function ShortArticle({ shortArticle }) {
   return (
     <div className={cn("article")}>
-      <Link className={cn("link")} href="../../wp-notes/single-blog">
+      <Link className={cn("link")} href="../../wp-notes/1">
         <div className={cn("article__content-container")}>
           <div className={cn("article__header")}>{shortArticle.header}</div>
           <div className={cn("article__content-text", "article__tags")}>

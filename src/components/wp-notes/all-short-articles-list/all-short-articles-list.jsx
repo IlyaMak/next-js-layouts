@@ -22,7 +22,7 @@ export default function AllShortArticlesList({ otherArticles }) {
     <div className={cn("all-articles-section")}>
       <div className={cn("header-additional-info", "row")}>PINNED</div>
       <div className={cn("article")}>
-        <Link className={cn("link")} href="/wp-notes/single-blog">
+        <Link className={cn("link")} href="/wp-notes/1">
           <div className={cn("article__content-container")}>
             <div className={cn("article__header")}>
               Light & Bright in Brooklyn

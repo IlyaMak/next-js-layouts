@@ -1,8 +1,8 @@
-import styles from "./page.module.css";
-import cnCommon from "../../../modules/classname";
-import Comments from "../../../components/wp-notes/comments/comments";
-import PostCommentForm from "../../../components/wp-notes/post-comment-form/post-comment-form";
-import PageStructure from "../../../components/wp-notes/page-structure/page-structure";
+import styles from "./[id].module.css";
+import cnCommon from "../../modules/classname";
+import Comments from "../../components/wp-notes/comments/comments";
+import PostCommentForm from "../../components/wp-notes/post-comment-form/post-comment-form";
+import PageStructure from "../../components/wp-notes/page-structure/page-structure";
 import { useState } from "react";
 
 const cn = cnCommon.bind(null, styles);
@@ -77,7 +77,6 @@ function Body() {
     setCommentIndex(commentIndex);
   };
 
-  console.log(commentIndex);
   return (
     <div className={styles.body}>
       <div className={cn("header-text")}>

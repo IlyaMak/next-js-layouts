@@ -34,7 +34,7 @@ export default function DrawerMenu({ isMenuShown, setIsMenuShown }) {
           <Link
             className={cn(
               "menu-item",
-              pathname === "/wp-notes" || pathname === "/wp-notes/single-blog"
+              pathname === "/wp-notes" || pathname === "/wp-notes/1"
                 ? "menu-item--active"
                 : ""
             )}
