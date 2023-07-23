@@ -15,6 +15,7 @@ export default function Home() {
         <a href="sign-in-nft">Sign-in-NFT</a>
         <a href="digital-agency-enver">Digital Agency Enver</a>
         <a href="wp-notes">WP-Notes</a>
+        <a href="appolly">Appolly</a>
       </div>
     </>
   );
