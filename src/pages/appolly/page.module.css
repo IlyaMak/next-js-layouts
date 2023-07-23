@@ -1,0 +1,184 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("/assets-appolly/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+@custom-media --m (min-width: 768px);
+@custom-media --xl (min-width: 1440px);
+
+.main {
+  height: 100%;
+  background-image: url("/assets-appolly/images/Background Image.png");
+  font-family: "Josefin Sans";
+  position: relative;
+
+  @media (--m) {
+    background-image: url("/assets-appolly/images/Background Image (1).png");
+  }
+
+  @media (--xl) {
+    background-image: url("/assets-appolly/images/Background Image (2).png");
+  }
+
+  .logo-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 60px;
+    border-radius: 5px;
+    background: #fff;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
+    @media (--m) {
+      top: 114px;
+      width: 200px;
+      height: 90px;
+    }
+
+    @media (--xl) {
+      top: 104px;
+    }
+
+    .logo {
+      width: 79px;
+      height: 12px;
+
+      @media (--m) {
+        width: 167px;
+        height: 28px;
+      }
+    }
+  }
+
+  .header {
+    padding: 40px 16px 0;
+
+    @media (--m) {
+      padding: 25px 40px 0;
+    }
+
+    @media (--xl) {
+      padding: 35px 135px 0;
+    }
+
+    .contact-section {
+      display: none;
+      @media (--m) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .contact-container {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        line-height: 24px;
+
+        .contact-image {
+          margin-right: 18px;
+        }
+
+        .email-container {
+          display: flex;
+          margin-right: 48px;
+        }
+
+        .phone-container {
+          display: flex;
+        }
+      }
+
+      .social-container {
+        width: 162px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .social-image {
+          height: 18px;
+        }
+      }
+    }
+
+    .menu-container {
+      padding: 0 3px 0 9px;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 3px;
+      height: 40px;
+
+      @media (--m) {
+        margin-top: 35px;
+        padding: 0 5px 0 18px;
+        height: 60px;
+      }
+
+      @media (--xl) {
+        margin-top: 15px;
+        padding-left: 52px;
+      }
+
+      .menu-item {
+        margin-right: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        color: #232233;
+      }
+
+      .main-menu-items-container {
+        display: none;
+
+        @media (--xl) {
+          display: flex;
+          margin-right: 319px;
+        }
+      }
+
+      .secondary-menu-items-container {
+        display: none;
+
+        @media (--xl) {
+          display: flex;
+        }
+      }
+
+      .menu-button {
+        border: none;
+        background: transparent;
+        padding: 0;
+
+        @media (--xl) {
+          display: none;
+        }
+      }
+
+      .download-button {
+        border: none;
+        background: #5956e9;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 10px;
+        width: 76px;
+        height: 34px;
+
+        @media (--m) {
+          border-radius: 5px;
+          width: 158px;
+          height: 50px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .home-section {
+    margin-top: 50px;
+  }
+}
