@@ -141,7 +141,7 @@ const Appolly = () => {
           </div>
         </div>
         <div className={cn("about-section")}>
-          <div className={cn("about-section__header")}>ABOUT OUR APP</div>
+          <div className={cn("section-header")}>ABOUT OUR APP</div>
           <div className={cn("about-section__description-container")}>
             <div
               className={cn("description-text", "about-section__description")}>
@@ -158,6 +158,101 @@ const Appolly = () => {
               alt="App image"
             />
             <Advantages advantages={appAdvantages} />
+          </div>
+        </div>
+        <div className={cn("features-section")}>
+          <div className={cn("section-header", "section-header--features")}>
+            APP FEATURES
+          </div>
+          <div
+            className={cn("description-text", "features-section__description")}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </div>
+          <div className={cn("feature", "feature--edged", "feature--first")}>
+            <img
+              className={cn("feature__icon")}
+              src="/assets-appolly/images/comment.svg"
+              alt="Feature icon"
+            />
+            <div className={cn("feature__header")}>FULL FREE CHAT</div>
+            <div className={cn("description-text", "feature__description")}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+          <div className={cn("columns-content")}>
+            <div className={cn("columns-content__first")}>
+              <div className={cn("feature")}>
+                <img
+                  className={cn("feature__icon")}
+                  src="/assets-appolly/images/browser.svg"
+                  alt="Feature icon"
+                />
+                <div className={cn("feature__header")}>UNLIMITED FEATURES</div>
+                <div className={cn("description-text", "feature__description")}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+              <div className={cn("feature", "feature--third")}>
+                <img
+                  className={cn("feature__icon")}
+                  src="/assets-appolly/images/vector.svg"
+                  alt="Feature icon"
+                />
+                <div className={cn("feature__header")}>AWESOME UI DESIGN</div>
+                <div className={cn("description-text", "feature__description")}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+            </div>
+            <img
+              className={cn("columns-content__second")}
+              src="/assets-appolly/images/003.png"
+              alt="Features image"
+            />
+            <div className={cn("columns-content__third")}>
+              <div className={cn("feature")}>
+                <img
+                  className={cn("feature__icon")}
+                  src="/assets-appolly/images/cell-phone.svg"
+                  alt="Feature icon"
+                />
+                <div className={cn("feature__header")}>
+                  ISO & ANDROID VERSION
+                </div>
+                <div className={cn("description-text", "feature__description")}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+              <div className={cn("feature", "feature--fifth")}>
+                <img
+                  className={cn("feature__icon")}
+                  src="/assets-appolly/images/eye-scanner 1.svg"
+                  alt="Feature icon"
+                />
+                <div className={cn("feature__header")}>
+                  RETINA READY GRAPHICS
+                </div>
+                <div className={cn("description-text", "feature__description")}>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className={cn("feature", "feature--edged")}>
+            <img
+              className={cn("feature__icon")}
+              src="/assets-appolly/images/male-telemarketer.svg"
+              alt="Feature icon"
+            />
+            <div className={cn("feature__header")}>
+              24/7 SUPPORT BY REAL PEOPLE
+            </div>
+            <div className={cn("description-text", "feature__description")}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
           </div>
         </div>
       </div>
