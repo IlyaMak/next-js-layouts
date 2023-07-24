@@ -82,11 +82,44 @@ const Appolly = () => {
           </div>
         </div>
         <div className={cn("home-section")}>
-          <div className={cn("download-container")}></div>
-          <img
-            src="/assets-appolly/images/Free Ui View Mobile App Mockup 1.png"
-            alt="Appolly image"
-          />
+          <div className={cn("download-section")}>
+            <div className={cn("decore-rectangle")}></div>
+            <div className={cn("download-container")}>
+              <div className={cn("download-container__header")}>
+                A GREAT APP MAKES YOUR LIFE BETTER
+              </div>
+              <div className={cn("download-container__description")}>
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+              </div>
+              <div
+                className={cn(
+                  "download-container__header",
+                  "download-container__header--secondary"
+                )}>
+                DOWNLOAD APP NOW
+              </div>
+              <div className={cn("download-buttons-container")}>
+                <img
+                  className={cn("download-container__image")}
+                  src="/assets-appolly/images/toppng 1.png"
+                  alt="Google Play icon"
+                />
+                <img
+                  className={cn("download-container__image")}
+                  src="/assets-appolly/images/PngItem_1144050 2.png"
+                  alt="Google Play icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div className={cn("home-image-container")}>
+            <img
+              className={cn("home-image")}
+              src="/assets-appolly/images/Free Ui View Mobile App Mockup 1.png"
+              alt="Appolly image"
+            />
+          </div>
         </div>
       </div>
     </>

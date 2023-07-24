@@ -7,17 +7,18 @@
 @custom-media --xl (min-width: 1440px);
 
 .main {
-  height: 100%;
   background-image: url("/assets-appolly/images/Background Image.png");
   font-family: "Josefin Sans";
   position: relative;
 
   @media (--m) {
     background-image: url("/assets-appolly/images/Background Image (1).png");
+    height: 100%;
   }
 
   @media (--xl) {
     background-image: url("/assets-appolly/images/Background Image (2).png");
+    height: 100%;
   }
 
   .logo-container {
@@ -179,6 +180,170 @@
   }
 
   .home-section {
-    margin-top: 50px;
+    margin-top: 108px;
+
+    @media (--m) {
+      margin-top: 236px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @media (--xl) {
+      margin: 82px 115px 0 135px;
+    }
+
+    .download-section {
+      margin: 0 16px;
+      position: relative;
+      height: 368px;
+
+      @media (--m) {
+        margin: 34px 0 0 40px;
+        width: 391px;
+        height: 381px;
+      }
+
+      @media (--xl) {
+        width: 620px;
+        height: 535px;
+        margin: 105px 0 0;
+      }
+
+      .decore-rectangle {
+        position: absolute;
+        width: 303px;
+        height: calc(100% - 20px);
+        width: calc(100% - 40px);
+        border: 10px solid #7572ff;
+        margin-left: 20px;
+        margin-right: 16px;
+        z-index: 1;
+
+        @media (--m) {
+          width: calc(375px - 18px - 18px);
+          height: calc(381px - 18px - 18px);
+          border: 18px solid #7572ff;
+        }
+
+        @media (--xl) {
+          width: calc(570px - 18px - 18px);
+          height: calc(535px - 18px - 18px);
+          right: 0;
+          margin: 0;
+        }
+      }
+
+      .download-container {
+        position: absolute;
+        z-index: 2;
+        background: #fff;
+        margin-right: 20px;
+        padding: 30px 12px 20px 18px;
+        top: 20px;
+        height: calc(318px - 40px);
+
+        @media (--m) {
+          padding: 14px 7px 14px 18px;
+          top: 33px;
+          width: calc(356px - 7px - 18px);
+          height: calc(318px - 14px - 14px);
+        }
+
+        @media (--xl) {
+          padding: 40px 23px 41px 30px;
+          top: 51px;
+          width: calc(570px - 23px - 30px);
+          height: calc(432px - 40px - 41px);
+        }
+
+        &__header {
+          color: #5956e9;
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 37.5px;
+
+          @media (--m) {
+            font-size: 31.25px;
+            font-weight: 700;
+            line-height: 47.25px;
+          }
+
+          @media (--xl) {
+            font-size: 48px;
+            line-height: 130%;
+          }
+
+          &--secondary {
+            color: #232233;
+            font-size: 20px;
+            line-height: 30px;
+            margin-top: 30px;
+
+            @media (--m) {
+              margin-top: 23px;
+            }
+
+            @media (--xl) {
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 37.5px;
+              margin-top: 52px;
+            }
+          }
+        }
+
+        &__description {
+          color: #6c6c72;
+          line-height: 24px;
+          margin-top: 6px;
+
+          @media (--xl) {
+            width: 487px;
+            height: 66px;
+            margin-top: 18px;
+          }
+        }
+
+        .download-buttons-container {
+          margin-top: 18px;
+
+          @media (--xl) {
+            margin-top: 5px;
+          }
+        }
+
+        &__image {
+          width: 109px;
+          height: 34px;
+          margin-right: 10px;
+
+          @media (--xl) {
+            width: 149px;
+            height: 47px;
+          }
+        }
+      }
+    }
+
+    .home-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0 0 55px;
+
+      @media (--m) {
+        margin-top: 0;
+      }
+
+      .home-image {
+        @media (--m) {
+          height: 423px;
+        }
+
+        @media (--xl) {
+          height: 725px;
+        }
+      }
+    }
   }
 }
