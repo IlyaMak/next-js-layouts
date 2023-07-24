@@ -1,0 +1,45 @@
+@custom-media --m (min-width: 768px);
+@custom-media --xl (min-width: 1440px);
+
+.advantage-card {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  align-items: start;
+  padding: 18px 16px 10px 19px;
+  text-align: start;
+  margin-bottom: 20px;
+  
+  @media (--m) {
+      padding-right: 30px;
+      width: calc(100% - 30px - 19px);
+  }
+
+  @media (--xl) {
+      padding: 30px 20px 21px 18px;
+      width: calc(570px - 20px - 18px);
+      height: calc(160px - 30px - 21px);
+      margin-bottom: 40px;
+  }
+}
+
+.advantage {
+  margin-left: 18px;
+}
+
+.advantage-header {
+  color: #232233;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.advantage-text {
+  color: #6c6c72;
+  line-height: 24px;
+  margin-top: 3px;
+
+  @media(--xl) {
+    margin-top: 12px;
+  }
+}

@@ -1,0 +1,14 @@
+@custom-media --m (min-width: 768px);
+@custom-media --xl (min-width: 1440px);
+
+.advantages-container {
+  margin-top: 40px;
+
+  @media (--m) {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 55%;
+  }
+}
