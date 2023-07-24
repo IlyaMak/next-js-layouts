@@ -13,12 +13,10 @@
 
   @media (--m) {
     background-image: url("/assets-appolly/images/Background Image (1).png");
-    height: 100%;
   }
 
   @media (--xl) {
     background-image: url("/assets-appolly/images/Background Image (2).png");
-    height: 100%;
   }
 
   .logo-container {
@@ -181,6 +179,7 @@
 
   .home-section {
     margin-top: 108px;
+    padding-bottom: 120px;
 
     @media (--m) {
       margin-top: 236px;
@@ -292,18 +291,6 @@
           }
         }
 
-        &__description {
-          color: #6c6c72;
-          line-height: 24px;
-          margin-top: 6px;
-
-          @media (--xl) {
-            width: 487px;
-            height: 66px;
-            margin-top: 18px;
-          }
-        }
-
         .download-buttons-container {
           margin-top: 18px;
 
@@ -343,6 +330,87 @@
         @media (--xl) {
           height: 725px;
         }
+      }
+    }
+  }
+
+  .description-text {
+    color: #6c6c72;
+    line-height: 24px;
+    margin-top: 6px;
+
+    @media (--xl) {
+      width: 487px;
+      height: 66px;
+      margin-top: 18px;
+    }
+  }
+
+  .about-section {
+    background: #fff;
+    padding: 60px 16px 92px;
+    text-align: center;
+
+    @media (--m) {
+      padding: 120px 40px 159px;
+    }
+
+    @media (--xl) {
+      padding: 120px 135px 120px 161px;
+    }
+
+    &__header {
+      color: #232233;
+      font-size: 25px;
+      font-weight: 600;
+      line-height: 37.5px;
+
+      @media (--m) {
+        font-size: 31.25px;
+        font-weight: 700;
+        line-height: 47.25px;
+      }
+    }
+
+    &__description-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__description {
+      margin-top: 18px;
+
+      @media (--m) {
+        width: 450px;
+      }
+
+      @media (--xl) {
+        width: 601px;
+      }
+    }
+
+    &__content-container {
+      margin-top: 40px;
+
+      @media (--m) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+      }
+    }
+
+    &__image {
+      width: 238px;
+      height: 324px;
+
+      @media (--m) {
+        margin-top: 14px;
+      }
+
+      @media (--xl) {
+        margin-top: 0;
+        width: 386px;
+        height: 526px;
       }
     }
   }

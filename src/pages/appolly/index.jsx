@@ -2,8 +2,27 @@ import Head from "next/head";
 import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
 import globalStyles from "../../app/style.global";
+import Advantages from "../../components/appolly/advantages/advantages";
 
 const cn = cnCommon.bind(null, styles);
+
+const appAdvantages = [
+  {
+    header: "CREATIVE DESIGN",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.",
+  },
+  {
+    header: "EASY TO USE",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.",
+  },
+  {
+    header: "BEST USER EXPERIENCE",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.",
+  },
+];
 
 const Appolly = () => {
   return (
@@ -88,7 +107,7 @@ const Appolly = () => {
               <div className={cn("download-container__header")}>
                 A GREAT APP MAKES YOUR LIFE BETTER
               </div>
-              <div className={cn("download-container__description")}>
+              <div className={cn("description-text")}>
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
               </div>
@@ -119,6 +138,26 @@ const Appolly = () => {
               src="/assets-appolly/images/Free Ui View Mobile App Mockup 1.png"
               alt="Appolly image"
             />
+          </div>
+        </div>
+        <div className={cn("about-section")}>
+          <div className={cn("about-section__header")}>ABOUT OUR APP</div>
+          <div className={cn("about-section__description-container")}>
+            <div
+              className={cn("description-text", "about-section__description")}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+              nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+              Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+            </div>
+          </div>
+          <div className={cn("about-section__content-container")}>
+            <img
+              className={cn("about-section__image")}
+              src="/assets-appolly/images/App Design.png"
+              alt="App image"
+            />
+            <Advantages advantages={appAdvantages} />
           </div>
         </div>
       </div>
