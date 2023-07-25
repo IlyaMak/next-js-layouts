@@ -1,0 +1,16 @@
+@custom-media --m (min-width: 768px);
+@custom-media --xl (min-width: 1440px);
+
+.team-members-container {
+  margin-top: 40px;
+
+  @media (--m) {
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (--xl) {
+    margin-top: 60px;
+  }
+}

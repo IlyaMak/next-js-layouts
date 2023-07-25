@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import cnCommon from "../../modules/classname";
 import globalStyles from "../../app/style.global";
 import Advantages from "../../components/appolly/advantages/advantages";
+import TeamMembersCards from "../../components/appolly/team-members-cards/team-members-cards";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -21,6 +22,29 @@ const appAdvantages = [
     header: "BEST USER EXPERIENCE",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis enim. Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.",
+  },
+];
+
+const membersCardData = [
+  {
+    image: "/assets-appolly/images/Profile.png",
+    name: "CARLA PRESS",
+    job: "APP DEVELOPER",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae. Est tellus vitae.",
+    facebookIcon: "/assets-appolly/images/facebook-fill-purple.svg",
+  },
+  {
+    image: "/assets-appolly/images/Profile (1).png",
+    name: "CRAIGE GOUSE",
+    job: "UI/UX DESIGNER",
+    facebookIcon: "/assets-appolly/images/facebook-fill-black.svg",
+  },
+  {
+    image: "/assets-appolly/images/Profile (2).png",
+    name: "JOCELYN SEPTIMUS",
+    job: "WEBSITE DEVELOPER",
+    facebookIcon: "/assets-appolly/images/facebook-fill-black.svg",
   },
 ];
 
@@ -418,6 +442,16 @@ const Appolly = () => {
               />
             </div>
           </div>
+        </div>
+        <div className={cn("team-section")}>
+          <div className={cn("section-header")}>OUR CREATIVE TEAM</div>
+          <div className={cn("description-text", "team-section__description")}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </div>
+          <TeamMembersCards membersCards={membersCardData} />
         </div>
       </div>
     </>
