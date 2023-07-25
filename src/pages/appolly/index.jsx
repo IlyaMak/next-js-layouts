@@ -127,7 +127,7 @@ const Appolly = () => {
                 <img
                   className={cn("download-container__image")}
                   src="/assets-appolly/images/PngItem_1144050 2.png"
-                  alt="Google Play icon"
+                  alt="App Store icon"
                 />
               </div>
             </div>
@@ -252,6 +252,146 @@ const Appolly = () => {
             </div>
             <div className={cn("description-text", "feature__description")}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </div>
+          </div>
+        </div>
+        <div className={cn("screenshot-section")}>
+          <div className={cn("section-header", "screenshot-section__header")}>
+            CHECKOUT OUR APP INTERFACE LOOK
+          </div>
+          <div
+            className={cn(
+              "description-text",
+              "screenshot-section__description"
+            )}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </div>
+          <div className={cn("slider-container")}>
+            <button className={cn("slider-button", "slider-button--left")}>
+              <img
+                src="/assets-appolly/images/arrow-left-s-line.svg"
+                alt="Left arrow icon"
+              />
+            </button>
+            <div className={cn("images-container")}>
+              <img
+                className={cn(
+                  "covered-image",
+                  "covered-image--first",
+                  "slider-container__secondary-image"
+                )}
+                src="/assets-appolly/images/000.png"
+                alt="App image"
+              />
+              <img
+                className={cn(
+                  "covering-image",
+                  "slider-container__secondary-image"
+                )}
+                src="/assets-appolly/images/003.png"
+                alt="App image"
+              />
+              <img
+                className={cn("slider-container__image")}
+                src="/assets-appolly/images/iPhoneX-Mockup 1.png"
+                alt="App image"
+              />
+              <img
+                className={cn(
+                  "covering-image",
+                  "slider-container__secondary-image"
+                )}
+                src="/assets-appolly/images/001.png"
+                alt="App image"
+              />
+              <img
+                className={cn(
+                  "covered-image",
+                  "covered-image--fifth",
+                  "slider-container__secondary-image"
+                )}
+                src="/assets-appolly/images/004.png"
+                alt="App image"
+              />
+            </div>
+            <button className={cn("slider-button")}>
+              <img
+                src="/assets-appolly/images/arrow-right-s-line.svg"
+                alt="Left arrow icon"
+              />
+            </button>
+          </div>
+          <img
+            className={cn("slider-image")}
+            src="/assets-appolly/images/Slider.svg"
+            alt="Slider image"
+          />
+          <div className={cn("download-section")}>
+            <div className={cn("download-container")}>
+              <div
+                className={cn("section-header", "download-container__header")}>
+                DOWNLOAD APP NOW
+              </div>
+              <div
+                className={cn(
+                  "description-text",
+                  "download-container__description"
+                )}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+                Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+                Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+              </div>
+              <div className={cn("download-buttons-container")}>
+                <img
+                  className={cn("download-container__image")}
+                  src="/assets-appolly/images/toppng 1.png"
+                  alt="Google Play icon"
+                />
+                <img
+                  src="/assets-appolly/images/PngItem_1144050 2.png"
+                  alt="App Store icon"
+                />
+              </div>
+              <div className={cn("facts-section")}>
+                <div className={cn("fact-container")}>
+                  <img
+                    className={cn("fact-icon")}
+                    src="/assets-appolly/images/download-2-fill.svg"
+                    alt="Fact image"
+                  />
+                  <div className={cn("fact-value")}>59865</div>
+                  <div className={cn("fact")}>Download</div>
+                </div>
+                <div className={cn("fact-container")}>
+                  <img
+                    className={cn("fact-icon")}
+                    src="/assets-appolly/images/thumb-up-fill.svg"
+                    alt="Fact image"
+                  />
+                  <div className={cn("fact-value")}>29852</div>
+                  <div className={cn("fact")}>Like</div>
+                </div>
+                <div className={cn("fact-container")}>
+                  <img
+                    className={cn("fact-icon")}
+                    src="/assets-appolly/images/star-fill.svg"
+                    alt="Fact image"
+                  />
+                  <div className={cn("fact-value")}>1500</div>
+                  <div className={cn("fact")}>5 star rating</div>
+                </div>
+              </div>
+            </div>
+            <div className={cn("download-section__image-container")}>
+              <img
+                className={cn("download-section__image")}
+                src="/assets-appolly/images/App Design2.png"
+                alt="App image"
+              />
             </div>
           </div>
         </div>
