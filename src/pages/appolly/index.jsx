@@ -395,6 +395,30 @@ const Appolly = () => {
             </div>
           </div>
         </div>
+        <div className={cn("guide-section")}>
+          <div className={cn("section-header", "guide-section__header")}>
+            HOW TO USE OUR APP PERFECTLY
+          </div>
+          <div className={cn("description-text", "guide-section__description")}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus.
+          </div>
+          <div className={cn("guide-section__video-container")}>
+            <div className={cn("guide-section__image-container")}>
+              <img
+                className={cn("guide-section__video-image")}
+                src="/assets-appolly/images/Image.png"
+                alt="Video image"
+              />
+              <img
+                className={cn("guide-section__video-icon")}
+                src="/assets-appolly/images/Video Icon.svg"
+                alt="Video icon"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
