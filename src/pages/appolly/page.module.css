@@ -10,6 +10,7 @@
   background-image: url("/assets-appolly/images/Background Image.png");
   font-family: "Josefin Sans";
   position: relative;
+  overflow: hidden;
 
   @media (--m) {
     background-image: url("/assets-appolly/images/Background Image (1).png");
@@ -936,6 +937,168 @@
       @media (--xl) {
         width: 601px;
         margin-top: 23px;
+      }
+    }
+  }
+
+  .customers-section {
+    padding: 60px 0;
+    text-align: center;
+
+    @media (--m) {
+      padding: 120px 40px;
+    }
+
+    @media (--xl) {
+      padding: 120px 135px 118px;
+    }
+
+    &__header {
+      color: #fff;
+    }
+
+    &__description {
+      color: #fff;
+      width: 300px;
+      margin: 18px auto 0;
+
+      @media (--m) {
+        width: 450px;
+      }
+
+      @media (--xl) {
+        margin-top: 23px;
+        width: 601px;
+      }
+    }
+
+    .all-customers-container {
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @media (--m) {
+        margin-top: 40px;
+      }
+
+      @media (--xl) {
+        margin-top: 60px;
+      }
+
+      .customer-container {
+        background: #fff;
+        box-shadow: 0px 10px 100px 0px rgba(0, 0, 0, 0.24);
+        border-radius: 10px;
+        width: 343px;
+        height: 250px;
+        z-index: 2;
+
+        @media (--m) {
+          width: 450px;
+          height: 250px;
+        }
+
+        @media (--xl) {
+          width: 770px;
+          height: 357px;
+        }
+
+        &--edged {
+          height: 215px;
+          position: absolute;
+          z-index: 1;
+
+          @media (--m) {
+            height: 210px;
+          }
+
+          @media (--xl) {
+            width: 570px;
+            height: 330px;
+          }
+        }
+
+        &--first {
+          left: -45px;
+
+          @media (--m) {
+            left: 0;
+          }
+        }
+
+        &--third {
+          right: -50px;
+
+          @media (--m) {
+            right: 0;
+          }
+        }
+
+        &__image {
+          margin-top: 20px;
+
+          @media (--m) {
+            margin-top: 23px;
+          }
+
+          @media (--xl) {
+            margin-top: 40px;
+            width: 96px;
+          }
+        }
+
+        &__name {
+          margin-top: 12px;
+          color: #232233;
+          font-size: 25px;
+          font-weight: 600;
+          line-height: 37.5px;
+
+          @media (--xl) {
+            margin-top: 20px;
+            font-size: 31.25px;
+            font-weight: 700;
+            line-height: 47.25px;
+          }
+        }
+
+        &__job {
+          color: #232233;
+          line-height: 24px;
+
+          @media (--xl) {
+            margin-top: 1px;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+          }
+        }
+
+        &__description {
+          color: #6c6c72;
+          line-height: 24px;
+          width: 316px;
+          margin: 18px auto 0;
+
+          @media (--m) {
+            width: 374px;
+          }
+
+          @media (--xl) {
+            margin-top: 8px;
+            width: 647px;
+          }
+        }
+      }
+    }
+
+    .customers-slider-image {
+      margin-top: 40px;
+
+      @media (--m) {
+        margin-top: 60px;
       }
     }
   }

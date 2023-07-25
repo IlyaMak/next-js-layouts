@@ -453,6 +453,75 @@ const Appolly = () => {
           </div>
           <TeamMembersCards membersCards={membersCardData} />
         </div>
+        <div className={cn("customers-section")}>
+          <div className={cn("section-header", "customers-section__header")}>
+            OUR HAPPY CUSTOMERS
+          </div>
+          <div
+            className={cn(
+              "description-text",
+              "customers-section__description"
+            )}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </div>
+          <div className={cn("all-customers-container")}>
+            <div
+              className={cn(
+                "customer-container",
+                "customer-container--edged",
+                "customer-container--first"
+              )}>
+              <img
+                className={cn("customer-container__image")}
+                src="/assets-appolly/images/Profile Image.png"
+                alt="Customer image"
+              />
+              <div className={cn("customer-container__name")}>ANN LUBIN</div>
+              <div className={cn("customer-container__job")}>CO-FOUNDER</div>
+              <div className={cn("customer-container__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+            <div className={cn("customer-container")}>
+              <img
+                className={cn("customer-container__image")}
+                src="/assets-appolly/images/Profile Image.png"
+                alt="Customer image"
+              />
+              <div className={cn("customer-container__name")}>ANN LUBIN</div>
+              <div className={cn("customer-container__job")}>CO-FOUNDER</div>
+              <div className={cn("customer-container__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </div>
+            </div>
+            <div
+              className={cn(
+                "customer-container",
+                "customer-container--edged",
+                "customer-container--third"
+              )}>
+              <img
+                className={cn("customer-container__image")}
+                src="/assets-appolly/images/Profile Image.png"
+                alt="Customer image"
+              />
+              <div className={cn("customer-container__name")}>ANN LUBIN</div>
+              <div className={cn("customer-container__job")}>CO-FOUNDER</div>
+              <div className={cn("customer-container__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </div>
+            </div>
+          </div>
+          <img
+            className={cn("customers-slider-image")}
+            src="/assets-appolly/images/Slider-white.svg"
+            alt="Slider image"
+          />
+        </div>
       </div>
     </>
   );
