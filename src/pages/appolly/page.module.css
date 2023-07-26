@@ -134,6 +134,11 @@
         font-size: 20px;
         font-weight: 600;
         color: #232233;
+        text-decoration: none;
+
+        &:hover {
+          filter: brightness(200%);
+        }
       }
 
       .main-menu-items-container {
@@ -1422,7 +1427,7 @@
         margin-left: 66px;
       }
 
-      .menu-link {
+      .menu-link-container {
         margin-top: 11px;
         line-height: 24px;
 
@@ -1432,6 +1437,15 @@
 
         @media (--xl) {
           margin-top: 11px;
+        }
+
+        .menu-link {
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            filter: brightness(60%);
+          }
         }
       }
     }

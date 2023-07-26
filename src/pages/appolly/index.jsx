@@ -113,18 +113,28 @@ const Appolly = () => {
               <img src="/assets-appolly/images/menu-line.svg" alt="Menu icon" />
             </button>
             <div className={cn("main-menu-items-container")}>
-              <div className={cn("menu-item")}>HOME</div>
-              <div className={cn("menu-item")}>ABOUT</div>
-              <div className={cn("menu-item")}>FEATURES</div>
+              <a href="#home" className={cn("menu-item")}>
+                HOME
+              </a>
+              <a href="#about" className={cn("menu-item")}>
+                ABOUT
+              </a>
+              <a href="#features" className={cn("menu-item")}>
+                FEATURES
+              </a>
             </div>
             <div className={cn("secondary-menu-items-container")}>
-              <div className={cn("menu-item")}>SCREENSHOT</div>
-              <div className={cn("menu-item")}>BLOG</div>
+              <a href="#screenshot" className={cn("menu-item")}>
+                SCREENSHOT
+              </a>
+              <a href="#blog" className={cn("menu-item")}>
+                BLOG
+              </a>
             </div>
             <button className={cn("download-button")}>DOWNLOAD</button>
           </div>
         </div>
-        <div className={cn("home-section")}>
+        <div id="home" className={cn("home-section")}>
           <div className={cn("download-section")}>
             <div className={cn("decore-rectangle")}></div>
             <div className={cn("download-container")}>
@@ -164,7 +174,7 @@ const Appolly = () => {
             />
           </div>
         </div>
-        <div className={cn("about-section")}>
+        <div id="about" className={cn("about-section")}>
           <div className={cn("section-header")}>ABOUT OUR APP</div>
           <div className={cn("about-section__description-container")}>
             <div
@@ -184,7 +194,7 @@ const Appolly = () => {
             <Advantages advantages={appAdvantages} />
           </div>
         </div>
-        <div className={cn("features-section")}>
+        <div id="features" className={cn("features-section")}>
           <div className={cn("section-header", "section-header--features")}>
             APP FEATURES
           </div>
@@ -279,7 +289,7 @@ const Appolly = () => {
             </div>
           </div>
         </div>
-        <div className={cn("screenshot-section")}>
+        <div id="screenshot" className={cn("screenshot-section")}>
           <div className={cn("section-header", "screenshot-section__header")}>
             CHECKOUT OUR APP INTERFACE LOOK
           </div>
@@ -522,7 +532,7 @@ const Appolly = () => {
             alt="Slider image"
           />
         </div>
-        <div className={cn("blog-section")}>
+        <div id="blog" className={cn("blog-section")}>
           <div className={cn("section-header")}>OUR RECENT BLOG</div>
           <div className={cn("description-text", "blog-section__description")}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
@@ -655,10 +665,26 @@ const Appolly = () => {
               <div className={cn("footer__header", "footer__header--links")}>
                 QUICK LINK
               </div>
-              <div className={cn("menu-link")}>About</div>
-              <div className={cn("menu-link")}>Features</div>
-              <div className={cn("menu-link")}>Screenshot</div>
-              <div className={cn("menu-link")}>Blog</div>
+              <div className={cn("menu-link-container")}>
+                <a className={cn("menu-link")} href="#about">
+                  About
+                </a>
+              </div>
+              <div className={cn("menu-link-container")}>
+                <a className={cn("menu-link")} href="#features">
+                  Features
+                </a>
+              </div>
+              <div className={cn("menu-link-container")}>
+                <a className={cn("menu-link")} href="#screenshot">
+                  Screenshot
+                </a>
+              </div>
+              <div className={cn("menu-link-container")}>
+                <a className={cn("menu-link")} href="#blog">
+                  Blog
+                </a>
+              </div>
             </div>
             <div className={cn("footer__third-column")}>
               <div className={cn("footer__header")}>NEWS LETTER</div>
