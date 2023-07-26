@@ -28,19 +28,26 @@ export default function MemberCard({ memberCard }) {
         ante velit vitae. Est tellus vitae.
       </div>
       <div className={cn("member-card__socials")}>
-        <img src={memberCard.facebookIcon} alt="Facebook logo" />
+        <img
+          className={cn("social-icon")}
+          src={memberCard.facebookIcon}
+          alt="Facebook logo"
+        />
         <div className={cn("line")}></div>
         <img
+          className={cn("social-icon")}
           src="/assets-appolly/images/instagram-fill-black.svg"
           alt="Instagram logo"
         />
         <div className={cn("line")}></div>
         <img
+          className={cn("social-icon")}
           src="/assets-appolly/images/twitter-fill-black.svg"
           alt="Twitter logo"
         />
         <div className={cn("line")}></div>
         <img
+          className={cn("social-icon")}
           src="/assets-appolly/images/youtube-fill-black.svg"
           alt="Youtube logo"
         />

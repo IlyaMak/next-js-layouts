@@ -101,6 +101,12 @@
       margin-top: 40px;
     }
 
+    .social-icon {
+      &:hover {
+        filter: brightness(140%);
+      }
+    }
+
     .line {
       width: 1px;
       height: 23px;

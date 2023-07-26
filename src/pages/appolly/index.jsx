@@ -617,6 +617,82 @@ const Appolly = () => {
             </div>
           </div>
         </div>
+        <div className={cn("footer")}>
+          <div className={cn("footer__content-columns")}>
+            <div className={cn("footer__first-column")}>
+              <div className={cn("logo-text")}>LOGO</div>
+              <div className={cn("description-text", "footer__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </div>
+              <div className={cn("footer__socials")}>
+                <img
+                  className={cn("social-icon")}
+                  src="/assets-appolly/images/facebook-fill-purple.svg"
+                  alt="Facebook logo"
+                />
+                <div className={cn("line")}></div>
+                <img
+                  className={cn("social-icon")}
+                  src="/assets-appolly/images/instagram-fill.svg"
+                  alt="Instagram logo"
+                />
+                <div className={cn("line")}></div>
+                <img
+                  className={cn("social-icon")}
+                  src="/assets-appolly/images/twitter-fill.svg"
+                  alt="Twitter logo"
+                />
+                <div className={cn("line")}></div>
+                <img
+                  className={cn("social-icon")}
+                  src="/assets-appolly/images/youtube-fill.svg"
+                  alt="Youtube logo"
+                />
+              </div>
+            </div>
+            <div className={cn("footer__second-column")}>
+              <div className={cn("footer__header", "footer__header--links")}>
+                QUICK LINK
+              </div>
+              <div className={cn("menu-link")}>About</div>
+              <div className={cn("menu-link")}>Features</div>
+              <div className={cn("menu-link")}>Screenshot</div>
+              <div className={cn("menu-link")}>Blog</div>
+            </div>
+            <div className={cn("footer__third-column")}>
+              <div className={cn("footer__header")}>NEWS LETTER</div>
+              <div
+                className={cn("description-text", "footer__news-description")}>
+                Subscribe our newsletter to get our latest update & news
+              </div>
+              <div className={cn("contact-input-container")}>
+                <input
+                  className={cn("contact-input")}
+                  type="text"
+                  placeholder="Your email address"
+                />
+                <button className={cn("send-button")}>
+                  <img
+                    src="/assets-appolly/images/send-plane-2-fill.svg"
+                    alt="Send icon"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className={cn("horizontal-line")}></div>
+          <div className={cn("copyright-container")}>
+            <img
+              className={cn("copyright-image")}
+              src="/assets-appolly/images/copyright-line.svg"
+              alt="Copyright icon"
+            />
+            <div className={cn("copyright-text")}>
+              Copyright 2021 .Ojjomedia. All Right Reserved.
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
