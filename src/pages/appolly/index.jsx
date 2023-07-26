@@ -522,6 +522,101 @@ const Appolly = () => {
             alt="Slider image"
           />
         </div>
+        <div className={cn("blog-section")}>
+          <div className={cn("section-header")}>OUR RECENT BLOG</div>
+          <div className={cn("description-text", "blog-section__description")}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+            Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
+            Ullamcorper risus tempor, ac nunc libero urna, feugiat.
+          </div>
+          <div className={cn("all-blogs-container")}>
+            <div className={cn("blog-card")}>
+              <div className={cn("blog-card__image-container")}>
+                <img
+                  className={cn("blog-card__image")}
+                  src="/assets-appolly/images/Image (1).png"
+                  alt="Blog image"
+                />
+              </div>
+              <div className={cn("blog-card__name")}>
+                THE SNAP PIXEL: HOW IT WORKS AND HOW TO INSTALL
+              </div>
+              <div className={cn("description-text", "blog-card__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </div>
+              <div className={cn("blog-card__link-container")}>
+                <a className={cn("blog-card__link")} href="#">
+                  READ MORE
+                </a>
+              </div>
+            </div>
+            <div className={cn("blog-card")}>
+              <div className={cn("blog-card__image-container")}>
+                <img
+                  className={cn("blog-card__image")}
+                  src="/assets-appolly/images/Image (2).png"
+                  alt="Blog image"
+                />
+              </div>
+              <div className={cn("blog-card__name")}>
+                GLOBAL PARTNER SOLUTIONS: A PARTNERSHIP OF INNOVA
+              </div>
+              <div className={cn("description-text", "blog-card__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </div>
+              <div className={cn("blog-card__link-container")}>
+                <a className={cn("blog-card__link")} href="#">
+                  READ MORE
+                </a>
+              </div>
+            </div>
+            <div className={cn("blog-card")}>
+              <div className={cn("blog-card__image-container")}>
+                <img
+                  className={cn("blog-card__image")}
+                  src="/assets-appolly/images/Image (3).png"
+                  alt="Blog image"
+                />
+              </div>
+              <div className={cn("blog-card__name")}>
+                AN OPPORTUNITY FOR SNAPCHATTERS TO START FRE
+              </div>
+              <div className={cn("description-text", "blog-card__description")}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
+                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
+              </div>
+              <div className={cn("blog-card__link-container")}>
+                <a className={cn("blog-card__link")} href="#">
+                  READ MORE
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className={cn("contact-container")}>
+            <div className={cn("contact-container__main-content")}>
+              <div className={cn("content-container")}>
+                <img
+                  className={cn("content-image")}
+                  src="/assets-appolly/images/Email Icon.svg"
+                  alt="Email icon"
+                />
+                <div className={cn("content-text")}>info@youremail.com</div>
+              </div>
+              <div className={cn("line")}></div>
+              <div className={cn("content-container")}>
+                <img
+                  className={cn("content-image")}
+                  src="/assets-appolly/images/Call Icon.svg"
+                  alt="Call icon"
+                />
+                <div className={cn("content-text")}>+880 321 655 9985</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

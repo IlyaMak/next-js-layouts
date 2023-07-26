@@ -1102,4 +1102,212 @@
       }
     }
   }
+
+  .blog-section {
+    padding: 60px 16px 210px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+
+    @media (--m) {
+      padding: 120px 40px 195px;
+    }
+
+    @media (--xl) {
+      padding: 120px 135px 248px;
+    }
+
+    &__description {
+      width: 450px;
+      margin: 18px auto 0;
+
+      @media (--xl) {
+        margin-top: 23px;
+        width: 601px;
+      }
+    }
+
+    .all-blogs-container {
+      margin-top: 40px;
+
+      @media (--m) {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media (--xl) {
+        margin-top: 60px;
+      }
+
+      .blog-card {
+        height: 482px;
+        border-radius: 10px;
+        box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        margin-top: 40px;
+
+        @media (--m) {
+          width: 213px;
+          height: 633px;
+        }
+
+        @media (--xl) {
+          width: 370px;
+          height: 500px;
+        }
+
+        &__image-container {
+          display: flex;
+          justify-content: center;
+        }
+
+        &__image {
+          width: 343px;
+          height: 228px;
+          border-radius: 10px 10px 0 0;
+
+          @media (--m) {
+            width: 213px;
+            height: 228px;
+          }
+
+          @media (--xl) {
+            width: 370px;
+          }
+        }
+
+        &__name {
+          color: #232233;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 30px;
+          margin: 30px 18px 0 18px;
+
+          @media (--xl) {
+            margin-top: 40px;
+          }
+        }
+
+        &__description {
+          margin: 18px 10px 0 18px;
+
+          @media (--xl) {
+            margin-top: 10px;
+            width: calc(100% - 36px);
+          }
+        }
+
+        &__link-container {
+          margin: 20px 0 0 18px;
+
+          @media (--m) {
+            margin-top: 40px;
+          }
+
+          @media (--xl) {
+            margin-top: 30px;
+          }
+        }
+
+        &__link {
+          color: #5956e9;
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 130%;
+        }
+      }
+    }
+
+    .contact-container {
+      position: absolute;
+      bottom: -146px;
+      box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+      padding-bottom: 30px;
+      width: calc(100% - 32px);
+
+      @media (--m) {
+        bottom: -75px;
+        border-radius: 15px;
+        padding: 22px 0 22px 18px;
+        width: calc(100% - 80px - 18px);
+      }
+
+      @media (--xl) {
+        bottom: -115px;
+        border-radius: 30px;
+        padding: 57px 0 56px 50px;
+        width: calc(100% - 135px - 135px - 50px);
+      }
+
+      &__main-content {
+        @media (--m) {
+          display: flex;
+          align-items: center;
+        }
+
+        .content-container {
+          @media (--m) {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+          }
+
+          .content-image {
+            margin-top: 30px;
+
+            @media (--m) {
+              width: 60px;
+              margin-top: 0;
+            }
+
+            @media (--xl) {
+              width: 100px;
+            }
+          }
+
+          .content-text {
+            margin-top: 20px;
+            color: #232233;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 30px;
+
+            @media (--m) {
+              margin-top: 0;
+              margin-left: 18px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+            }
+
+            @media (--xl) {
+              font-size: 25px;
+              font-weight: 600;
+              line-height: 37.5px;
+            }
+          }
+        }
+
+        .line {
+          width: 117px;
+          height: 4px;
+          background: #232233;
+          margin: 20px auto 0;
+
+          @media (--m) {
+            margin: 0 30px 0 103px;
+            width: 3px;
+            height: 106px;
+          }
+
+          @media (--xl) {
+            margin: 0 50px 0 184px;
+            width: 4px;
+            height: 117px;
+          }
+        }
+      }
+    }
+  }
 }
