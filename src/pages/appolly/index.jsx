@@ -4,6 +4,8 @@ import cnCommon from "../../modules/classname";
 import globalStyles from "../../app/style.global";
 import Advantages from "../../components/appolly/advantages/advantages";
 import TeamMembersCards from "../../components/appolly/team-members-cards/team-members-cards";
+import DrawerMenu from "../../components/appolly/drawer-menu/drawer-menu";
+import { useState } from "react";
 
 const cn = cnCommon.bind(null, styles);
 
@@ -49,6 +51,8 @@ const membersCardData = [
 ];
 
 const Appolly = () => {
+  const [isMenuShown, setIsMenuShown] = useState(false);
+
   return (
     <>
       <Head>
@@ -58,6 +62,7 @@ const Appolly = () => {
         {globalStyles}
       </style>
       <div className={cn("main")}>
+        <DrawerMenu isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
         <div className={cn("logo-container")}>
           <img
             className={cn("logo")}
@@ -109,7 +114,9 @@ const Appolly = () => {
             </div>
           </div>
           <div className={cn("menu-container")}>
-            <button className={cn("menu-button")}>
+            <button
+              className={cn("menu-button")}
+              onClick={() => setIsMenuShown(!isMenuShown)}>
               <img src="/assets-appolly/images/menu-line.svg" alt="Menu icon" />
             </button>
             <div className={cn("main-menu-items-container")}>

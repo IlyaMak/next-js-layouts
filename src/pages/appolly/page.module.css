@@ -137,7 +137,8 @@
         text-decoration: none;
 
         &:hover {
-          filter: brightness(200%);
+          color: #5956e9;
+          text-decoration: underline;
         }
       }
 
