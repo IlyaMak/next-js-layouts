@@ -1,4 +1,4 @@
-@custom-media --m (min-width: 768px);
+@custom-media --md (min-width: 768px);
 @custom-media --xl (min-width: 1440px);
 
 .advantage-card {
@@ -14,7 +14,7 @@
     margin-top: 0;
   }
 
-  @media (--m) {
+  @media (--md) {
     padding-right: 30px;
     width: calc(100% - 30px - 19px);
   }

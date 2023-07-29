@@ -1,4 +1,4 @@
-@custom-media --m (min-width: 768px);
+@custom-media --md (min-width: 768px);
 @custom-media --xl (min-width: 1440px);
 
 .member-card {
@@ -7,7 +7,7 @@
   padding: 29px 9px 53px;
   margin-top: 30px;
 
-  @media (--m) {
+  @media (--md) {
     margin-top: 0;
     padding: 30px 6px;
     width: calc(213px - 12px);
@@ -21,7 +21,7 @@
   &__image {
     width: 220px;
 
-    @media (--m) {
+    @media (--md) {
       width: 178px;
     }
 
@@ -37,7 +37,7 @@
     font-weight: 700;
     line-height: 47.25px;
 
-    @media (--m) {
+    @media (--md) {
       margin-top: 11px;
       font-size: 20px;
       font-weight: 600;
@@ -59,7 +59,7 @@
     font-weight: 600;
     line-height: 30px;
 
-    @media (--m) {
+    @media (--md) {
       margin-top: 9px;
       font-size: 16px;
       font-weight: 400;
@@ -79,7 +79,7 @@
     color: #6c6c72;
     line-height: 24px;
 
-    @media (--m) {
+    @media (--md) {
       margin: 18px 22px 0;
     }
 
@@ -93,7 +93,7 @@
     justify-content: space-around;
     margin-top: 40px;
 
-    @media (--m) {
+    @media (--md) {
       margin-top: 30px;
     }
 

@@ -1,4 +1,4 @@
-@custom-media --m (min-width: 768px);
+@custom-media --md (min-width: 768px);
 @custom-media --xl (min-width: 1440px);
 
 .drawer-menu {
@@ -14,7 +14,7 @@
   box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);
   transition: height 0.2s linear;
 
-  @media (--m) {
+  @media (--md) {
     top: 144px;
     left: 40px;
   }
