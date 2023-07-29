@@ -8,18 +8,22 @@
   align-items: start;
   padding: 18px 16px 10px 19px;
   text-align: start;
-  margin-bottom: 20px;
-  
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
   @media (--m) {
-      padding-right: 30px;
-      width: calc(100% - 30px - 19px);
+    padding-right: 30px;
+    width: calc(100% - 30px - 19px);
   }
 
   @media (--xl) {
-      padding: 30px 20px 21px 18px;
-      width: calc(570px - 20px - 18px);
-      height: calc(160px - 30px - 21px);
-      margin-bottom: 40px;
+    padding: 30px 20px 21px 18px;
+    width: calc(570px - 20px - 18px);
+    height: calc(160px - 30px - 21px);
+    margin-bottom: 40px;
   }
 }
 
@@ -39,7 +43,7 @@
   line-height: 24px;
   margin-top: 3px;
 
-  @media(--xl) {
+  @media (--xl) {
     margin-top: 12px;
   }
 }
