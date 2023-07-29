@@ -250,7 +250,7 @@ const Appolly = () => {
             </div>
             <img
               className={cn("columns-content__second")}
-              src="/assets-appolly/images/003.png"
+              src="/assets-appolly/images/App.png"
               alt="Features image"
             />
             <div className={cn("columns-content__third")}>
@@ -442,8 +442,7 @@ const Appolly = () => {
           </div>
           <div className={cn("description-text", "guide-section__description")}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-            nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-            Faucibus amet etiam tincidunt rhoncus.
+            nunc ante vitae. Est tellus vitae, nullam lobortis enim.
           </div>
           <div className={cn("guide-section__video-container")}>
             <div className={cn("guide-section__image-container")}>

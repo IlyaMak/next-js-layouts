@@ -3,9 +3,9 @@
   src: url("/assets-appolly/fonts/JosefinSans-VariableFont_wght.ttf");
 }
 
-@custom-media --m (min-width: 768px);
+@custom-media --m (min-width: 768px); /* TODO rename to md */
 @custom-media --xl (min-width: 1440px);
-
+/* TODO должна быть фиксация ширины основного контента страницы на 1440px, чтобы не растягивалось некрасиво. Идея с .row {max-width, margin: 0 auto} */
 .main {
   background-image: url("/assets-appolly/images/Background Image.png");
   font-family: "Josefin Sans";
@@ -434,33 +434,28 @@
   }
 
   .features-section {
-    padding: 60px 37px 60px 38px;
+    padding: 60px 0;
     text-align: center;
     color: #fff;
 
     @media (--m) {
-      padding: 120px 44px 120px 36px;
+      padding: 120px 0;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-    }
-
-    @media (--xl) {
-      padding-left: 175px;
-      padding-right: 128px;
     }
 
     &__description {
       color: #fff;
-      margin-top: 18px;
+      margin: 18px auto 0;
+      width: 300px;
 
       @media (--m) {
-        width: 450px;
+        width: 450px; /** TODO не должно применяться к описаниям по бокам картинки */
       }
 
       @media (--xl) {
-        width: 601px;
+        width: 601px; /** TODO не должно применяться к описаниям по бокам картинки */
       }
     }
 
@@ -469,6 +464,10 @@
 
       @media (--m) {
         margin-top: 17px;
+      }
+
+      @media (--xl) {
+        margin-top: 0;
       }
 
       &--edged {
@@ -494,7 +493,7 @@
         }
 
         @media (--xl) {
-          margin-top: 280px;
+          margin-top: 347px;
         }
       }
 
@@ -504,7 +503,7 @@
         }
 
         @media (--xl) {
-          margin-top: 280px;
+          margin-top: 347px;
         }
       }
 
@@ -522,9 +521,14 @@
       }
 
       &__description {
-        margin-top: 18px;
+        margin: 18px auto 0;
         line-height: 24px;
         color: #fff;
+        width: 213px;
+
+        @media (--m) {
+          width: auto;
+        }
 
         @media (--xl) {
           width: 297px;
@@ -549,19 +553,23 @@
       }
 
       &__second {
+        width: 214px;
         height: 468px;
         margin-top: 60px;
+        border-radius: 40px;
+        box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.5);
 
         @media (--m) {
-          margin-top: 0;
-          margin-left: 8px;
-          margin-right: 8px;
+          margin: 0 18px;
+          box-shadow: 10px 10px 100px 0px rgba(24, 48, 63, 0.3);
         }
 
         @media (--xl) {
+          width: 375px;
           height: 812px;
-          margin-left: 50px;
-          margin-right: 50px;
+          margin-left: 60px;
+          margin-right: 60px;
+          box-shadow: 40px 40px 100px 0px rgba(24, 48, 63, 0.5);
         }
       }
 
@@ -853,35 +861,31 @@
   .guide-section {
     text-align: center;
     position: relative;
-    height: 357px;
+    margin-top: 60px;
+    height: calc(357px - 60px);
 
     @media (--m) {
-      height: 402px;
+      margin-top: 49px;
+      height: calc(402px - 49px);
     }
 
     @media (--xl) {
-      height: 447px;
+      margin-top: 120px;
+      height: calc(477px - 120px);
     }
 
     &__header {
       color: #fff;
-      margin: 60px 40px 0;
-
-      @media (--m) {
-        margin: 49px 200px 0;
-      }
-
-      @media (--xl) {
-        margin-top: 120px;
-      }
     }
 
     &__description {
       color: #fff;
-      margin: 40px 37px 0;
+      width: 300px;
+      margin: 40px auto 0;
 
       @media (--m) {
-        margin: 18px 158px 0;
+        width: 450px;
+        margin: 18px auto 0;
       }
 
       @media (--xl) {
@@ -913,6 +917,7 @@
       width: 343px;
       height: 150px;
       border-radius: 10px;
+      object-fit: cover;
 
       @media (--m) {
         width: 570px;
@@ -972,11 +977,11 @@
     text-align: center;
 
     @media (--m) {
-      padding: 120px 40px;
+      padding: 120px 0;
     }
 
     @media (--xl) {
-      padding: 120px 135px 118px;
+      padding: 120px 0 118px;
     }
 
     &__header {
@@ -999,18 +1004,21 @@
     }
 
     .all-customers-container {
-      margin-top: 32px;
+      margin: 32px auto 0;
       display: flex;
       align-items: center;
       justify-content: center;
       position: relative;
+      width: 375px;
 
       @media (--m) {
         margin-top: 40px;
+        width: 688px;
       }
 
       @media (--xl) {
         margin-top: 60px;
+        width: 1171px;
       }
 
       .customer-container {
@@ -1159,10 +1167,11 @@
       @media (--m) {
         display: flex;
         justify-content: space-between;
+        /* TODO margin-top по факту больше чем на макете*/
       }
 
       @media (--xl) {
-        margin-top: 60px;
+        margin-top: 60px; /* TODO отступ по факту больше чем на макете*/
       }
 
       .blog-card {
@@ -1191,6 +1200,8 @@
           width: 343px;
           height: 228px;
           border-radius: 10px 10px 0 0;
+          object-fit: cover;
+          width: 100%;
 
           @media (--m) {
             width: 213px;
