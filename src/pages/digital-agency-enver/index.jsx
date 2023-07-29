@@ -70,7 +70,7 @@ const Enver = () => {
   return (
     <>
       <Head>
-        <title>PNFT Market</title>
+        <title>Digital Agency Enver</title>
       </Head>
       <style jsx global>
         {globalStyles}
