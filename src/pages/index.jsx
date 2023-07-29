@@ -19,7 +19,7 @@ export default function Home() {
         <div className={cn("cards-section")}>
           <div className={cn("landing-card")}>
             <div className={cn("image-container")}>
-              <Link href="sign-in-nft">
+              <Link className={cn("image-link")} href="sign-in-nft">
                 <img
                   className={cn("landing-image")}
                   src="/assets-appolly/images/pnft-market.png"
@@ -40,7 +40,7 @@ export default function Home() {
           </div>
           <div className={cn("landing-card")}>
             <div className={cn("image-container")}>
-              <Link href="digital-agency-enver">
+              <Link className={cn("image-link")} href="digital-agency-enver">
                 <img
                   className={cn("landing-image")}
                   src="/assets-appolly/images/enver.png"
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className={cn("landing-card")}>
             <div className={cn("image-container")}>
-              <Link href="wp-notes">
+              <Link className={cn("image-link")} href="wp-notes">
                 <img
                   className={cn("landing-image")}
                   src="/assets-appolly/images/wp-notes.png"
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
           <div className={cn("landing-card")}>
             <div className={cn("image-container")}>
-              <Link href="appolly">
+              <Link className={cn("image-link")} href="appolly">
                 <img
                   className={cn("landing-image")}
                   src="/assets-appolly/images/appolly.png"

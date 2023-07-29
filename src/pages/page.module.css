@@ -30,12 +30,17 @@
     .image-container {
       overflow: hidden;
 
-      .landing-image {
-        width: 100%;
-        transition: all 0.2s linear;
+      .image-link {
+        display: block;
+        line-height: 0;
 
-        &:hover {
-          transform: scale(1.2);
+        .landing-image {
+          width: 100%;
+          transition: all 0.2s linear;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
