@@ -16,7 +16,7 @@
 
   @media (--md) {
     padding-right: 30px;
-    width: calc(100% - 30px - 19px);
+    width: calc(391px - 30px - 19px);
   }
 
   @media (--xl) {

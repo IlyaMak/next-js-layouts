@@ -62,7 +62,6 @@ const Appolly = () => {
         {globalStyles}
       </style>
       <div className={cn("main")}>
-        <DrawerMenu isMenuShown={isMenuShown} setIsMenuShown={setIsMenuShown} />
         <div className={cn("logo-container")}>
           <img
             className={cn("logo")}
@@ -70,7 +69,7 @@ const Appolly = () => {
             alt="Appolly logo"
           />
         </div>
-        <div className={cn("header")}>
+        <div className={cn("row", "header")}>
           <div className={cn("contact-section")}>
             <div className={cn("contact-container")}>
               <div className={cn("email-container")}>
@@ -141,7 +140,11 @@ const Appolly = () => {
             <button className={cn("download-button")}>DOWNLOAD</button>
           </div>
         </div>
-        <div id="home" className={cn("home-section")}>
+        <div id="home" className={cn("home-section", "row")}>
+          <DrawerMenu
+            isMenuShown={isMenuShown}
+            setIsMenuShown={setIsMenuShown}
+          />
           <div className={cn("download-section")}>
             <div className={cn("decore-rectangle")}></div>
             <div className={cn("download-container")}>
@@ -310,7 +313,7 @@ const Appolly = () => {
             Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
             Ullamcorper risus tempor, ac nunc libero urna, feugiat.
           </div>
-          <div className={cn("slider-container")}>
+          <div className={cn("row", "slider-container")}>
             <button className={cn("slider-button", "slider-button--left")}>
               <img
                 src="/assets-appolly/images/arrow-left-s-line.svg"
@@ -546,7 +549,7 @@ const Appolly = () => {
             Faucibus amet etiam tincidunt rhoncus, ullamcorper velit.
             Ullamcorper risus tempor, ac nunc libero urna, feugiat.
           </div>
-          <div className={cn("all-blogs-container")}>
+          <div className={cn("row", "all-blogs-container")}>
             <div className={cn("blog-card")}>
               <div className={cn("blog-card__image-container")}>
                 <img

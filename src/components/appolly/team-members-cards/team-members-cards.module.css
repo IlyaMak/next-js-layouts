@@ -5,12 +5,14 @@
   margin-top: 40px;
 
   @media (--md) {
-    margin-top: 32px;
+    margin: 32px auto 0;
     display: flex;
     justify-content: space-between;
+    width: 688px;
   }
 
   @media (--xl) {
     margin-top: 60px;
+    width: 1170px;
   }
 }
