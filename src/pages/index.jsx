@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Layouts</title>
-        <meta property="og:title" content="Layouts examples"></meta>
+        <meta property="og:title" content="Figma To React Examples"></meta>
         <meta
           property="og:image"
           content="https://next-js-layouts-five.vercel.app/main-layout-screen.png"></meta>
