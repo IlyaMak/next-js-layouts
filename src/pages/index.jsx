@@ -12,7 +12,11 @@ export default function Home() {
       <Head>
         <title>Layouts</title>
         <meta property="og:title" content="Layouts examples"></meta>
-        <meta property="og:image" content="/main-layout-screen.png"></meta>
+        <meta
+          property="og:image"
+          content="https://next-js-layouts-five.vercel.app/main-layout-screen.png"></meta>
+        <meta property="og:image:width" content="968"></meta>
+        <meta property="og:image:height" content="504"></meta>
       </Head>
       <style jsx global>
         {globalStyles}
