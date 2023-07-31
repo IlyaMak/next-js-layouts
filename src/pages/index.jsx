@@ -11,11 +11,25 @@ export default function Home() {
     <>
       <Head>
         <title>Layouts</title>
+        <meta property="og:title" content="Layouts examples"></meta>
+        <meta property="og:image" content="/main-layout-screen.png"></meta>
       </Head>
       <style jsx global>
         {globalStyles}
       </style>
       <div className={styles.main}>
+        <div className={cn("github-container")}>
+          <Link
+            className={cn("github-container__link")}
+            href="https://github.com/IlyaMak/next-js-layouts">
+            <img
+              className={cn("github-container__logo")}
+              src="github-mark-white.svg"
+              alt="Github icon"
+            />
+            Github Repository
+          </Link>
+        </div>
         <div className={cn("cards-section")}>
           <div className={cn("landing-card")}>
             <div className={cn("image-container")}>
